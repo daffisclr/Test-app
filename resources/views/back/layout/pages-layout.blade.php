@@ -44,19 +44,6 @@
 </head>
 
 <body>
-    <div class="pre-loader">
-        <div class="pre-loader-box">
-            <div class="loader-logo">
-                <img src="/back/vendors/images/deskapp-logo.svg" alt="" />
-            </div>
-            <div class="loader-progress" id="progress_div">
-                <div class="bar" id="bar1"></div>
-            </div>
-            <div class="percent" id="percent1">0%</div>
-            <div class="loading-text">Loading...</div>
-        </div>
-    </div>
-
     <div class="header">
         <div class="header-left">
             <div class="menu-icon bi bi-list"></div>
@@ -180,6 +167,31 @@
                     </div>
                 </div>
             </div>
+
+            @if ( Auth::guard('admin')->check())
+            <div class="user-info-dropdown">
+                <div class="dropdown">
+                    <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown">
+                        <span class="user-icon">
+                            <img src="/back/vendors/images/photo1.jpg" alt="" />
+                        </span>
+                        <span class="user-name">Ross C. Lopez</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
+                        <a class="dropdown-item" href="profile.html"><i class="dw dw-user1"></i> Profile</a>
+                        <a class="dropdown-item" href="profile.html"><i class="dw dw-settings2"></i> Setting</a>
+                        <a class="dropdown-item" href="faq.html"><i class="dw dw-help"></i> Help</a>
+
+                        <a class="dropdown-item" href="{{ route('admin.logout_handler') }}"
+                        onclick="event.preventDefault();document.getElementById('adminLogoutForm').
+                        submit();"><i class="dw dw-logout"></i> Log Out </a>
+
+                        <form action="{{ route('admin.logout_handler') }}" id="adminLogoutForm"
+                        method="POST">@csrf</form>
+                    </div>
+                </div>
+            </div>
+            @elseif ( Auth::guard('alumni')->check())
             <div class="user-info-dropdown">
                 <div class="dropdown">
                     <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown">
@@ -196,6 +208,8 @@
                     </div>
                 </div>
             </div>
+            @endif
+
             <div class="github-link">
                 <a href="https://github.com/dropways/deskapp" target="_blank"><img src="/back/vendors/images/github.svg"
                         alt="" /></a>
