@@ -48,5 +48,15 @@ class AdminController extends Controller
         Auth::guard('admin')->logout();
         session()->flash('fail', 'You are logged out!');
         return redirect()->route('admin.login');
-    }
+    } // End Logout Function
+
+    public function sendPasswordResetLink (Request $request){
+        $request->validate([
+            'email'=>'required|email|exists:admins,email',
+        ],[
+            'email.required'=>'The :attribute is required',
+            'email.email'=>'Invalid email address',
+            'email.exists'=>'The :attribute is not exists in system'
+        ]);
+    } // Check Email if forgot password
 }
