@@ -24,7 +24,8 @@ class Alumni extends Authenticatable
         'username',
         'email',
         'phone',
-        'picture'
+        'picture',
+        'password'
     ];
 
     /**
