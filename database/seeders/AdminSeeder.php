@@ -18,23 +18,23 @@ class AdminSeeder extends Seeder
             'name' => 'Admin',
             'username' => 'admin',
             'email' => 'admin@email.com',
-            'phone' => '0812134567',
+            'phone' => '08121345678',
             'password' => Hash::make('12345')
         ]);
 
         Admin::create([
             'name' => 'Admin1',
             'username' => 'admin1',
-            'email' => 'admin@email1.com',
-            'phone' => '0812134567',
+            'email' => 'admin1@email.com',
+            'phone' => '081213456789',
             'password' => Hash::make('12345')
         ]);
 
         Admin::create([
             'name' => 'Admin2',
             'username' => 'admin2',
-            'email' => 'admin@email2.com',
-            'phone' => '0812134567',
+            'email' => 'admin2@email.com',
+            'phone' => '0812134567891',
             'password' => Hash::make('12345')
         ]);
     }
