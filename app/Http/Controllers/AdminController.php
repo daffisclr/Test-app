@@ -193,4 +193,13 @@ class AdminController extends Controller
         return redirect()->route('admin.login')->with('success','Done! Your password has changed. Use new password
         to login into systems');
     }
+
+    // View Profile
+    public function profileView(Request $request){
+        $admin = null;
+        if( Auth::guard('admin')->check() ){
+            $admin = Admin::findOrFail(auth()->id());
+        }
+        return view('back.pages.admin.profile', compact('admin'));
+    }
 }
