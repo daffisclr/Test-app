@@ -309,8 +309,7 @@
                         <div class="sidebar-small-cap">Settings</div>
                     </li>
                     <li>
-                        <a href="{{ route('admin.profile') }}"
-                            target="_blank" class="dropdown-toggle no-arrow">
+                        <a href="{{ route('admin.profile') }}" class="dropdown-toggle no-arrow">
                             <span class="micon fa fa-user"></span>
                             <span class="mtext">Profile </span>
                         </a>

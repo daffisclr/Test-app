@@ -10,7 +10,7 @@ class AdminProfileTabs extends Component
 {
     public $tab = null;
     public $tabname = 'personal_details';
-    protected $queryString = ['tab'];
+    protected $queryString = ['tab'=>['keep'=>true]];
     public $name, $email, $username, $admin_id;
 
     public function selectTab($tab){
@@ -33,7 +33,7 @@ class AdminProfileTabs extends Component
         $this->validate([
             'name'=>'required|min:5',
             'email'=>'required|email|unique:admins,email,'.$this->admin_id,
-            'username'=>'required|min:3|unique:admins,username'.$this->admin_id
+            'username'=>'required|min:3|unique:admins,username,'.$this->admin_id
         ]);
 
         Admin::find($this->admin_id)
@@ -43,11 +43,17 @@ class AdminProfileTabs extends Component
                 'username'=>$this->username
         ]);
 
+        $this->dispatch('updateHeaderInfo');
+        $this->dispatch('updateAdminInfo',[
+            'adminName'=>$this->name,
+            'adminEmail'=>$this->email
+        ]);
+
         $this->showToastr('success','Your personal details have been successfully updated');
     }
 
     public function showToastr($type, $message){
-        return $this->dispatchBrowserEvent('showToastr',[
+        return $this->dispatch('showToastr',[
             'type'=>$type,
             'message'=>$message
         ]);
