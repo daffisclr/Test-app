@@ -349,7 +349,6 @@
     <script src="/extra-assets/ijabo/jquery-ijaboViewer.min.js"></script>
     <script>
         window.addEventListener('showToastr', function(event){
-            console.log(event);
             toastr.remove();
             if ( event.detail.type === 'info' ){ toastr.info(event.detail.message); }
             else if ( event.detail.type === 'success' ){ toastr.success(event.detail.message); }
