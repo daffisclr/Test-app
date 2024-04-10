@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::create('admins', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger(
+                'role_id'
+            );
             $table->string('name')->nullable();
             $table->string('username')->unique()->nullable();
             $table->string('email')->unique()->nullable();
@@ -20,6 +23,9 @@ return new class extends Migration
             $table->string('picture')->nullable();
             $table->string('password')->nullable();
             $table->timestamps();
+            $table->foreign(
+                'role_id'
+            )->references('id')->on('roles')->onDelete('cascade')->onUpdate('cascade');;
         });
     }
 
