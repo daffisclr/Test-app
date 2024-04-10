@@ -60,7 +60,41 @@
                 <div class="tab-pane fade {{ $tab == 'update_password' ? 'active show' : '' }}" id="update_password"
                     role="tabpanel">
                     <div class="pd-20 profile-task-wrap">
-                        --- Update Password Here ---
+                        <form wire:submit.prevent='changePassword()'>
+                            <div class="input-group custom">
+                                <input type="text" class="form-control form-control-lg" placeholder="New Password"
+                                name="new_password" wire:model='new_password'>
+                                <div class="input-group-append custom">
+                                    <span class="input-group-text"><i class="dw dw-padlock1"></i></span>
+                                </div>
+                            </div>
+                            @error('new_password')
+                                <div class="d-block text-danger" style="margin-top:-25px; margin-bottom:15px;">
+                                    {{ $message }}
+                                </div>
+                            @enderror
+                            <div class="input-group custom">
+                                <input type="text" class="form-control form-control-lg" placeholder="Confirm New Password"
+                                name="new_password_confirmation" wire:model='new_password_confirmation'>
+                                <div class="input-group-append custom">
+                                    <span class="input-group-text"><i class="dw dw-padlock1"></i></span>
+                                </div>
+                            </div>
+                            @error('new_password_confirmation')
+                                <div class="d-block text-danger" style="margin-top:-25px; margin-bottom:15px;">
+                                    {{ $message }}
+                                </div>
+                            @enderror
+                            <div class="row align-items-center">
+                                <div class="col-5">
+                                    <div class="input-group mb-0">
+                
+                                        <input class="btn btn-primary btn-lg btn-block" type="submit" value="Submit">
+                
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
                 <!-- Tasks Tab End -->
