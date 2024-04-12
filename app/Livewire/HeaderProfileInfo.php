@@ -15,8 +15,9 @@ class HeaderProfileInfo extends Component
         'updateHeaderInfo' => 'refresh'
     ];
 
-    public function mount(){
-        if( Auth::guard('admin')->check() ){
+    public function mount()
+    {
+        if (Auth::guard('admin')->check()) {
             $this->admin = Admin::findOrFail(auth()->id());
         }
     }

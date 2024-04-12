@@ -14,20 +14,32 @@ class ModuleSeeder extends Seeder
     public function run(): void
     {
         Module::create([
-            'name' => "home",
-            'url' => "admin/home",
+            'name' => "Home",
+            'url' => "admin.home",
             'icon' => 'fa-home',
             'description' => 'Home Module',
+            'module_level' => 0,
             'valid_status' => 1
         ]);
 
         Module::create([
-            'name' => "profile",
-            'url' => "admin/profile",
-            'icon' => 'fa-user',
-            'description' => 'Profile Module',
+            'name' => "Settings",
+            'description' => 'Setting Parent Module',
+            'module_level' => 1,
             'valid_status' => 1
         ]);
+
+        Module::create([
+            'name' => "Profile",
+            'url' => "admin.profile",
+            'icon' => 'fa-user',
+            'description' => 'Profile Module',
+            'parent_module' => 2,
+            'module_level' => 2,
+            'valid_status' => 1
+        ]);
+
+
 
         $modules = Module::all();
 

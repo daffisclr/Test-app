@@ -22,6 +22,8 @@ class Module extends Model
     protected $fillable = [
         'name',
         'url',
+        'parent_module',
+        'module_level',
         'icon',
         'description',
         'valid_status'

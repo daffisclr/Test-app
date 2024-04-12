@@ -18,7 +18,13 @@ return new class extends Migration
             )->nullable(false);
             $table->string(
                 'url'
-            )->nullable(false);
+            )->nullable();
+            $table->unsignedBigInteger(
+                'parent_module'
+            )->nullable();
+            $table->integer(
+                'module_level'
+            )->nullable();
             $table->string(
                 'icon'
             )->nullable();
@@ -27,6 +33,10 @@ return new class extends Migration
             )->nullable();
             $table->integer('valid_status')->nullable(false);
             $table->timestamps();
+        });
+
+        Schema::table('modules', function (Blueprint $table) {
+            $table->foreign('parent_module')->references('id')->on('modules');
         });
     }
 
