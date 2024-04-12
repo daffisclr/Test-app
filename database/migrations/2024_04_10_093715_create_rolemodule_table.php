@@ -11,16 +11,21 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('rolemodule', function (Blueprint $table) {
+        Schema::create('module_role', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('module_id');
             $table->unsignedBigInteger('role_id');
+            $table->integer('valid')->nullable(false)->default(0);
+            $table->integer('C')->nullable(false)->default(0);
+            $table->integer('R')->nullable(false)->default(0);
+            $table->integer('U')->nullable(false)->default(0);
+            $table->integer('D')->nullable(false)->default(0);
             $table->string(
                 'description'
             )->nullable();
             $table->foreign(
                 'module_id'
-            )->references('id')->on('module')->onDelete('cascade')->onUpdate('cascade');
+            )->references('id')->on('modules')->onDelete('cascade')->onUpdate('cascade');
             $table->foreign('role_id')->references('id')->on('roles')->onDelete('cascade')->onUpdate('cascade');
             $table->timestamps();
         });
@@ -31,7 +36,7 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('rolemodule');
+        Schema::dropIfExists('module_role');
         Schema::table('adminrole', function (Blueprint $table) {
             $table->dropForeign('module_id');
             $table->dropIndex('module_id');

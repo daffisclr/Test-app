@@ -29,6 +29,6 @@ class Module extends Model
 
     public function roles()
     {
-        return $this->belongsToMany(Role::class);
+        return $this->belongsToMany(Role::class)->withTimestamps()->withPivot(['id', 'module_id', 'role_id', 'valid', 'C', 'R', 'U', 'D', 'description']);
     }
 }
