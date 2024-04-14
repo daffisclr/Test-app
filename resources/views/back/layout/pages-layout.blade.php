@@ -289,7 +289,34 @@
         <div class="menu-block customscroll">
             <div class="sidebar-menu">
                 <ul id="accordion-menu">
-                    @livewire('menu')
+
+                    @if ( Route::is('admin.*') )
+                    <li>
+                        <a href="{{ route('admin.home') }}" class="dropdown-toggle no-arrow">
+                            <span class="micon fa fa-home"></span><span class="mtext">Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="invoice.html" class="dropdown-toggle no-arrow">
+                            <span class="micon bi bi-receipt-cutoff"></span><span class="mtext">Invoice</span>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="dropdown-divider"></div>
+                    </li>
+                    <li>
+                        <div class="sidebar-small-cap">Settings</div>
+                    </li>
+                    <li>
+                        <a href="{{ route('admin.profile') }}" class="dropdown-toggle no-arrow">
+                            <span class="micon fa fa-user"></span>
+                            <span class="mtext">Profile </span>
+                        </a>
+                    </li>
+                    @else
+
+                    @endif
+
                 </ul>
             </div>
         </div>
@@ -322,17 +349,11 @@
     <script>
         window.addEventListener('showToastr', function(event) {
             toastr.remove();
-            if (event.detail.type === 'info') {
-                toastr.info(event.detail.message);
-            } else if (event.detail.type === 'success') {
-                toastr.success(event.detail.message);
-            } else if (event.detail.type === 'error') {
-                toastr.error(event.detail.message);
-            } else if (event.detail.type === 'warning') {
-                toastr.warning(event.detail.message);
-            } else {
-                return false;
-            }
+            if ( event.detail.type === 'info' ){ toastr.info(event.detail.message); }
+            else if ( event.detail.type === 'success' ){ toastr.success(event.detail.message); }
+            else if ( event.detail.type === 'error' ){ toastr.error(event.detail.message); }
+            else if ( event.detail.type === 'warning' ){ toastr.warning(event.detail.message); }
+            else { return false; }
         });
     </script>
 
