@@ -22,6 +22,7 @@ return new class extends Migration
             $table->string('phone')->nullable();
             $table->string('picture')->nullable();
             $table->string('password')->nullable();
+            $table->integer('valid_status')->nullable(false)->default(1);
             $table->timestamps();
             $table->foreign(
                 'role_id'
