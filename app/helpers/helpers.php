@@ -21,14 +21,20 @@ if (!function_exists('sendEmail')) {
         $mail->Password = env('EMAIL_PASSWORD');
         $mail->SMTPSecure = env('EMAIL_ENCRYPTION');
         $mail->Port = env('EMAIL_PORT');
-        $mail->setFrom($mailConfig['mail_from_email'],$mailConfig['mail_from_name']);
-        $mail->addAddress($mailConfig['mail_recipient_email'],$mailConfig['mail_recipient_name']);
+        $mail->setFrom($mailConfig['mail_from_email'], $mailConfig['mail_from_name']);
+        if ($mailConfig['mail_recipient']) {
+            foreach ($mailConfig['mail_recipient'] as $recipient) {
+                $mail->addAddress($recipient->mail_recipient_email, $recipient->mail_recipient_name);
+            }
+        } else {
+            $mail->addAddress($mailConfig['mail_recipient_email'], $mailConfig['mail_recipient_name']);
+        }
         $mail->isHTML(true);
         $mail->Subject = $mailConfig['mail_subject'];
         $mail->Body = $mailConfig['mail_body'];
-        if($mail->send()){
+        if ($mail->send()) {
             return true;
-        } else{
+        } else {
             return false;
         }
     }

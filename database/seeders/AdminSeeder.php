@@ -19,7 +19,8 @@ class AdminSeeder extends Seeder
             'username' => 'admin',
             'email' => 'admin@email.com',
             'phone' => '08121345678',
-            'password' => Hash::make('12345')
+            'password' => Hash::make('12345'),
+            'role_id' => 1
         ]);
 
         Admin::create([
@@ -27,7 +28,8 @@ class AdminSeeder extends Seeder
             'username' => 'admin1',
             'email' => 'admin1@email.com',
             'phone' => '081213456789',
-            'password' => Hash::make('12345')
+            'password' => Hash::make('12345'),
+            'role_id' => 1
         ]);
 
         Admin::create([
@@ -35,7 +37,17 @@ class AdminSeeder extends Seeder
             'username' => 'admin2',
             'email' => 'admin2@email.com',
             'phone' => '0812134567891',
-            'password' => Hash::make('12345')
+            'password' => Hash::make('12345'),
+            'role_id' => 1
+        ]);
+
+        Admin::create([
+            'name' => 'Alumni',
+            'username' => 'alumni',
+            'email' => 'alumni@email.com',
+            'phone' => '0812134567891',
+            'password' => Hash::make('12345'),
+            'role_id' => 2
         ]);
     }
 }

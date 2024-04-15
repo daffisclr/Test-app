@@ -25,7 +25,8 @@ class Admin extends Authenticatable
         'email',
         'phone',
         'picture',
-        'password'
+        'password',
+        'valid_status',
     ];
 
     /**
@@ -48,11 +49,16 @@ class Admin extends Authenticatable
         'password' => 'hashed',
     ];
 
-    public function getPictureAttribute($value){
-        if ($value){
-            return asset('/images/users/admins/'.$value);
+    public function getPictureAttribute($value)
+    {
+        if ($value) {
+            return asset('/images/users/admins/' . $value);
         } else {
             return asset('/images/users/default-avatar.png');
         }
+    }
+    public function role()
+    {
+        return $this->belongsTo(Role::class);
     }
 }

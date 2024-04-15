@@ -290,30 +290,31 @@
             <div class="sidebar-menu">
                 <ul id="accordion-menu">
 
-                    @if (Route::is('admin.*'))
-                        <li>
-                            <a href="{{ route('admin.home') }}" class="dropdown-toggle no-arrow">
-                                <span class="micon fa fa-home"></span><span class="mtext">Home</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="invoice.html" class="dropdown-toggle no-arrow">
-                                <span class="micon bi bi-receipt-cutoff"></span><span class="mtext">Invoice</span>
-                            </a>
-                        </li>
-                        <li>
-                            <div class="dropdown-divider"></div>
-                        </li>
-                        <li>
-                            <div class="sidebar-small-cap">Settings</div>
-                        </li>
-                        <li>
-                            <a href="{{ route('admin.profile') }}" class="dropdown-toggle no-arrow">
-                                <span class="micon fa fa-user"></span>
-                                <span class="mtext">Profile </span>
-                            </a>
-                        </li>
+                    @if ( Route::is('admin.*') )
+                    <li>
+                        <a href="{{ route('admin.home') }}" class="dropdown-toggle no-arrow">
+                            <span class="micon fa fa-home"></span><span class="mtext">Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="invoice.html" class="dropdown-toggle no-arrow">
+                            <span class="micon bi bi-receipt-cutoff"></span><span class="mtext">Invoice</span>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="dropdown-divider"></div>
+                    </li>
+                    <li>
+                        <div class="sidebar-small-cap">Settings</div>
+                    </li>
+                    <li>
+                        <a href="{{ route('admin.profile') }}" class="dropdown-toggle no-arrow">
+                            <span class="micon fa fa-user"></span>
+                            <span class="mtext">Profile </span>
+                        </a>
+                    </li>
                     @else
+
                     @endif
 
                 </ul>
@@ -348,35 +349,12 @@
     <script>
         window.addEventListener('showToastr', function(event) {
             toastr.remove();
-            if (event.detail[0].type === 'info') {
-                toastr.info(event.detail[0].message);
-            } else if (event.detail[0].type === 'success') {
-                toastr.success(event.detail[0].message);
-            } else if (event.detail[0].type === 'error') {
-                toastr.error(event.detail[0].message);
-            } else if (event.detail[0].type === 'warning') {
-                toastr.warning(event.detail[0].message);
-            } else {
-                return false;
-            }
+            if ( event.detail.type === 'info' ){ toastr.info(event.detail.message); }
+            else if ( event.detail.type === 'success' ){ toastr.success(event.detail.message); }
+            else if ( event.detail.type === 'error' ){ toastr.error(event.detail.message); }
+            else if ( event.detail.type === 'warning' ){ toastr.warning(event.detail.message); }
+            else { return false; }
         });
-
-        // document.addEventListener('livewire:init', () => {
-        //     Livewire.on('showToastr', (event) => {
-        //         toastr.remove();
-        //         if (event[0].type === 'info') {
-        //             toastr.info(event[0].message);
-        //         } else if (event[0].type === 'success') {
-        //             toastr.success(event[0].message);
-        //         } else if (event[0].type === 'error') {
-        //             toastr.error(event[0].message);
-        //         } else if (event[0].type === 'warning') {
-        //             toastr.warning(event[0].message);
-        //         } else {
-        //             return false;
-        //         }
-        //     });
-        // });
     </script>
 
     @livewireScripts
