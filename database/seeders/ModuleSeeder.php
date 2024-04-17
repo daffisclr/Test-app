@@ -39,15 +39,35 @@ class ModuleSeeder extends Seeder
             'valid_status' => 1
         ]);
 
-
+        Module::create([
+            'name' => "Kuesioner",
+            'url' => "admin.kuesioner",
+            'icon' => ' fa-file-text',
+            'description' => 'Kuesioner Module',
+            'module_level' => 0,
+            'valid_status' => 1
+        ]);
 
         $modules = Module::all();
 
         Role::all()->each(function ($role) use ($modules) {
-            $role->modules()->attach(
-                $modules->pluck('id')->toArray(),
-                ['valid' => 1, 'C' => 1, 'R' => 1, 'U' => 1, 'D' => 1,]
-            );
+            if ($role->id == 1)
+                $role->modules()->attach(
+                    $modules->pluck('id')->toArray(),
+                    ['valid' => 1, 'C' => 1, 'R' => 1, 'U' => 1, 'D' => 1,]
+                );
+
+            if ($role->id == 2) {
+                $role->modules()->attach(
+                    $modules->where('id', '!=', 4)->pluck('id')->toArray(),
+                    ['valid' => 1, 'C' => 1, 'R' => 1, 'U' => 1, 'D' => 1,]
+                );
+
+                $role->modules()->attach(
+                    $modules->where('id', '==', 4)->pluck('id')->toArray(),
+                    ['valid' => 1, 'C' => 1, 'R' => 1, 'U' => 0, 'D' => 0,]
+                );
+            }
         });
     }
 }
