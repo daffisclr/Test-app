@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\QuestionnaireController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -29,6 +30,8 @@ Route::prefix('admin')->name('admin.')->group(function () {
         Route::view('/home', 'back.pages.admin.home')->name('home');
         Route::post('/logout_handler', [AdminController::class, 'logoutHandler'])->name('logout_handler');
         Route::get('/profile', [AdminController::class, 'profileView'])->name('profile');
+        Route::get('/kuesioner', [QuestionnaireController::class, 'index'])->name('kuesioner');
+        Route::post('/kuesioner', [QuestionnaireController::class, 'kuesioner_form'])->name('kuesioner-form');
     });
 
     Route::get('/', function () {
