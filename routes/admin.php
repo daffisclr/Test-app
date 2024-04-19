@@ -31,7 +31,7 @@ Route::prefix('admin')->name('admin.')->group(function () {
         Route::post('/logout_handler', [AdminController::class, 'logoutHandler'])->name('logout_handler');
         Route::get('/profile', [AdminController::class, 'profileView'])->name('profile');
         Route::get('/kuesioner', [QuestionnaireController::class, 'index'])->name('kuesioner');
-        Route::post('/kuesioner', [QuestionnaireController::class, 'kuesioner_form'])->name('kuesioner-form');
+        Route::post('/kuesioner-form', [QuestionnaireController::class, 'kuesioner_form']);
     });
 
     Route::get('/', function () {
