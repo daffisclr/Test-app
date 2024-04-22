@@ -22,9 +22,6 @@ class QuestionSeeder extends Seeder
                 'description' => '',
                 'valid_status' => 1,
                 'rules' => 'required',
-                'validation_message' => 'Field is required',
-                'select_options' => 'Please Select One',
-                'select_value' => '',
                 'created_at' => date('Y-m-d H:i:s')
             ], [
                 'question_label' => 'Last Name',
@@ -34,9 +31,6 @@ class QuestionSeeder extends Seeder
                 'description' => '',
                 'valid_status' => 1,
                 'rules' => 'required',
-                'validation_message' => 'Field is required',
-                'select_options' => 'Please Select One',
-                'select_value' => '',
                 'created_at' => date('Y-m-d H:i:s')
             ], [
                 'question_label' => 'Email Address',
@@ -46,9 +40,6 @@ class QuestionSeeder extends Seeder
                 'description' => '',
                 'valid_status' => 1,
                 'rules' => 'required',
-                'validation_message' => 'Field is required',
-                'select_options' => 'Please Select One',
-                'select_value' => '',
                 'created_at' => date('Y-m-d H:i:s')
             ], [
                 'question_label' => 'Phone Number',
@@ -58,9 +49,6 @@ class QuestionSeeder extends Seeder
                 'description' => '',
                 'valid_status' => 1,
                 'rules' => 'required',
-                'validation_message' => 'Field is required',
-                'select_options' => 'Please Select One',
-                'select_value' => '',
                 'created_at' => date('Y-m-d H:i:s')
             ], [
                 'question_label' => 'Select City',
@@ -70,9 +58,6 @@ class QuestionSeeder extends Seeder
                 'description' => '',
                 'valid_status' => 1,
                 'rules' => 'required',
-                'validation_message' => 'Field is required',
-                'select_options' => 'Please Select One',
-                'select_value' => '',
                 'created_at' => date('Y-m-d H:i:s')
             ], [
                 'question_label' => 'Date of Birth',
@@ -82,9 +67,6 @@ class QuestionSeeder extends Seeder
                 'description' => '',
                 'valid_status' => 1,
                 'rules' => 'required',
-                'validation_message' => 'Field is required',
-                'select_options' => 'Please Select One',
-                'select_value' => '',
                 'created_at' => date('Y-m-d H:i:s')
             ], [
                 'question_label' => 'Job Title',
@@ -94,9 +76,6 @@ class QuestionSeeder extends Seeder
                 'description' => '',
                 'valid_status' => 1,
                 'rules' => 'required',
-                'validation_message' => 'Field is required',
-                'select_options' => 'Please Select One',
-                'select_value' => '',
                 'created_at' => date('Y-m-d H:i:s')
             ], [
                 'question_label' => 'Company Name',
@@ -106,9 +85,6 @@ class QuestionSeeder extends Seeder
                 'description' => '',
                 'valid_status' => 1,
                 'rules' => 'required',
-                'validation_message' => 'Field is required',
-                'select_options' => 'Please Select One',
-                'select_value' => '',
                 'created_at' => date('Y-m-d H:i:s')
             ], [
                 'question_label' => 'Job Description',
@@ -118,9 +94,6 @@ class QuestionSeeder extends Seeder
                 'description' => '',
                 'valid_status' => 1,
                 'rules' => 'required',
-                'validation_message' => 'Field is required',
-                'select_options' => 'Please Select One',
-                'select_value' => '',
                 'created_at' => date('Y-m-d H:i:s')
             ], [
                 'question_label' => 'Interview For',
@@ -130,9 +103,6 @@ class QuestionSeeder extends Seeder
                 'description' => '',
                 'valid_status' => 1,
                 'rules' => 'required',
-                'validation_message' => 'Field is required',
-                'select_options' => 'Please Select One',
-                'select_value' => '',
                 'created_at' => date('Y-m-d H:i:s')
             ], [
                 'question_label' => 'Interview Date',
@@ -142,9 +112,6 @@ class QuestionSeeder extends Seeder
                 'description' => '',
                 'valid_status' => 1,
                 'rules' => 'required',
-                'validation_message' => 'Field is required',
-                'select_options' => 'Please Select One',
-                'select_value' => '',
                 'created_at' => date('Y-m-d H:i:s')
             ], [
                 'question_label' => 'Interview Type',
@@ -154,21 +121,15 @@ class QuestionSeeder extends Seeder
                 'description' => '',
                 'valid_status' => 1,
                 'rules' => 'required',
-                'validation_message' => 'Field is required',
-                'select_options' => 'Please Select One',
-                'select_value' => '',
                 'created_at' => date('Y-m-d H:i:s')
             ], [
                 'question_label' => 'Interview Time',
                 'input_name' => 'interview_time',
-                'type' => 'date',
+                'type' => 'time',
                 'step' => 3,
                 'description' => '',
                 'valid_status' => 1,
                 'rules' => 'required',
-                'validation_message' => 'Field is required',
-                'select_options' => 'Please Select One',
-                'select_value' => '',
                 'created_at' => date('Y-m-d H:i:s')
             ], [
                 'question_label' => 'Behaviour',
@@ -178,9 +139,6 @@ class QuestionSeeder extends Seeder
                 'description' => '',
                 'valid_status' => 1,
                 'rules' => 'required',
-                'validation_message' => 'Field is required',
-                'select_options' => 'Please Select One',
-                'select_value' => '',
                 'created_at' => date('Y-m-d H:i:s')
             ], [
                 'question_label' => 'Confidance',
@@ -190,9 +148,6 @@ class QuestionSeeder extends Seeder
                 'description' => '',
                 'valid_status' => 1,
                 'rules' => 'required',
-                'validation_message' => 'Field is required',
-                'select_options' => 'Please Select One',
-                'select_value' => '',
                 'created_at' => date('Y-m-d H:i:s')
             ], [
                 'question_label' => 'Result',
@@ -202,9 +157,6 @@ class QuestionSeeder extends Seeder
                 'description' => '',
                 'valid_status' => 1,
                 'rules' => 'required',
-                'validation_message' => 'Field is required',
-                'select_options' => 'Please Select One',
-                'select_value' => '',
                 'created_at' => date('Y-m-d H:i:s')
             ], [
                 'question_label' => 'Comments',
@@ -214,9 +166,6 @@ class QuestionSeeder extends Seeder
                 'description' => '',
                 'valid_status' => 1,
                 'rules' => 'required',
-                'validation_message' => 'Field is required',
-                'select_options' => 'Please Select One',
-                'select_value' => '',
                 'created_at' => date('Y-m-d H:i:s')
             ],
         ];

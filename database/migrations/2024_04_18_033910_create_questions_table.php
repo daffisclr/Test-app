@@ -19,7 +19,6 @@ return new class extends Migration
             $table->integer('step')->nullable(false)->comment('1 = info alumni, 2 = job status, 3 = interview, 4 = remark');
             $table->string('description')->nullable();
             $table->string('rules')->nullable()->comment('seperate with |');
-            $table->string('validation_message')->nullable()->comment('seperate with |');
             $table->string('select_options')->nullable()->comment('seperate with |');
             $table->string('select_value')->nullable()->comment('seperate with |');
             $table->integer('valid_status')->nullable(false)->default(1);
