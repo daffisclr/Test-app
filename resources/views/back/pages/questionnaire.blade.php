@@ -216,7 +216,8 @@
                         data: values,
                         beforeSend: function() {},
                         success: function(res) {
-                            if (res == 1) location.reload()
+                            console.log(res);
+                            location.reload()
                         },
                         error: function(error) {
                             var err = JSON.parse(error.responseText)

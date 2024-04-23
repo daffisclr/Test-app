@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Admin;
+use Illuminate\Http\Client\Response;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
@@ -62,11 +63,11 @@ class QuestionnaireController extends Controller
 
         if ($insert) {
             DB::commit();
-            return 1;
+            return response()->json(['response' => 'success', 'message' => 'Success! Data has been added.'], 200);
         } else {
             DB::rollback();
             // something went wrong
-            return 0;
+            return response()->json(['response' => 'error', 'message' => 'Error! Something went wrong.'], 500);
         }
     }
 }
