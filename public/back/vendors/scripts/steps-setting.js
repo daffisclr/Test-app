@@ -24,10 +24,10 @@ $(".tab-wizard2").steps({
 		next: "Next",
 		previous: "Previous",
 	},
-	onStepChanged: function(event, currentIndex, priorIndex) {
+	onStepChanged: function (event, currentIndex, priorIndex) {
 		$('.steps .current').prevAll().addClass('disabled');
 	},
-	onFinished: function(event, currentIndex) {
+	onFinished: function (event, currentIndex) {
 		$('#success-modal-btn').trigger('click');
 	}
 });
