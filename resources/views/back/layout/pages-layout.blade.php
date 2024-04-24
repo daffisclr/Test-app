@@ -24,6 +24,18 @@
     <link rel="stylesheet" type="text/css" href="/back/src/plugins/jquery-steps/jquery.steps.css" />
     <link rel="stylesheet" type="text/css" href="/back/vendors/styles/style.css" />
 
+    <link rel="stylesheet" type="text/css" href="/back/src/plugins/jquery-asColorPicker/dist/css/asColorPicker.css" />
+
+    <!-- switchery css -->
+    <link rel="stylesheet" type="text/css" href="/back/src/plugins/switchery/switchery.min.css" />
+
+    <!-- bootstrap-tagsinput css -->
+    <link rel="stylesheet" type="text/css" href="/back/src/plugins/bootstrap-tagsinput/bootstrap-tagsinput.css" />
+
+    <!-- bootstrap-touchspin css -->
+    <link rel="stylesheet" type="text/css"
+        href="/back/src/plugins/bootstrap-touchspin/jquery.bootstrap-touchspin.css" />
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GBZ3SGGX85"></script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2973766580778258"
@@ -337,6 +349,11 @@
     <script src="/back/vendors/scripts/layout-settings.js"></script>
     <script src="/back/src/plugins/jquery-steps/jquery.steps.js"></script>
     <script src="/back/vendors/scripts/steps-setting.js"></script>
+
+    <script src="/back/src/plugins/jquery-asColor/dist/jquery-asColor.js"></script>
+    <script src="/back/src/plugins/jquery-asGradient/dist/jquery-asGradient.js"></script>
+    <script src="/back/src/plugins/jquery-asColorPicker/jquery-asColorPicker.js"></script>
+    <script src="/back/vendors/scripts/colorpicker.js"></script>
 
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NXZMQSS" height="0" width="0"

@@ -29,18 +29,21 @@
         </div>
         <div class="wizard-content">
             <form class="tab-wizard wizard-circle wizard">
+                <!-- Step 1 -->
                 <h5>Informasi Alumni JTIK</h5>
                 <section>
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-12">
                             <div class="form-group">
-                                <label>First Name :</label>
+                                <label>Nama Alumni :</label>
                                 <input type="text" class="form-control" />
                             </div>
                         </div>
-                        <div class="col-md-6">
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
                             <div class="form-group">
-                                <label>Last Name :</label>
+                                <label>NIM :</label>
                                 <input type="text" class="form-control" />
                             </div>
                         </div>
@@ -48,13 +51,13 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label>Email Address :</label>
-                                <input type="email" class="form-control" />
+                                <label>Email :</label>
+                                <input type="text" class="form-control" />
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label>Phone Number :</label>
+                                <label>Nomor Telpon/Hp :</label>
                                 <input type="text" class="form-control" />
                             </div>
                         </div>
@@ -62,79 +65,314 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label>Select City :</label>
+                                <label>Jenis Kelamin :</label>
                                 <select class="custom-select form-control">
-                                    <option value="">Select City</option>
-                                    <option value="Amsterdam">India</option>
-                                    <option value="Berlin">UK</option>
-                                    <option value="Frankfurt">US</option>
+                                    <option value="">Pilih...</option>
+                                    <option value="1">Laki-laki</option>
+                                    <option value="2">Perempuan</option>
                                 </select>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label>Date of Birth :</label>
-                                <input type="text" class="form-control date-picker" placeholder="Select Date" />
+                                <label>Agama :</label>
+                                <select class="custom-select form-control">
+                                    <option value="">Pilih...</option>
+                                    <option value="1">Islam</option>
+                                    <option value="2">Protestan</option>
+                                    <option value="2">Katolik</option>
+                                    <option value="2">Hindu</option>
+                                    <option value="2">Buddha</option>
+                                    <option value="2">Khonghucu</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Tahun lulus :</label>
+                                <input type="text" class="form-control" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Prodi :</label>
+                                <select class="custom-select form-control">
+                                    <option value="">Program Studi...</option>
+                                    <option value="1">Teknik Informatika - TI</option>
+                                    <option value="2">Teknik Multimedia Jaringan - TMJ</option>
+                                    <option value="3">Teknik Multimedia Digital - TMD</option>
+                                    <option value="4">Teknik Komputer Jaringan - KJ</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Jenjang :</label>
+                                <input type="text" class="form-control" placeholder="TI - TMJ - TMD = D4  / TKJ = D1" />
                             </div>
                         </div>
                     </div>
                 </section>
                 <!-- Step 2 -->
-                <h5>Job Status</h5>
+                <h5>Kuesioner Wajib</h5>
                 <section>
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-12">
                             <div class="form-group">
-                                <label>Job Title :</label>
-                                <input type="text" class="form-control" />
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label>Company Name :</label>
-                                <input type="text" class="form-control" />
+                                <label>F8 - Jelaskan status anda saat ini :</label>
+                                <select class="custom-select form-control">
+                                    <option value="">Pilih...</option>
+                                    <option value="1">Bekerja (fulltime/part-time)</option>
+                                    <option value="2">Belum menungkinkan kerja</option>
+                                    <option value="3">Wiraswasta</option>
+                                    <option value="4">Melanjutkan Pendidikan</option>
+                                    <option value="5">Tidak kerja, tapi sedang mencari kerja</option>
+                                </select>
                             </div>
                         </div>
                         <div class="col-md-12">
                             <div class="form-group">
-                                <label>Job Description :</label>
-                                <textarea class="form-control"></textarea>
+                                <label>F504 - Apakah anda telah mendapat pekerjaan <= 6 bulan/termasuk bekerja sebelum
+                                        lulus: </label>
+                                        <select class="custom-select form-control">
+                                            <option value="">Pilih...</option>
+                                            <option value="1">Ya</option>
+                                            <option value="2">Tidak</option>
+                                        </select>
                             </div>
                         </div>
-                    </div>
-                </section>
-                <!-- Step 3 -->
-                <h5>Interview</h5>
-                <section>
-                    <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label>Interview For :</label>
-                                <input type="text" class="form-control" />
+                                <label>f5-02/06 - Berapa bulan Anda mendapatkan pekerjaan pertama setelah lulus atau Waktu
+                                    Tunggu (WT)? …. bulan</label>
+                                <input type="number" class="form-control" />
                             </div>
+                        </div>
+                        <div class="col-md-6">
                             <div class="form-group">
-                                <label>Interview Type :</label>
-                                <select class="form-control">
-                                    <option>Normal</option>
-                                    <option>Difficult</option>
-                                    <option>Hard</option>
+                                <label>f5-05 - Berapa pendapatan Anda per bulan pada saat Anda mendapatkan pekerjaan pertama
+                                    (take home pay)?</label>
+                                <input type="number" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label>F510 - Di mana lokasi tempat anda bekerja?</label>
+                            <div class="form-group">
+                                <label>Provinsi</label>
+                                <select class="custom-select form-control">
+                                    <option value="">Pilih...</option>
+                                    <option value="1">Ya</option>
+                                    <option value="2">Tidak</option>
                                 </select>
                             </div>
                         </div>
                         <div class="col-md-6">
+                            <label> <br> </label>
                             <div class="form-group">
-                                <label>Interview Date :</label>
-                                <input type="text" class="form-control date-picker" placeholder="Select Date" />
+                                <label>Kabupaten/Kota</label>
+                                <select class="custom-select form-control">
+                                    <option value="">Pilih...</option>
+                                    <option value="1">Ya</option>
+                                    <option value="2">Tidak</option>
+                                </select>
                             </div>
+                        </div>
+                        <div class="col-md-12">
+                            <label> F11 - Apa jenis Perusahaan/instansi/Institusi tempat anda bekerja sekarang? </label>
                             <div class="form-group">
-                                <label>Interview Time :</label>
-                                <input class="form-control time-picker" placeholder="Select time" type="text" />
+                                <select class="custom-select form-control">
+                                    <option value="">Pilih...</option>
+                                    <option value="1">Instansi Pemerintah</option>
+                                    <option value="2">Organisasi non profit/ lembaga swadaya masyarakat</option>
+                                    <option value="3">Perusahaan swasta</option>
+                                    <option value="4">Wiraswasta/perusahaan sendiri</option>
+                                    <option value="5">Lainnya...</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>F5b - Apa nama perusahaan/kantor tempat anda bekerja?</label>
+                                <input type="text" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <label> F5c - Bila berwiraswasta, apa posisi/ jabatan Anda saat ini? <b>(Apabila F8 menjawab [3]
+                                    wiraswasta)</b> </label>
+                            <div class="form-group">
+                                <select class="custom-select form-control">
+                                    <option value="">Pilih posisi...</option>
+                                    <option value="1">Founder</option>
+                                    <option value="2">Co founder</option>
+                                    <option value="3">Staff</option>
+                                    <option value="4">Freelance/Pekerja lepas</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <label> F5d - Apa tingkat tempat kerja Anda? </label>
+                            <div class="form-group">
+                                <select class="custom-select form-control">
+                                    <option value="">Pilih tingkatan...</option>
+                                    <option value="1">Lokal/Wilayah/Wiraswasta tidak berbadan hukum</option>
+                                    <option value="2">Nasional/Wiraswasta berbadan hukum</option>
+                                    <option value="3">Multinasional/Internasional</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <label>Pertanyaan studi lanjut <b>(Apabila F8 menjawab [4] Melanjutkan Pendidikan)</b></label>
+                            <br>
+                            <label>Sumber biaya: </label>
+                            <div class="form-group">
+                                <select class="custom-select form-control">
+                                    <option value="">Pilih...</option>
+                                    <option value="1">Biaya Sendiri</option>
+                                    <option value="2">Beasiswa</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label>Nama perguruan tinggi: </label>
+                            <div class="form-group">
+                                <input type="text" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label>Program Studi:</label>
+                            <div class="form-group">
+                                <input type="text" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <label>Tanggal Masuk:</label>
+                            <div class="form-group">
+                                <input class="form-control date-picker" placeholder="Select Date" type="text">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <label> F12 - Sebutkan sumber dana dalam pembiayaan kuliah saat kuliah di JTIK PNJ</label>
+                            <div class="form-group">
+                                <select class="custom-select form-control">
+                                    <option value="">Pilih...</option>
+                                    <option value="1">Biaya sendiri/Keluarga</option>
+                                    <option value="2">Beasiswa BIDIKMISI</option>
+                                    <option value="3">Beasiswa ADIK</option>
+                                    <option value="4">Beasiswa KJMU</option>
+                                    <option value="5">Beasiswa Perusahaan/Swasta</option>
+                                    <option value="6">Lainnya...</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <label> F12a - Pada pertanyaan di atas, tuliskan jawaban Anda jika pilihan Anda adalah
+                                "Lainnya"</label>
+                            <div class="form-group">
+                                <input type="text" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <label> F14 - Seberapa erat hubungan antara bidang studi dengan pekerjaan anda?</label>
+                            <div class="form-group">
+                                <select class="custom-select form-control">
+                                    <option value="">Pilih...</option>
+                                    <option value="1">Sangat erat</option>
+                                    <option value="2">Erat</option>
+                                    <option value="3">Cukup erat</option>
+                                    <option value="4">Kurang erat</option>
+                                    <option value="5">Tidak sama sekali</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <label> F15 - Tingkat Pendidikan apa yang paling tepat/sesuai untuk pekerjaan anda saat
+                                ini?</label>
+                            <div class="form-group">
+                                <select class="custom-select form-control">
+                                    <option value="">Pilih...</option>
+                                    <option value="1">Setingkat lebih tinggi</option>
+                                    <option value="2">Tingkat yang sama</option>
+                                    <option value="3">Setingkat lebih rendah</option>
+                                    <option value="4">Tidak perlu pendidikan tinggi</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <label> F17a - Pada saat lulus, pada tingkat mana kompetensi di bawah ini anda kuasai?</label>
+                            <br>
+                            <p>Skor 1-5 (1 sangat rendah - 5 sangat tinggi)</p>
+                        </div>
+                        <div class="col-md-12">
+                            <label> F17b - Pada saat ini, pada tingkat mana kompetensi di bawah ini diperlukan dalam
+                                pekerjaan? </label>
+                            <br>
+                            <p>Skor 1-5 (1 sangat rendah - 5 sangat tinggi)</p>
+                        </div>
+                    </div>
+                </section>
+                <!-- Step 3 -->
+                <h5>Kuesioner Opsional</h5>
+                <section>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label> F2 - Menurut anda seberapa besar penekanan pada metode pembelajaran di bawah ini
+                                dilaksanakan di program studi anda?</label>
+                        </div>
+                        <div class="col-md-12">
+                            <label> F4 - Bagaimana Anda mencari pekerjaan tersebut? Jawaban bisa lebih dari satu</label>
+                            <div style="margin-left: 32px" class="custom-control custom-checkbox mb-5">
+                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                <label class="custom-control-label" for="customCheck1">Melalui iklan</label>
+                            </div>
+                            <div style="margin-left: 32px" class="custom-control custom-checkbox mb-5">
+                                <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                <label class="custom-control-label" for="customCheck2">Melamar langsung ke perusahaan</label>
+                            </div>
+                            <div style="margin-left: 32px" class="custom-control custom-checkbox mb-5">
+                                <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                <label class="custom-control-label" for="customCheck3">Melalui bursa kerja</label>
+                            </div>
+                            <div style="margin-left: 32px" class="custom-control custom-checkbox mb-5">
+                                <input type="checkbox" class="custom-control-input" id="customCheck4">
+                                <label class="custom-control-label" for="customCheck4">Melalui internet</label>
+                            </div>
+                            <div style="margin-left: 32px" class="custom-control custom-checkbox mb-5">
+                                <input type="checkbox" class="custom-control-input" id="customCheck4">
+                                <label class="custom-control-label" for="customCheck4">Dihubungi oleh perusahaan</label>
+                            </div>
+                            <div style="margin-left: 32px" class="custom-control custom-checkbox mb-5">
+                                <input type="checkbox" class="custom-control-input" id="customCheck4">
+                                <label class="custom-control-label" for="customCheck4">Melalui Kemenakertrans</label>
+                            </div>
+                            <div style="margin-left: 32px" class="custom-control custom-checkbox mb-5">
+                                <input type="checkbox" class="custom-control-input" id="customCheck4">
+                                <label class="custom-control-label" for="customCheck4">Melalui agen tenaga kerja</label>
+                            </div>
+                            <div style="margin-left: 32px" class="custom-control custom-checkbox mb-5">
+                                <input type="checkbox" class="custom-control-input" id="customCheck4">
+                                <label class="custom-control-label" for="customCheck4">Melalui relasi (misalnya dosen, orang tua, saudara, teman, dll.)</label>
+                            </div>
+                            <div style="margin-left: 32px" class="custom-control custom-checkbox mb-5">
+                                <input type="checkbox" class="custom-control-input" id="customCheck4">
+                                <label class="custom-control-label" for="customCheck4">Melalui magang</label>
+                            </div>
+                            <div style="margin-left: 32px" class="custom-control custom-checkbox mb-5">
+                                <input type="checkbox" class="custom-control-input" id="customCheck4">
+                                <label class="custom-control-label" for="customCheck4">Meneruskan pekerjaan yang sama, semasa kuliah</label>
+                            </div>
+                            <div style="margin-left: 32px" class="custom-control custom-checkbox mb-5">
+                                <input type="checkbox" class="custom-control-input" id="customCheck4">
+                                <label class="custom-control-label" for="customCheck4">Lainnya</label>
                             </div>
                         </div>
                     </div>
                 </section>
                 <!-- Step 4 -->
-                <h5>Remark</h5>
+                {{-- <h5>Remark</h5>
                 <section>
                     <div class="row">
                         <div class="col-md-6">
@@ -162,7 +400,7 @@
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> --}}
             </form>
         </div>
     </div>
