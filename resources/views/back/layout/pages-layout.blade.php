@@ -21,8 +21,31 @@
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="/back/vendors/styles/core.css" />
     <link rel="stylesheet" type="text/css" href="/back/vendors/styles/icon-font.min.css" />
+    <link href=" https://cdn.jsdelivr.net/npm/jquery.steps@1.1.4/dist/jquery-steps.min.css " rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/back/src/plugins/jquery-steps/jquery.steps.css" />
     <link rel="stylesheet" type="text/css" href="/back/vendors/styles/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/select2-bootstrap-theme/0.1.0-beta.10/select2-bootstrap.css"
+        integrity="sha512-CbQfNVBSMAYmnzP3IC+mZZmYMP2HUnVkV4+PwuhpiMUmITtSpS7Prr3fNncV1RBOnWxzz4pYQ5EAGG4ck46Oig=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/select2-bootstrap-theme/0.1.0-beta.10/select2-bootstrap.min.css"
+        integrity="sha512-kq3FES+RuuGoBW3a9R2ELYKRywUEQv0wvPTItv3DSGqjpbNtGWVdvT8qwdKkqvPzT93jp8tSF4+oN4IeTEIlQA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/redmond/jquery-ui.min.css"
+        integrity="sha512-pL3uvb0iajriFzWcsjvmztg0ViN8MGpl4ajmiCb+xC5vnLUES2mkdp+7YAUjlcK/T+htiZH9HNkxAO+P3TbUmA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/timedropper/1.0/timedropper.min.css"
+        integrity="sha512-1KbjVCVdPEzoZExDz/KxcMilV3CXs+UXM62FQzy+3Pp9lmqfOmGkaJQg49XK/Y6sLFvZFb/BinT7hI/+0oEVig=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/timedropper/1.0/timedropper.css"
+        integrity="sha512-XXfcrEwC7/grycfCLD/qlGv9N/dNUdWxArzod7WMj2kdptI509I2qfOExEBn02WJxiO/GCH/wqLLwR9XgIcBFQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" type="text/css" href="/back/src/plugins/jquery-asColorPicker/dist/css/asColorPicker.css" />
 
@@ -99,13 +122,15 @@
                                 <div class="form-group row">
                                     <label class="col-sm-12 col-md-2 col-form-label">To</label>
                                     <div class="col-sm-12 col-md-10">
-                                        <input class="form-control form-control-sm form-control-line" type="text" />
+                                        <input class="form-control form-control-sm form-control-line"
+                                            type="text" />
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label class="col-sm-12 col-md-2 col-form-label">Subject</label>
                                     <div class="col-sm-12 col-md-10">
-                                        <input class="form-control form-control-sm form-control-line" type="text" />
+                                        <input class="form-control form-control-sm form-control-line"
+                                            type="text" />
                                     </div>
                                 </div>
                                 <div class="text-right">
@@ -344,12 +369,26 @@
 
     <!-- js -->
     <script src="/back/vendors/scripts/core.js"></script>
-    <script src="/back/vendors/scripts/script.min.js"></script>
-    <script src="/back/vendors/scripts/process.js"></script>
-    <script src="/back/vendors/scripts/layout-settings.js"></script>
-    <script src="/back/src/plugins/jquery-steps/jquery.steps.js"></script>
-    <script src="/back/vendors/scripts/steps-setting.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer>
+    </script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"
+        integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/timedropper/1.0/timedropper.js"
+        integrity="sha512-N3Ul7URkZRwfx6ukVg0/whKopCPvyvYF01WTMj+uqfXnNMDhLE8fS6viElgOrHjBbZJeUFd6YyEPWXdNh8nyUA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/timedropper/1.0/timedropper.min.js"
+        integrity="sha512-f4mnC8WQRS2wA6YylLpyD99m/aw7/DZq6N4qQ12cu0wQQXWwrDU4afX3YUn/oGqDcgT1vkRu1XcidsV3LfqNNw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <script src="/back/vendors/scripts/script.min.js" defer></script>
+    <script src="/back/vendors/scripts/process.js" defer></script>
+    <script src="/back/vendors/scripts/layout-settings.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.steps@1.1.4/dist/jquery-steps.min.js"
+        integrity="sha256-R0TrxkJ4TSGpn3wTl2fajMlbx8pCYkJvzNYb4WitkFI=" crossorigin="anonymous" defer></script>
+    <script src="/back/src/plugins/jquery-steps/jquery.steps.js" defer></script>
 
+    <script src="/back/src/plugins/bootstrap-tagsinput/bootstrap-tagsinput.js"></script>
     <script src="/back/src/plugins/jquery-asColor/dist/jquery-asColor.js"></script>
     <script src="/back/src/plugins/jquery-asGradient/dist/jquery-asGradient.js"></script>
     <script src="/back/src/plugins/jquery-asColorPicker/jquery-asColorPicker.js"></script>

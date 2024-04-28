@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
 
-<p> Dear Alumni </p>
+<p> Yth Bapak/Ibu </p>
 <p>
-    Content Here...
+    Silahkan Mengisi kuesioner pada link berikut ini:
+
+    {{ $guest_kuesioner }}
 </p>
 
 </html>

@@ -44,10 +44,10 @@
 
 @endsection
 @push('scripts')
-<script>
-    window.addEventListener('updateAdminInfo', function(event){
-        $('#adminProfileName').html(event.detail[0].adminName);
-        $('#adminProfileEmail').html(event.detail[0].adminEmail);
-    });
-</script>
+    <script type="text/javascript">
+        window.addEventListener('updateAdminInfo', function(event) {
+            $('#adminProfileName').html(event.detail[0].adminName);
+            $('#adminProfileEmail').html(event.detail[0].adminEmail);
+        });
+    </script>
 @endpush

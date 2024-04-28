@@ -6,7 +6,7 @@
         <div class="row">
             <div class="col-md-12 col-sm-12">
                 <div class="title">
-                    <h4>Profile</h4>
+                    <h4>Kuesioner</h4>
                 </div>
                 <nav aria-label="breadcrumb" role="navigation">
                     <ol class="breadcrumb">
@@ -330,7 +330,8 @@
                             </div>
                             <div style="margin-left: 32px" class="custom-control custom-checkbox mb-5">
                                 <input type="checkbox" class="custom-control-input" id="customCheck2">
-                                <label class="custom-control-label" for="customCheck2">Melamar langsung ke perusahaan</label>
+                                <label class="custom-control-label" for="customCheck2">Melamar langsung ke
+                                    perusahaan</label>
                             </div>
                             <div style="margin-left: 32px" class="custom-control custom-checkbox mb-5">
                                 <input type="checkbox" class="custom-control-input" id="customCheck3">
@@ -354,7 +355,8 @@
                             </div>
                             <div style="margin-left: 32px" class="custom-control custom-checkbox mb-5">
                                 <input type="checkbox" class="custom-control-input" id="customCheck4">
-                                <label class="custom-control-label" for="customCheck4">Melalui relasi (misalnya dosen, orang tua, saudara, teman, dll.)</label>
+                                <label class="custom-control-label" for="customCheck4">Melalui relasi (misalnya dosen,
+                                    orang tua, saudara, teman, dll.)</label>
                             </div>
                             <div style="margin-left: 32px" class="custom-control custom-checkbox mb-5">
                                 <input type="checkbox" class="custom-control-input" id="customCheck4">
@@ -362,7 +364,8 @@
                             </div>
                             <div style="margin-left: 32px" class="custom-control custom-checkbox mb-5">
                                 <input type="checkbox" class="custom-control-input" id="customCheck4">
-                                <label class="custom-control-label" for="customCheck4">Meneruskan pekerjaan yang sama, semasa kuliah</label>
+                                <label class="custom-control-label" for="customCheck4">Meneruskan pekerjaan yang sama,
+                                    semasa kuliah</label>
                             </div>
                             <div style="margin-left: 32px" class="custom-control custom-checkbox mb-5">
                                 <input type="checkbox" class="custom-control-input" id="customCheck4">
@@ -404,25 +407,58 @@
             </form>
         </div>
     </div>
-
-    {{-- <form action="{{ route('admin.kuesioner-form') }}" method="post">
-        @csrf
-
-        <div class="col-sm-12">
-            <div class="row form-group">
-                <label for="q1" class="col-sm-4 form-label required">Question 1</label>
-                <input type="text" class="col-sm-8 form-control" name="q1" id="q1">
-            </div>
-
-            <div class="row form-group">
-                <label for="q2" class="col-sm-4 form-label required">Question 2</label>
-                <input type="text" class="col-sm-8 form-control" name="q2" id="q2">
-            </div>
-
-            <div class="row form-group">
-                <label for="q3" class="col-sm-4 form-label required">Question 3</label>
-                <input type="text" class="col-sm-8 form-control" name="q3" id="q3">
-            </div>
-        </div>
-    </form> --}}
 @endsection
+
+@push('scripts')
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var APP_URL = {!! json_encode(url('/')) !!}
+
+            $(".tab-wizard1").steps({
+                headerTag: "h5",
+                bodyTag: "section",
+                transitionEffect: "fade",
+                titleTemplate: '<span class="step">#index#</span> #title#',
+                labels: {
+                    finish: "Submit"
+                },
+                onStepChanged: function(event, currentIndex, priorIndex) {
+                    $('.steps .current').prevAll().addClass('disabled');
+                },
+                onFinished: function(event, currentIndex) {
+                    var inputs = $('#kuesioner :input');
+                    var values = {
+                        "_token": "{{ csrf_token() }}",
+                    };
+
+                    inputs.each(function() {
+                        values[this.name] = $(this).val();
+                    });
+
+                    $.ajax({
+                        url: 'kuesioner-form',
+                        type: 'post',
+                        data: values,
+                        beforeSend: function() {},
+                        success: function(res) {
+                            console.log(res);
+                            location.reload()
+                        },
+                        error: function(error) {
+                            var err = JSON.parse(error.responseText)
+                            console.error('Errors', err);
+
+                            inputs.each(function() {
+                                $('#' + this.name + '_errors').remove()
+                                if (err.errors[this.name])
+                                    $(this).after('<div id="' + this.name +
+                                        '_errors" class="text-danger">' + err
+                                        .errors[this.name] + '</div>')
+                            });
+                        }
+                    });
+                }
+            });
+        })
+    </script>
+@endpush
