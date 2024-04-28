@@ -47,6 +47,18 @@
         integrity="sha512-XXfcrEwC7/grycfCLD/qlGv9N/dNUdWxArzod7WMj2kdptI509I2qfOExEBn02WJxiO/GCH/wqLLwR9XgIcBFQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <link rel="stylesheet" type="text/css" href="/back/src/plugins/jquery-asColorPicker/dist/css/asColorPicker.css" />
+
+    <!-- switchery css -->
+    <link rel="stylesheet" type="text/css" href="/back/src/plugins/switchery/switchery.min.css" />
+
+    <!-- bootstrap-tagsinput css -->
+    <link rel="stylesheet" type="text/css" href="/back/src/plugins/bootstrap-tagsinput/bootstrap-tagsinput.css" />
+
+    <!-- bootstrap-touchspin css -->
+    <link rel="stylesheet" type="text/css"
+        href="/back/src/plugins/bootstrap-touchspin/jquery.bootstrap-touchspin.css" />
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GBZ3SGGX85"></script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2973766580778258"
@@ -373,6 +385,11 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery.steps@1.1.4/dist/jquery-steps.min.js"
         integrity="sha256-R0TrxkJ4TSGpn3wTl2fajMlbx8pCYkJvzNYb4WitkFI=" crossorigin="anonymous" defer></script>
     <script src="/back/src/plugins/jquery-steps/jquery.steps.js" defer></script>
+
+    <script src="/back/src/plugins/jquery-asColor/dist/jquery-asColor.js"></script>
+    <script src="/back/src/plugins/jquery-asGradient/dist/jquery-asGradient.js"></script>
+    <script src="/back/src/plugins/jquery-asColorPicker/jquery-asColorPicker.js"></script>
+    <script src="/back/vendors/scripts/colorpicker.js"></script>
 
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NXZMQSS" height="0" width="0"
