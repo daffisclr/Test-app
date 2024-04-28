@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\QuestionnaireController;
+use App\Http\Controllers\BroadcastController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -32,6 +33,8 @@ Route::prefix('admin')->name('admin.')->group(function () {
         Route::get('/profile', [AdminController::class, 'profileView'])->name('profile');
         Route::get('/kuesioner', [QuestionnaireController::class, 'index'])->name('kuesioner');
         Route::post('/kuesioner-form', [QuestionnaireController::class, 'kuesioner_form'])->name("kuesioner-form");
+        Route::get('/broadcast', [BroadcastController::class, 'index'])->name('broadcast');
+        Route::post('/broadcast-action', [BroadcastController::class, 'broadcast_email'])->name('broadcast-action');
     });
 
     Route::get('/', function () {

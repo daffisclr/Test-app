@@ -122,13 +122,15 @@
                                 <div class="form-group row">
                                     <label class="col-sm-12 col-md-2 col-form-label">To</label>
                                     <div class="col-sm-12 col-md-10">
-                                        <input class="form-control form-control-sm form-control-line" type="text" />
+                                        <input class="form-control form-control-sm form-control-line"
+                                            type="text" />
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label class="col-sm-12 col-md-2 col-form-label">Subject</label>
                                     <div class="col-sm-12 col-md-10">
-                                        <input class="form-control form-control-sm form-control-line" type="text" />
+                                        <input class="form-control form-control-sm form-control-line"
+                                            type="text" />
                                     </div>
                                 </div>
                                 <div class="text-right">
@@ -386,6 +388,7 @@
         integrity="sha256-R0TrxkJ4TSGpn3wTl2fajMlbx8pCYkJvzNYb4WitkFI=" crossorigin="anonymous" defer></script>
     <script src="/back/src/plugins/jquery-steps/jquery.steps.js" defer></script>
 
+    <script src="/back/src/plugins/bootstrap-tagsinput/bootstrap-tagsinput.js"></script>
     <script src="/back/src/plugins/jquery-asColor/dist/jquery-asColor.js"></script>
     <script src="/back/src/plugins/jquery-asGradient/dist/jquery-asGradient.js"></script>
     <script src="/back/src/plugins/jquery-asColorPicker/jquery-asColorPicker.js"></script>

@@ -48,6 +48,16 @@ class ModuleSeeder extends Seeder
             'valid_status' => 1
         ]);
 
+        Module::create([
+            'name' => "Broadcast Users",
+            'url' => "admin.broadcast",
+            'icon' => 'fa-envelope',
+            'description' => 'Broadcast Users Module',
+            'module_level' => 0,
+            'valid_status' => 1
+        ]);
+
+
         $modules = Module::all();
 
         Role::all()->each(function ($role) use ($modules) {
@@ -66,6 +76,11 @@ class ModuleSeeder extends Seeder
                 $role->modules()->attach(
                     $modules->where('id', '==', 4)->pluck('id')->toArray(),
                     ['valid' => 1, 'C' => 1, 'R' => 1, 'U' => 0, 'D' => 0,]
+                );
+
+                $role->modules()->attach(
+                    $modules->where('id', '==', 5)->pluck('id')->toArray(),
+                    ['valid' => 0, 'C' => 0, 'R' => 0, 'U' => 0, 'D' => 0,]
                 );
             }
         });
