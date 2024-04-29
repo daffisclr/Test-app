@@ -14,7 +14,7 @@
     Penilaian dan masukan yang Bapak/Ibu berikan sangat berharga bagi kami dan kami akan menjaga kerahasiaan informasi
     yang diberikan tersebut. Oleh karena itu bantuan penilaian dan masukan dari Bapak/Ibu sangat kami harapkan.
 
-    Atas nama Rektor Jurusan Teknik Informatika dan Komputer Politeknik Negeri Jakarta, kami mengucapkan terima kasih yang sebesar-besarnya atas kesediaan saudara
+    Atas nama Jurusan Teknik Informatika dan Komputer Politeknik Negeri Jakarta, kami mengucapkan terima kasih yang sebesar-besarnya atas kesediaan saudara
     meluangkan waktu sejenak untuk berpartisapasi dalam pengisian survey ini.
 
     Team tracer study Jurusan Teknik Informatika dan Komputer Politeknik Negeri Jakarta
