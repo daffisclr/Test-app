@@ -23,11 +23,10 @@ class DatabaseSeeder extends Seeder
             RoleSeeder::class,
             AdminSeeder::class,
             ModuleSeeder::class,
-            QuestionSeeder::class,
             ProvinceSeeder::class,
             RegencySeeder::class,
             DistrictSeeder::class,
-            VillageSeeder::class
+            // VillageSeeder::class
         ]);
     }
 }

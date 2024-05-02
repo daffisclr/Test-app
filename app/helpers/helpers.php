@@ -5,7 +5,7 @@ use PHPMailer\PHPMailer\Exception;
 
 /** SEND EMAIL FUNCTION USING PHPMAILER LIBRARY**/
 
-if (!function_exists( 'sendEmail' )) {
+if (!function_exists('sendEmail')) {
     function sendEmail($mailConfig)
     {
         require 'PHPMailer/src/Exception.php';
@@ -21,10 +21,9 @@ if (!function_exists( 'sendEmail' )) {
         $mail->Password = env('EMAIL_PASSWORD');
         $mail->SMTPSecure = env('EMAIL_ENCRYPTION');
         $mail->Port = env('EMAIL_PORT');
-        dd(env('EMAIL_FROM_ADDRESS'));
         dd($mailConfig['mail_from_email'], $mailConfig['mail_from_name']);
         $mail->setFrom($mailConfig['mail_from_email'], $mailConfig['mail_from_name']);
-        if ($mailConfig['mail_recipient']) {
+        if (isset($mailConfig->mail_recipient)) {
             foreach ($mailConfig['mail_recipient'] as $recipient) {
                 $mail->addAddress($recipient->mail_recipient_email, $recipient->mail_recipient_name);
             }
