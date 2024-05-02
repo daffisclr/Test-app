@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('start_date')->nullable();
             $table->string('university_name')->nullable();
             $table->string('major')->nullable();
-            $table->string('remarks')->nullable();
+            $table->string('reasons')->nullable();
             $table->foreign('tracer_study_id')->references('id')->on('kuesioner')->onDelete('cascade')->onUpdate('cascade');
             $table->timestamps();
         });

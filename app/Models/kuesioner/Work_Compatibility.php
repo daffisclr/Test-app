@@ -22,7 +22,7 @@ class Work_Compatibility extends Model
     protected $fillable = [
         'kuesioner_work_id',
         'compatibility_type',
-        'remarks',
+        'compatibility',
     ];
 
 

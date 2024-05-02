@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->unsignedBigInteger('kuesioner_work_id')->nullable(false);
             $table->string('compatibility_type')->nullable();
-            $table->string('remarks')->nullable();
+            $table->string('compatibility')->nullable();
             $table->foreign('kuesioner_work_id')->references('id')->on('kuesioner_work')->onDelete('cascade')->onUpdate('cascade');
             $table->timestamps();
         });

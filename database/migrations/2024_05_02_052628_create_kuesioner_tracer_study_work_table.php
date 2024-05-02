@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('company')->nullable();
             $table->string('salary')->nullable();
             $table->string('company_province')->nullable();
-            $table->string('company_district')->nullable();
+            $table->string('company_regency')->nullable();
             $table->string('company_type')->nullable();
             $table->string('company_level')->nullable();
             $table->integer('university_company_relation')->nullable();
@@ -29,6 +29,8 @@ return new class extends Migration
             $table->integer('applied_company_interviewed')->nullable();
             $table->integer('job_hunting_status')->nullable();
             $table->string('job_hunting_status_remark')->nullable();
+            $table->string('job_hunt_type')->nullable();
+            $table->integer('job_hunt_month')->nullable();
             $table->foreign('tracer_study_id')->references('id')->on('kuesioner')->onDelete('cascade')->onUpdate('cascade');
             $table->timestamps();
         });

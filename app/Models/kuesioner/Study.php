@@ -27,7 +27,7 @@ class Study extends Model
         'start_date',
         'university_name',
         'major',
-        'remarks',
+        'reasons',
     ];
 
 

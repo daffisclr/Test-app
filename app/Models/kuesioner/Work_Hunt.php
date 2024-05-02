@@ -21,8 +21,6 @@ class Work_Hunt extends Model
 
     protected $fillable = [
         'kuesioner_work_id',
-        'job_hunt_type',
-        'job_hunt_month',
         'job_hunt_method',
         'remarks',
     ];

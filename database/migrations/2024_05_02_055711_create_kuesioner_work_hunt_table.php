@@ -14,8 +14,6 @@ return new class extends Migration
         Schema::create('kuesioner_work_hunt', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('kuesioner_work_id')->nullable(false);
-            $table->string('job_hunt_type')->nullable();
-            $table->integer('job_hunt_month')->nullable();
             $table->string('job_hunt_method')->nullable();
             $table->string('remarks')->nullable();
             $table->foreign('kuesioner_work_id')->references('id')->on('kuesioner_work')->onDelete('cascade')->onUpdate('cascade');

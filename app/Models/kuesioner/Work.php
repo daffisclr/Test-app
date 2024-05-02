@@ -27,7 +27,7 @@ class Work extends Model
         'company',
         'salary',
         'company_province',
-        'company_district',
+        'company_regency',
         'company_type',
         'company_level',
         'university_company_relation',
@@ -37,6 +37,8 @@ class Work extends Model
         'applied_company_interviewed',
         'job_hunting_status',
         'job_hunting_status_remark',
+        'job_hunt_type',
+        'job_hunt_month',
     ];
 
 
