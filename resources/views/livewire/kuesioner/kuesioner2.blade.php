@@ -231,8 +231,7 @@
                 </td>
                 <td valign='top'>:</td>
                 <td>
-                    <input type='text' name='p_start_date' class='date-picker inp-f18e' value=''
-                        maxlength='30' /><span class='hl'>(f18d)</span>
+                    <input type='date' name='p_start_date' class='date-picker inp-f18e'/><span class='hl'>(f18d)</span>
                 </td>
             </tr>
             <tr id='p_university_name' class='tr-quis4'>
@@ -247,7 +246,7 @@
             </tr>
             <tr id='p_major' class='tr-quis4'>
                 <td valign='top'>Apa nama program studi yang Anda ambil dalam melanjutkan
-                    studi? <br /> * Contoh pengisian : Magister Ilmu Hukum
+                    studi? <br /> * Contoh pengisian : Magister Teknik Mesin
                 </td>
                 <td valign='top'>:</td>
                 <td>
@@ -577,7 +576,7 @@
             <tr id='p_methods' class='tr-quis'>
                 <td valign='top'>Menurut Anda seberapa besar penekanan pada metode pembelajaran di
                     bawah ini
-                    ketika dilaksanakan di program studi Anda di UB?</td>
+                    ketika dilaksanakan di program studi Anda di PNJ?</td>
                 <td valign='top'>:</td>
                 <td>
                     <table class='table table-striped table-responsive'>
