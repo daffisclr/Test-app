@@ -186,7 +186,7 @@ class AdminController extends Controller
 
         $mailConfig = array(
             'mail_from_email' => env('EMAIL_FROM_ADDRESS'),
-            'mail_from_name' => env('EMAIL_FROM_NAME '),
+            'mail_from_name' => env('EMAIL_FROM_NAME'),
             'mail_recipient_email' => $admin->email,
             'mail_recipient_name' => $admin->name,
             'mail_subject' => 'Password changed',
