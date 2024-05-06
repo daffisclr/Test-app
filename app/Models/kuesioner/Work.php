@@ -36,7 +36,6 @@ class Work extends Model
         'applied_company_responded',
         'applied_company_interviewed',
         'job_hunting_status',
-        'job_hunting_status_remark',
         'job_hunt_type',
         'job_hunt_month',
     ];

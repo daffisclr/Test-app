@@ -65,7 +65,19 @@
                     };
 
                     inputs.each(function() {
-                        values[this.name] = $(this).val();
+                        switch ($(this).attr('type')) {
+                            case 'radio':
+                                if ($(this).attr('checked'))
+                                    values[this.name] = $(this).val();
+                                break;
+                            case 'checkbox':
+                                if ($(this).attr('checked'))
+                                    values[this.name] = $(this).val();
+                                break;
+                            default:
+                                values[this.name] = $(this).val();
+                                break;
+                        }
                     });
 
                     $.ajax({
@@ -74,8 +86,7 @@
                         data: values,
                         beforeSend: function() {},
                         success: function(res) {
-                            console.log(res);
-                            location.reload()
+                            // location.reload();
                         },
                         error: function(error) {
                             var err = JSON.parse(error.responseText)

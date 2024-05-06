@@ -94,8 +94,11 @@
                             <td>Provinsi</td>
                             <td> &nbsp;
                                 <select id='p_company_province' name='p_company_province' class='inp-f5a'
-                                    style="width:200px">
-                                    <option value='-'>-- Pilih Provinsi --</option>
+                                    style="width:200px" wire:change='get_regencies($event.target.value)'>
+                                    <option value='' hidden>-- Pilih Provinsi --</option>
+                                    @foreach ($provinces as $province)
+                                        <option value='{{ $province->id }}'>{{ $province->name }}</option>
+                                    @endforeach
                                 </select><span class='hl'>(f5a1)</span>
                             </td>
                         </tr>
@@ -103,8 +106,11 @@
                             <td>Kabupaten</td>
                             <td> &nbsp;
                                 <select id='p_company_regency' name='p_company_regency' class='inp-f5a'>
-                                    <option value='-' provinsi='-'>-- Pilih Kabupaten/Kota
+                                    <option value='' hidden>-- Pilih Kabupaten/Kota
                                         --</option>
+                                    @foreach ($regencies as $regency)
+                                        <option value='{{ $regency->id }}'>{{ $regency->name }}</option>
+                                    @endforeach
                                 </select>
                                 <select id='inp-f5a2tmp' style='display:none'>
                                 </select><span class='hl'>(f5a2)</span>
@@ -148,7 +154,7 @@
                             <td><span class='hl'>(f11-01)</span></td>
                         </tr>
                         <tr>
-                            <td><input type='text' name='p_company_type' value='' size='50'
+                            <td><input type='text' name='p_company_type_other' value='' size='50'
                                     maxlength='150' id='inp-f1102'></td>
                             <td><span class='hl'>(f11-02)</span></td>
                         </tr>
@@ -189,7 +195,7 @@
                             <td><span class='hl'>(f19a)</span></td>
                         </tr>
                         <tr>
-                            <td><input type='text' name='p_location' value='' size='50'
+                            <td><input type='text' name='p_location_remark' value='' size='50'
                                     maxlength='50'>
                             </td>
                             <td><span class='hl'>(f19b)</span></td>
@@ -214,7 +220,7 @@
                             <td><span class='hl'>(f18a)</span></td>
                         </tr>
                         <tr>
-                            <td><input type='text' name='p_payment_type' value='' size='50'
+                            <td><input type='text' name='p_payment_type_remark' value='' size='50'
                                     maxlength='150' /></td>
                             <td><span class='hl'>(fub304)</span></td>
                     </table>
@@ -305,7 +311,7 @@
                     </table>
                 </td>
             </tr>
-            <tr id='p_work_compatibility' class='tr-quis'>
+            <tr id='p_university_company_relation' class='tr-quis'>
 
                 <td valign='top'>Seberapa erat hubungan antara bidang studi dengan pekerjaan anda?
                     <br /> *
@@ -313,34 +319,38 @@
                 </td>
                 <td valign='top'>:</td>
                 <td>
-                    <input type='radio' name='p_work_compatibility' class='inp-f14' value='1'> [1] Sangat
+                    <input type='radio' name='p_university_company_relation' class='inp-f14' value='1'> [1]
+                    Sangat
                     Erat <span class='hl'>(f14)</span><br />
-                    <input type='radio' name='p_work_compatibility' class='inp-f14' value='2'> [2]
+                    <input type='radio' name='p_university_company_relation' class='inp-f14' value='2'> [2]
                     Erat<br />
-                    <input type='radio' name='p_work_compatibility' class='inp-f14' value='3'> [3] Cukup
+                    <input type='radio' name='p_university_company_relation' class='inp-f14' value='3'> [3]
+                    Cukup
                     Erat<br />
-                    <input type='radio' name='p_work_compatibility' class='inp-f14' value='4'> [4] Kurang
+                    <input type='radio' name='p_university_company_relation' class='inp-f14' value='4'> [4]
+                    Kurang
                     Erat<br />
-                    <input type='radio' name='p_work_compatibility' class='inp-f14' value='5'> [5] Tidak
+                    <input type='radio' name='p_university_company_relation' class='inp-f14' value='5'> [5]
+                    Tidak
                     Sama Sekali <br />
                 </td>
             </tr>
-            <tr id='p_work_compatibility_level' class='tr-quis'>
+            <tr id='p_university_company_level' class='tr-quis'>
                 <td valign='top'>
                     Tingkat pendidikan apa yang paling tepat/sesuai untuk pekerjaan anda saat ini?
                 </td>
                 <td valign='top'>:</td>
                 <td>
-                    <input type='radio' name='p_work_compatibility_level' class='inp-f15' value='1'> [1]
+                    <input type='radio' name='p_university_company_level' class='inp-f15' value='1'> [1]
                     Setingkat Lebih Tinggi
                     <span class='hl'>(f15)</span><br />
-                    <input type='radio' name='p_work_compatibility_level' class='inp-f15' value='2'> [2]
+                    <input type='radio' name='p_university_company_level' class='inp-f15' value='2'> [2]
                     Tingkat
                     yang Sama<br />
-                    <input type='radio' name='p_work_compatibility_level' class='inp-f15' value='3'> [3]
+                    <input type='radio' name='p_university_company_level' class='inp-f15' value='3'> [3]
                     Setingkat Lebih
                     Rendah<br />
-                    <input type='radio' name='p_work_compatibility_level' class='inp-f15' value='4'> [4]
+                    <input type='radio' name='p_university_company_level' class='inp-f15' value='4'> [4]
                     Tidak
                     Perlu Pendidikan
                     Tinggi<br />
@@ -697,11 +707,11 @@
                 <td valign='top'>:</td>
                 <td>
                     <input type='radio' name='p_job_hunt_type' class='inp-f3' value='Sebelum Lulus'>
-                    Kira-kira <input name='p_job_hunt_month' type='number' value='' maxlength='2'
+                    Kira-kira <input name='p_job_hunt_month[0]' type='number' value='' maxlength='2'
                         oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" />
                     bulan sebelum lulus <span class='hl'>(f302)</span><br />
                     <input type='radio' name='p_job_hunt_type' class='inp-f3' value='Setelah Lulus'>
-                    Kira-kira <input name='p_job_hunt_month' type='number' value='' maxlength='2'
+                    Kira-kira <input name='p_job_hunt_month[1]' type='number' value='' maxlength='2'
                         oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" />
                     setelah lulus <span class='hl'>(f303)</span><br />
                     <input type='radio' name='p_job_hunt_type' class='inp-f3'
@@ -714,55 +724,55 @@
                     Jawaban bisa lebih dari satu </td>
                 <td valign='top'>:</td>
                 <td>
-                    <input type='checkbox' name='p_job_hunt_method[1]' class='inp-f4'
+                    <input type='checkbox' name='p_job_hunt_method[0]' class='inp-f4'
                         value='Melalui iklan di koran/majalah, brosur'> Melalui iklan di koran/majalah,
                     brosur <span class='hl'>(f401)</span><br />
-                    <input type='checkbox' name='p_job_hunt_method[2]' class='inp-f4'
+                    <input type='checkbox' name='p_job_hunt_method[1]' class='inp-f4'
                         value='Melamar ke perusahaan tanpa mengatuhi lowongan yang ada'> Melamar ke
                     perusahaan tanpa mengatuhi lowongan yang ada <span class='hl'>(f402)</span><br />
-                    <input type='checkbox' name='p_job_hunt_method[3]' class='inp-f4'
+                    <input type='checkbox' name='p_job_hunt_method[2]' class='inp-f4'
                         value='Pergi ke bursa/pameran kerja'>
                     Pergi ke bursa/pameran kerja <span class='hl'>(f403)</span><br />
-                    <input type='checkbox' name='p_job_hunt_method[4]' class='inp-f4'
+                    <input type='checkbox' name='p_job_hunt_method[3]' class='inp-f4'
                         value='Mencari lewat internet/iklan online/milis'> Mencari lewat internet/iklan
                     online/milis <span class='hl'>(f404)</span><br />
-                    <input type='checkbox' name='p_job_hunt_method[5]' class='inp-f4'
+                    <input type='checkbox' name='p_job_hunt_method[4]' class='inp-f4'
                         value='Dihubungi oleh perusahaan'>
                     Dihubungi oleh perusahaan <span class='hl'>(f405)</span><br />
-                    <input type='checkbox' name='p_job_hunt_method[6]' class='inp-f4'
+                    <input type='checkbox' name='p_job_hunt_method[5]' class='inp-f4'
                         value='Menghubungi Kemenakertrans'>
                     Menghubungi Kemenakertrans <span class='hl'>(f406)</span><br />
-                    <input type='checkbox' name='p_job_hunt_method[7]' class='inp-f4'
+                    <input type='checkbox' name='p_job_hunt_method[6]' class='inp-f4'
                         value='Menghubungi agen tenaga kerja komersial/swasta'> Menghubungi agen tenaga
                     kerja komersial/swasta <span class='hl'>(f407)</span><br />
-                    <input type='checkbox' name='p_job_hunt_method[8]' class='inp-f4'
+                    <input type='checkbox' name='p_job_hunt_method[7]' class='inp-f4'
                         value='Memperoleh informasi dari pusat pengembangan karir fakultas/universitas'>
                     Memperoleh informasi dari pusat pengembangan karir fakultas/universitas <span
                         class='hl'>(f408)</span><br />
-                    <input type='checkbox' name='p_job_hunt_method[9]' class='inp-f4'
+                    <input type='checkbox' name='p_job_hunt_method[8]' class='inp-f4'
                         value='Menghubungi kantor kemahasiswaan/hubungan alumni'> Menghubungi kantor
                     kemahasiswaan/hubungan alumni <span class='hl'>(f409)</span><br />
-                    <input type='checkbox' name='p_job_hunt_method[10]' class='inp-f4'
+                    <input type='checkbox' name='p_job_hunt_method[9]' class='inp-f4'
                         value='Membangun jejaring (network) sejak masih kuliah'> Membangun jejaring
                     (network) sejak masih kuliah <span class='hl'>(f410)</span><br />
-                    <input type='checkbox' name='p_job_hunt_method[11]' class='inp-f4'
+                    <input type='checkbox' name='p_job_hunt_method[10]' class='inp-f4'
                         value='Melalui relasi (misalnya dosen, orang tua, saudara, teman, dll)'>
                     Melalui
                     relasi (misalnya dosen, orang tua, saudara, teman, dll) <span class='hl'>(f411)</span><br />
-                    <input type='checkbox' name='p_job_hunt_method[12]' class='inp-f4'
+                    <input type='checkbox' name='p_job_hunt_method[11]' class='inp-f4'
                         value='Membangun bisnis sendiri'>
                     Membangun bisnis sendiri <span class='hl'>(f412)</span><br />
-                    <input type='checkbox' name='p_job_hunt_method[13]' class='inp-f4'
+                    <input type='checkbox' name='p_job_hunt_method[12]' class='inp-f4'
                         value='Melalui penempatan kerja atau magang'> Melalui penempatan kerja atau
                     magang
                     <span class='hl'>(f413)</span><br />
-                    <input type='checkbox' name='p_job_hunt_method[14]' class='inp-f4'
+                    <input type='checkbox' name='p_job_hunt_method[13]' class='inp-f4'
                         value='Bekerja di tempat yang sama dengan tempat kerja semasa kuliah'> Bekerja
                     di
                     tempat yang sama dengan tempat kerja semasa kuliah <span class='hl'>(f414)</span><br />
-                    <input type='checkbox' id='inp-f415a' name='p_job_hunt_method[15]' class='inp-f4'
+                    <input type='checkbox' id='inp-f415a' name='p_job_hunt_method[14]' class='inp-f4'
                         value='Lainnya'>Lainnya:
-                    <input type='text' id='inp-f415b' name='f415b' maxlength='150'> <span
+                    <input type='text' id='inp-f415b' name='p_job_hunt_method_other' maxlength='150'> <span
                         class='hl'>(f415a -
                         f415b)</span><br />
                 </td>
@@ -833,61 +843,61 @@
                     dan jelaskan alasan tidak/belum bekerja </td>
                 <td valign='top'>:</td>
                 <td>
-                    <input type='checkbox' name='p_compatibility_type[1]' class='inp-f16'
+                    <input type='checkbox' name='p_compatibility_type[0]' class='inp-f16'
                         value='Pertanyaan tidak sesuai, pekerjaan saya saat ini sudah sesuai dengan pendidikan saya'>
                     Pertanyaan tidak sesuai, pekerjaan saya saat ini sudah sesuai dengan pendidikan saya
                     <span class='hl'>(f1601)</span><br />
-                    <input type='checkbox' name='p_compatibility_type[2]' class='inp-f16'
+                    <input type='checkbox' name='p_compatibility_type[1]' class='inp-f16'
                         value='Saya belum mendapatkan pekerjaan yang lebih sesuai dengan pendidikan saya'>
                     Saya belum mendapatkan pekerjaan yang lebih sesuai dengan pendidikan saya <span
                         class='hl'>(f1602)</span><br />
-                    <input type='checkbox' name='p_compatibility_type[3]' class='inp-f16'
+                    <input type='checkbox' name='p_compatibility_type[2]' class='inp-f16'
                         value='Di pekerjaan ini saya memperoleh prospek karir yang baik'> Di pekerjaan
                     ini
                     saya memperoleh prospek karir yang baik <span class='hl'>(f1603)</span><br />
-                    <input type='checkbox' name='p_compatibility_type[4]' class='inp-f16'
+                    <input type='checkbox' name='p_compatibility_type[3]' class='inp-f16'
                         value='Saya lebih suka bekerja di area pekerjaan yang tidak ada hubungannya dengan pendidikan saya '>
                     Saya lebih suka bekerja di area pekerjaan yang tidak ada hubungannya dengan
                     pendidikan
                     saya <span class='hl'>(f1604)</span><br />
-                    <input type='checkbox' name='p_compatibility_type[5]' class='inp-f16'
+                    <input type='checkbox' name='p_compatibility_type[4]' class='inp-f16'
                         value='Saya dipromosikan ke posisi yang kurang berhubungan dengan pendidikan saya dibanding posisi sebelumnya'>
                     Saya dipromosikan ke posisi yang kurang berhubungan dengan pendidikan saya dibanding
                     posisi sebelumnya <span class='hl'>(f1605)</span><br />
-                    <input type='checkbox' name='p_compatibility_type[6]' class='inp-f16'
+                    <input type='checkbox' name='p_compatibility_type[5]' class='inp-f16'
                         value='Saya dapat memperoleh pendapatan yang lebih tinggi di pekerjaan ini'>
                     Saya
                     dapat memperoleh pendapatan yang lebih tinggi di pekerjaan ini <span
                         class='hl'>(f1606)</span><br />
-                    <input type='checkbox' name='p_compatibility_type[7]' class='inp-f16'
+                    <input type='checkbox' name='p_compatibility_type[6]' class='inp-f16'
                         value='Pekerjaan saya saat ini lebih aman/terjamin/secure'> Pekerjaan saya
                     saat ini
                     lebih aman/terjamin/secure <span class='hl'>(f1607)</span><br />
-                    <input type='checkbox' name='p_compatibility_type[8]' class='inp-f16'
+                    <input type='checkbox' name='p_compatibility_type[7]' class='inp-f16'
                         value='Pekerjaan saya saat ini lebih menarik'> Pekerjaan saya saat ini lebih
                     menarik
                     <span class='hl'>(f1608)</span><br />
-                    <input type='checkbox' name='p_compatibility_type[9]' class='inp-f16'
+                    <input type='checkbox' name='p_compatibility_type[8]' class='inp-f16'
                         value='Pekerjaan saya saat ini lebih memungkinkan saya mengambil pekerjaan tambahan/jadwal yang fleksibel, dll'>
                     Pekerjaan saya saat ini lebih memungkinkan saya mengambil pekerjaan tambahan/jadwal
                     yang
                     fleksibel, dll <span class='hl'>(f1609)</span><br />
-                    <input type='checkbox' name='p_compatibility_type[10]' class='inp-f16'
+                    <input type='checkbox' name='p_compatibility_type[9]' class='inp-f16'
                         value='Pekerjaan saya saat ini lokasinya lebih dekat dari rumah saya'>
                     Pekerjaan
                     saya saat ini lokasinya lebih dekat dari rumah saya <span class='hl'>(f1610)</span><br />
-                    <input type='checkbox' name='p_compatibility_type[11]' class='inp-f16'
+                    <input type='checkbox' name='p_compatibility_type[10]' class='inp-f16'
                         value='Pekerjaan saya saat ini dpt lebih menjamin kebutuhan keluarga'>
                     Pekerjaan
                     saya saat ini dpt lebih menjamin kebutuhan keluarga <span class='hl'>(f1611)</span><br />
-                    <input type='checkbox' name='p_compatibility_type[12]' class='inp-f16'
+                    <input type='checkbox' name='p_compatibility_type[11]' class='inp-f16'
                         value='Pada awal meniti karir ini, saya harus menerima pekerjaan yang tidak berhubungan dengan pendidikan saya'>
                     Pada awal meniti karir ini, saya harus menerima pekerjaan yang tidak berhubungan
                     dengan
                     pendidikan saya <span class='hl'>(f1612)</span><br />
-                    <input type='checkbox' id='inp-f1613a' name='p_compatibility_type[13]' class='inp-f16'
+                    <input type='checkbox' id='inp-f1613a' name='p_compatibility_type[12]' class='inp-f16'
                         value='Lainnya'>Lainnya: <input type='text' id='inp-f1613b'
-                        name='p_compatibility__remark'> <span class='hl'>(f1613a - f1613b)</span><br />
+                        name='p_compatibility_remark'> <span class='hl'>(f1613a - f1613b)</span><br />
                 </td>
             </tr>
         </table>
