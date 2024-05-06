@@ -12,7 +12,7 @@ class Kuesioner2 extends Component
 
     public function render()
     {
-        $provinces = DB::table('provinces')->select(['id', 'province_name as name'])->get();
+        $provinces = DB::table ('provinces')->select(['id', 'province_name as name'])->get();
 
         return view('livewire.kuesioner.kuesioner2', compact('provinces'));
     }

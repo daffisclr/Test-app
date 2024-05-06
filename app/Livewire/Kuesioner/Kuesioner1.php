@@ -8,6 +8,6 @@ class Kuesioner1 extends Component
 {
     public function render()
     {
-        return view('livewire.kuesioner.kuesioner1');
+        return view ('livewire.kuesioner.kuesioner1');
     }
 }
