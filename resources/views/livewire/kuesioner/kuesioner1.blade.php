@@ -56,7 +56,14 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label>Tahun masuk :</label>
+                <input id="p_enterace_year" name="p_enterace_year" type="text" class="form-control"
+                    placeholder="contoh: 2017/2018" />
+            </div>
+        </div>
+        <div class="col-md-6">
             <div class="form-group">
                 <label>Tahun lulus :</label>
                 <input id="p_graduation_year" name="p_graduation_year" type="text" class="form-control"
