@@ -27,6 +27,7 @@ class Kuesioner_Identitas extends Model
         'phone',
         'gender',
         'religion',
+        'enterace_year',
         'graduation_year',
         'major',
         'degree',
