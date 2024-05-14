@@ -1550,4 +1550,162 @@
         </div>
     </div>
 
+    {{-- Sumberdana dalam pembiayaan kuliah alumni --}}
+    <div class="bg-white pd-20 card-box mb-30">
+        <div id="chart5" data-highcharts-chart="3">
+            <div id="highcharts-flm2yo6-11" dir="ltr" class="highcharts-container "
+                style="position: relative; overflow: hidden; width: 1008px; height: 400px; text-align: left; line-height: normal; z-index: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+                <svg version="1.1" class="highcharts-root "
+                    style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif;font-size:12px;"
+                    xmlns="http://www.w3.org/2000/svg" width="1008" height="400" viewBox="0 0 1008 400">
+                    <desc>Created with Highcharts 6.0.7</desc>
+                    <defs>
+                        <clipPath id="highcharts-flm2yo6-12">
+                            <rect x="0" y="0" width="988" height="301" fill="none"></rect>
+                        </clipPath>
+                    </defs>
+                    <rect fill="#ffffff" class="highcharts-background" x="0" y="0" width="1008" height="400"
+                        rx="0" ry="0"></rect>
+                    <g class="highcharts-pane-group"></g><text x="504" text-anchor="middle" class="highcharts-title"
+                        style="color:#333333;font-size:18px;fill:#333333;" y="24">
+                        <tspan>Sumberdana dalam pembiayaan kuliah alumni</tspan>
+                    </text><text x="504" text-anchor="middle" class="highcharts-subtitle"
+                        style="color:#666666;fill:#666666;" y="45"></text><text x="998" class="highcharts-credits"
+                        text-anchor="end" style="cursor:pointer;color:#999999;font-size:9px;fill:#999999;"
+                        y="395">Highcharts.com</text>
+                    <g class="highcharts-label highcharts-tooltip highcharts-color-1"
+                        style="cursor:default;pointer-events:none;white-space:nowrap;" transform="translate(503,-9999)"
+                        opacity="0" visibility="visible">
+                        <path fill="none" class="highcharts-label-box highcharts-tooltip-box"
+                            d="M 3.5 0.5 L 99.5 0.5 C 102.5 0.5 102.5 0.5 102.5 3.5 L 102.5 41.5 C 102.5 44.5 102.5 44.5 99.5 44.5 L 3.5 44.5 C 0.5 44.5 0.5 44.5 0.5 41.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5"
+                            isShadow="true" stroke="#000000" stroke-opacity="0.049999999999999996" stroke-width="5"
+                            transform="translate(1, 1)"></path>
+                        <path fill="none" class="highcharts-label-box highcharts-tooltip-box"
+                            d="M 3.5 0.5 L 99.5 0.5 C 102.5 0.5 102.5 0.5 102.5 3.5 L 102.5 41.5 C 102.5 44.5 102.5 44.5 99.5 44.5 L 3.5 44.5 C 0.5 44.5 0.5 44.5 0.5 41.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5"
+                            isShadow="true" stroke="#000000" stroke-opacity="0.09999999999999999" stroke-width="3"
+                            transform="translate(1, 1)"></path>
+                        <path fill="none" class="highcharts-label-box highcharts-tooltip-box"
+                            d="M 3.5 0.5 L 99.5 0.5 C 102.5 0.5 102.5 0.5 102.5 3.5 L 102.5 41.5 C 102.5 44.5 102.5 44.5 99.5 44.5 L 3.5 44.5 C 0.5 44.5 0.5 44.5 0.5 41.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5"
+                            isShadow="true" stroke="#000000" stroke-opacity="0.15" stroke-width="1"
+                            transform="translate(1, 1)"></path>
+                        <path fill="rgba(247,247,247,0.85)" class="highcharts-label-box highcharts-tooltip-box"
+                            d="M 3.5 0.5 L 99.5 0.5 C 102.5 0.5 102.5 0.5 102.5 3.5 L 102.5 41.5 C 102.5 44.5 102.5 44.5 99.5 44.5 L 3.5 44.5 C 0.5 44.5 0.5 44.5 0.5 41.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5"
+                            stroke="#434348" stroke-width="1"></path><text x="8"
+                            style="font-size:12px;color:#333333;fill:#333333;" y="20">
+                            <tspan style="font-size: 10px">Pears</tspan>
+                            <tspan style="fill:#434348" x="8" dy="15">●</tspan>
+                            <tspan dx="0"> Series 1: </tspan>
+                            <tspan style="font-weight:bold" dx="0">71.5</tspan>
+                        </text>
+                    </g>
+                </svg></div>
+        </div>
+    </div>
+
+    {{-- Seberapa erat hubungan antara bidang studi dengan pekerjaan alumni --}}
+    <div class="bg-white pd-20 card-box mb-30">
+        <div id="chart5" data-highcharts-chart="3">
+            <div id="highcharts-flm2yo6-11" dir="ltr" class="highcharts-container "
+                style="position: relative; overflow: hidden; width: 1008px; height: 400px; text-align: left; line-height: normal; z-index: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+                <svg version="1.1" class="highcharts-root "
+                    style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif;font-size:12px;"
+                    xmlns="http://www.w3.org/2000/svg" width="1008" height="400" viewBox="0 0 1008 400">
+                    <desc>Created with Highcharts 6.0.7</desc>
+                    <defs>
+                        <clipPath id="highcharts-flm2yo6-12">
+                            <rect x="0" y="0" width="988" height="301" fill="none"></rect>
+                        </clipPath>
+                    </defs>
+                    <rect fill="#ffffff" class="highcharts-background" x="0" y="0" width="1008" height="400"
+                        rx="0" ry="0"></rect>
+                    <g class="highcharts-pane-group"></g><text x="504" text-anchor="middle" class="highcharts-title"
+                        style="color:#333333;font-size:18px;fill:#333333;" y="24">
+                        <tspan>Seberapa erat hubungan antara bidang studi dengan pekerjaan alumni</tspan>
+                    </text><text x="504" text-anchor="middle" class="highcharts-subtitle"
+                        style="color:#666666;fill:#666666;" y="45"></text><text x="998" class="highcharts-credits"
+                        text-anchor="end" style="cursor:pointer;color:#999999;font-size:9px;fill:#999999;"
+                        y="395">Highcharts.com</text>
+                    <g class="highcharts-label highcharts-tooltip highcharts-color-1"
+                        style="cursor:default;pointer-events:none;white-space:nowrap;" transform="translate(503,-9999)"
+                        opacity="0" visibility="visible">
+                        <path fill="none" class="highcharts-label-box highcharts-tooltip-box"
+                            d="M 3.5 0.5 L 99.5 0.5 C 102.5 0.5 102.5 0.5 102.5 3.5 L 102.5 41.5 C 102.5 44.5 102.5 44.5 99.5 44.5 L 3.5 44.5 C 0.5 44.5 0.5 44.5 0.5 41.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5"
+                            isShadow="true" stroke="#000000" stroke-opacity="0.049999999999999996" stroke-width="5"
+                            transform="translate(1, 1)"></path>
+                        <path fill="none" class="highcharts-label-box highcharts-tooltip-box"
+                            d="M 3.5 0.5 L 99.5 0.5 C 102.5 0.5 102.5 0.5 102.5 3.5 L 102.5 41.5 C 102.5 44.5 102.5 44.5 99.5 44.5 L 3.5 44.5 C 0.5 44.5 0.5 44.5 0.5 41.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5"
+                            isShadow="true" stroke="#000000" stroke-opacity="0.09999999999999999" stroke-width="3"
+                            transform="translate(1, 1)"></path>
+                        <path fill="none" class="highcharts-label-box highcharts-tooltip-box"
+                            d="M 3.5 0.5 L 99.5 0.5 C 102.5 0.5 102.5 0.5 102.5 3.5 L 102.5 41.5 C 102.5 44.5 102.5 44.5 99.5 44.5 L 3.5 44.5 C 0.5 44.5 0.5 44.5 0.5 41.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5"
+                            isShadow="true" stroke="#000000" stroke-opacity="0.15" stroke-width="1"
+                            transform="translate(1, 1)"></path>
+                        <path fill="rgba(247,247,247,0.85)" class="highcharts-label-box highcharts-tooltip-box"
+                            d="M 3.5 0.5 L 99.5 0.5 C 102.5 0.5 102.5 0.5 102.5 3.5 L 102.5 41.5 C 102.5 44.5 102.5 44.5 99.5 44.5 L 3.5 44.5 C 0.5 44.5 0.5 44.5 0.5 41.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5"
+                            stroke="#434348" stroke-width="1"></path><text x="8"
+                            style="font-size:12px;color:#333333;fill:#333333;" y="20">
+                            <tspan style="font-size: 10px">Pears</tspan>
+                            <tspan style="fill:#434348" x="8" dy="15">●</tspan>
+                            <tspan dx="0"> Series 1: </tspan>
+                            <tspan style="font-weight:bold" dx="0">71.5</tspan>
+                        </text>
+                    </g>
+                </svg></div>
+        </div>
+    </div>
+
+    {{-- Tingkat pendidikan tepat/sesuai untuk pekerjaan alumni saat ini --}}
+    <div class="bg-white pd-20 card-box mb-30">
+        <div id="chart5" data-highcharts-chart="3">
+            <div id="highcharts-flm2yo6-11" dir="ltr" class="highcharts-container "
+                style="position: relative; overflow: hidden; width: 1008px; height: 400px; text-align: left; line-height: normal; z-index: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+                <svg version="1.1" class="highcharts-root "
+                    style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif;font-size:12px;"
+                    xmlns="http://www.w3.org/2000/svg" width="1008" height="400" viewBox="0 0 1008 400">
+                    <desc>Created with Highcharts 6.0.7</desc>
+                    <defs>
+                        <clipPath id="highcharts-flm2yo6-12">
+                            <rect x="0" y="0" width="988" height="301" fill="none"></rect>
+                        </clipPath>
+                    </defs>
+                    <rect fill="#ffffff" class="highcharts-background" x="0" y="0" width="1008" height="400"
+                        rx="0" ry="0"></rect>
+                    <g class="highcharts-pane-group"></g><text x="504" text-anchor="middle" class="highcharts-title"
+                        style="color:#333333;font-size:18px;fill:#333333;" y="24">
+                        <tspan>Tingkat pendidikan tepat/sesuai untuk pekerjaan alumni saat ini</tspan>
+                    </text><text x="504" text-anchor="middle" class="highcharts-subtitle"
+                        style="color:#666666;fill:#666666;" y="45"></text><text x="998" class="highcharts-credits"
+                        text-anchor="end" style="cursor:pointer;color:#999999;font-size:9px;fill:#999999;"
+                        y="395">Highcharts.com</text>
+                    <g class="highcharts-label highcharts-tooltip highcharts-color-1"
+                        style="cursor:default;pointer-events:none;white-space:nowrap;" transform="translate(503,-9999)"
+                        opacity="0" visibility="visible">
+                        <path fill="none" class="highcharts-label-box highcharts-tooltip-box"
+                            d="M 3.5 0.5 L 99.5 0.5 C 102.5 0.5 102.5 0.5 102.5 3.5 L 102.5 41.5 C 102.5 44.5 102.5 44.5 99.5 44.5 L 3.5 44.5 C 0.5 44.5 0.5 44.5 0.5 41.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5"
+                            isShadow="true" stroke="#000000" stroke-opacity="0.049999999999999996" stroke-width="5"
+                            transform="translate(1, 1)"></path>
+                        <path fill="none" class="highcharts-label-box highcharts-tooltip-box"
+                            d="M 3.5 0.5 L 99.5 0.5 C 102.5 0.5 102.5 0.5 102.5 3.5 L 102.5 41.5 C 102.5 44.5 102.5 44.5 99.5 44.5 L 3.5 44.5 C 0.5 44.5 0.5 44.5 0.5 41.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5"
+                            isShadow="true" stroke="#000000" stroke-opacity="0.09999999999999999" stroke-width="3"
+                            transform="translate(1, 1)"></path>
+                        <path fill="none" class="highcharts-label-box highcharts-tooltip-box"
+                            d="M 3.5 0.5 L 99.5 0.5 C 102.5 0.5 102.5 0.5 102.5 3.5 L 102.5 41.5 C 102.5 44.5 102.5 44.5 99.5 44.5 L 3.5 44.5 C 0.5 44.5 0.5 44.5 0.5 41.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5"
+                            isShadow="true" stroke="#000000" stroke-opacity="0.15" stroke-width="1"
+                            transform="translate(1, 1)"></path>
+                        <path fill="rgba(247,247,247,0.85)" class="highcharts-label-box highcharts-tooltip-box"
+                            d="M 3.5 0.5 L 99.5 0.5 C 102.5 0.5 102.5 0.5 102.5 3.5 L 102.5 41.5 C 102.5 44.5 102.5 44.5 99.5 44.5 L 3.5 44.5 C 0.5 44.5 0.5 44.5 0.5 41.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5"
+                            stroke="#434348" stroke-width="1"></path><text x="8"
+                            style="font-size:12px;color:#333333;fill:#333333;" y="20">
+                            <tspan style="font-size: 10px">Pears</tspan>
+                            <tspan style="fill:#434348" x="8" dy="15">●</tspan>
+                            <tspan dx="0"> Series 1: </tspan>
+                            <tspan style="font-weight:bold" dx="0">71.5</tspan>
+                        </text>
+                    </g>
+                </svg></div>
+        </div>
+    </div>
+
+
+
 @endsection
