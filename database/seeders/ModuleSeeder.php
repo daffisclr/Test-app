@@ -57,6 +57,15 @@ class ModuleSeeder extends Seeder
             'valid_status' => 1
         ]);
 
+        Module::create([
+            'name' => "Tracer Study Overview",
+            'url' => "admin.result",
+            'icon' => 'fa-bar-chart',
+            'description' => 'Tampilan data hasil kuesioner',
+            'module_level' => 0,
+            'valid_status' => 1
+        ]);
+
 
         $modules = Module::all();
 
