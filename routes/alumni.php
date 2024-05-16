@@ -13,6 +13,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/alumni', function () {
-    return 'helo alumni';
+Route::prefix('alumni')->name('alumni.')->group(function () {
+
+    Route::middleware(['guest:alumni', 'PreventBackHistory'])->group(function () {
+        Route::view('/register', 'back.pages.alumni.auth.registration')->name('registration');
+        Route::view('/login', 'back.pages.alumni.auth.login')->name('login');
+    });
+
+    Route::middleware(['auth:alumni', 'PreventBackHistory'])->group(function () {
+
+    });
+
+    Route::get('/', function () {
+        return redirect()->route('alumni.login');
+    });
 });
