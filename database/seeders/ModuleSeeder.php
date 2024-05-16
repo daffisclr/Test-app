@@ -49,7 +49,7 @@ class ModuleSeeder extends Seeder
         ]);
 
         Module::create([
-            'name' => "Broadcast Users",
+            'name' => "Invite Users",
             'url' => "admin.broadcast",
             'icon' => 'fa-envelope',
             'description' => 'Broadcast Users Module',
@@ -58,7 +58,7 @@ class ModuleSeeder extends Seeder
         ]);
 
         Module::create([
-            'name' => "Tracer Study Overview",
+            'name' => "Tracer Result",
             'url' => "admin.result",
             'icon' => 'fa-bar-chart',
             'description' => 'Tampilan data hasil kuesioner',
