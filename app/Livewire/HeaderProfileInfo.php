@@ -3,12 +3,12 @@
 namespace App\Livewire;
 
 use Livewire\Component;
-use App\Models\Admin;
+use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 
 class HeaderProfileInfo extends Component
 {
-    public $admin;
+    public $user;
     public $alumni;
 
     public $listeners = [
@@ -17,8 +17,8 @@ class HeaderProfileInfo extends Component
 
     public function mount()
     {
-        if (Auth::guard('admin')->check()) {
-            $this->admin = Admin::findOrFail(auth()->id());
+        if (Auth::guard('user')->check()) {
+            $this->user = User::findOrFail(auth()->id());
         }
     }
 

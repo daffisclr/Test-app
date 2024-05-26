@@ -24,9 +24,9 @@ class Role extends Model
         'valid_status',
     ];
 
-    public function admins()
+    public function users()
     {
-        return $this->hasMany(Admin::class);
+        return $this->hasMany(User::class);
     }
 
     public function modules()

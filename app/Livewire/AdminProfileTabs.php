@@ -3,17 +3,17 @@
 namespace App\Livewire;
 
 use Livewire\Component;
-use App\Models\Admin;
+use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 
-class AdminProfileTabs extends Component
+class UserProfileTabs extends Component
 {
     public $tab = null;
     public $tabname = 'personal_details';
     protected $queryString = ['tab' => ['keep' => true]];
-    public $name, $email, $username, $admin_id, $new_password, $new_password_confirmation;
+    public $name, $email, $username, $user_id, $new_password, $new_password_confirmation;
 
     public function selectTab($tab)
     {
@@ -24,24 +24,24 @@ class AdminProfileTabs extends Component
     {
         $this->tab = request()->tab ? request()->tab : $this->tabname;
 
-        if (Auth::guard('admin')->check()) {
-            $admin = Admin::findorFail(auth()->id());
-            $this->admin_id = $admin->id;
-            $this->name = $admin->name;
-            $this->email = $admin->email;
-            $this->username = $admin->username;
+        if (Auth::guard('user')->check()) {
+            $user = User::findorFail(auth()->id());
+            $this->user_id = $user->id;
+            $this->name = $user->name;
+            $this->email = $user->email;
+            $this->username = $user->username;
         }
     }
 
-    public function updateAdminPersonalDetails()
+    public function updateUserPersonalDetails()
     {
         $this->validate([
             'name' => 'required|min:5',
-            'email' => 'required|email|unique:admins,email,' . $this->admin_id,
-            'username' => 'required|min:3|unique:admins,username,' . $this->admin_id
+            'email' => 'required|email|unique:users,email,' . $this->user_id,
+            'username' => 'required|min:3|unique:users,username,' . $this->user_id
         ]);
 
-        Admin::find($this->admin_id)
+        User::find($this->user_id)
             ->update([
                 'name' => $this->name,
                 'email' => $this->email,
@@ -49,9 +49,9 @@ class AdminProfileTabs extends Component
             ]);
 
         $this->dispatch('updateHeaderInfo');
-        $this->dispatch('updateAdminInfo', [
-            'adminName' => $this->name,
-            'adminEmail' => $this->email
+        $this->dispatch('updateUserInfo', [
+            'userName' => $this->name,
+            'userEmail' => $this->email
         ]);
 
         $this->showToastr('success', 'Your personal details have been successfully updated');
@@ -67,7 +67,7 @@ class AdminProfileTabs extends Component
 
     public function render()
     {
-        return view('livewire.admin-profile-tabs');
+        return view('livewire.user-profile-tabs');
     }
 
     //Change Password
@@ -79,7 +79,7 @@ class AdminProfileTabs extends Component
             'new_password_confirmation' => 'required'
         ]);
 
-        Admin::where('id', $this->admin_id)->update([
+        User::where('id', $this->user_id)->update([
             'password' => Hash::make($this->new_password)
         ]);
 
@@ -88,6 +88,6 @@ class AdminProfileTabs extends Component
             'Your password has been changed!'
         );
 
-        return redirect()->route('admin.profile', ['tab' => "personal_details"]);
+        return redirect()->route('user.profile', ['tab' => "personal_details"]);
     }
 }

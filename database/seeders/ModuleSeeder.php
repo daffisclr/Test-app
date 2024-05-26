@@ -15,7 +15,7 @@ class ModuleSeeder extends Seeder
     {
         Module::create([
             'name' => "Home",
-            'url' => "admin.home",
+            'url' => "user.home",
             'icon' => 'fa-home',
             'description' => 'Home Module',
             'module_level' => 0,
@@ -31,7 +31,7 @@ class ModuleSeeder extends Seeder
 
         Module::create([
             'name' => "Profile",
-            'url' => "admin.profile",
+            'url' => "user.profile",
             'icon' => 'fa-user',
             'description' => 'Profile Module',
             'parent_module' => 2,
@@ -41,7 +41,7 @@ class ModuleSeeder extends Seeder
 
         Module::create([
             'name' => "Kuesioner",
-            'url' => "admin.kuesioner",
+            'url' => "user.kuesioner",
             'icon' => ' fa-file-text',
             'description' => 'Kuesioner Module',
             'module_level' => 0,
@@ -50,7 +50,7 @@ class ModuleSeeder extends Seeder
 
         Module::create([
             'name' => "Invite Users",
-            'url' => "admin.broadcast",
+            'url' => "user.broadcast",
             'icon' => 'fa-envelope',
             'description' => 'Broadcast Users Module',
             'module_level' => 0,
@@ -59,7 +59,7 @@ class ModuleSeeder extends Seeder
 
         Module::create([
             'name' => "Tracer Result",
-            'url' => "admin.result",
+            'url' => "user.result",
             'icon' => 'fa-bar-chart',
             'description' => 'Tampilan data hasil kuesioner',
             'module_level' => 0,

@@ -11,7 +11,7 @@ class Kuesioner_Tracer_Study extends Model
 {
     use HasApiTokens, HasFactory, Notifiable;
 
-    protected $guard = "admin";
+    protected $guard = "user";
 
     /**
      * The attributes that are mass assignable.

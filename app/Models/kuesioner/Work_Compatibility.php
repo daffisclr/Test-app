@@ -11,7 +11,7 @@ class Work_Compatibility extends Model
 {
     use HasApiTokens, HasFactory, Notifiable;
 
-    protected $guard = "admin";
+    protected $guard = "user";
 
     /**
      * The attributes that are mass assignable.

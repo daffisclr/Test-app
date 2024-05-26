@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Admin;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
@@ -35,11 +35,11 @@ class QuestionnaireController extends Controller
             "p_degree" => 'required',
         ], ['required' => 'Field is required']);
 
-        $admin = '';
+        $user = '';
         $form_value = $request->post();
 
-        if (Auth::guard('admin')->check()) {
-            $admin = Admin::findorFail(auth()->id());
+        if (Auth::guard('user')->check()) {
+            $user = User::findorFail(auth()->id());
         }
 
         //Begin db transaction for questionare answers
@@ -47,7 +47,7 @@ class QuestionnaireController extends Controller
 
         //Table Kuesioner Identity
         DB::table('kuesioner_identitas')->insert([
-            'user_id' => $admin->id,
+            'user_id' => $user->id,
             'name' => $form_value['p_name'],
             'nim' => $form_value['p_nim'],
             'email' => $form_value['p_email'],
