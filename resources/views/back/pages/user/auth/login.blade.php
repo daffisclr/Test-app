@@ -1,11 +1,11 @@
 @extends('back.layout.auth-layout')
-@section('pageTitle', isset($pageTitle) ? $pageTitle : 'Admin Login')
+@section('pageTitle', isset($pageTitle) ? $pageTitle : 'User Login')
 @section('content')
     <div class="login-box bg-white box-shadow border-radius-10">
         <div class="login-title">
-            <h2 class="text-center text-primary">Admin Login</h2>
+            <h2 class="text-center text-primary">User Login</h2>
         </div>
-        <form action="{{ route('admin.login_handler') }}" method="POST">
+        <form action="{{ route('user.login_handler') }}" method="POST">
             @csrf
             @if (Session::get('fail'))
                 <div class="alert alert-danger">
@@ -17,8 +17,8 @@
                 </div>
             @endif
             <div class="input-group custom">
-                <input type="text" class="form-control form-control-lg" placeholder="Email/Username"
-                name="login_id" value="{{ old('login_id') }}" />
+                <input type="text" class="form-control form-control-lg" placeholder="Email/Username" name="login_id"
+                    value="{{ old('login_id') }}" />
                 <div class="input-group-append custom">
                     <span class="input-group-text"><i class="icon-copy dw dw-user1"></i></span>
                 </div>
@@ -29,8 +29,7 @@
                 </div>
             @enderror
             <div class="input-group custom">
-                <input type="password" class="form-control form-control-lg" placeholder="**********"
-                name="password"/>
+                <input type="password" class="form-control form-control-lg" placeholder="**********" name="password" />
                 <div class="input-group-append custom">
                     <span class="input-group-text"><i class="dw dw-padlock1"></i></span>
                 </div>
@@ -49,7 +48,7 @@
                 </div>
                 <div class="col-6">
                     <div class="forgot-password">
-                        <a href="{{ route('admin.forgot-password') }}">Forgot Password</a>
+                        <a href="{{ route('user.forgot-password') }}">Forgot Password</a>
                     </div>
                 </div>
             </div>

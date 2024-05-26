@@ -11,7 +11,7 @@
                 <nav aria-label="breadcrumb" role="navigation">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item">
-                            <a href="{{ route('admin.home') }}">Home</a>
+                            <a href="{{ route('user.home') }}">Home</a>
                         </li>
                         <li class="breadcrumb-item active" aria-current="page">
                             Profile
@@ -27,17 +27,17 @@
             <div class="pd-20 card-box height-100-p">
                 <div class="profile-photo">
                     <a href="" class="edit-avatar"><i class="fa fa-pencil"></i></a>
-                    <img src="{{ $admin->picture }}" alt="" class="avatar-photo" id="adminProfilePicture">
+                    <img src="{{ $user->picture }}" alt="" class="avatar-photo" id="userProfilePicture">
                 </div>
-                <h5 class="text-center h5 mb-0" id="adminProfileName">{{ $admin->name }}</h5>
-                <p class="text-center text-muted font-14" id="adminProfileEmail">
-                    {{ $admin->email }}
+                <h5 class="text-center h5 mb-0" id="userProfileName">{{ $user->name }}</h5>
+                <p class="text-center text-muted font-14" id="userProfileEmail">
+                    {{ $user->email }}
                 </p>
             </div>
         </div>
         <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 mb-30">
             <div class="card-box height-100-p overflow-hidden">
-                @livewire('admin-profile-tabs')
+                @livewire('user-profile-tabs')
             </div>
         </div>
     </div>
@@ -46,8 +46,8 @@
 @push('scripts')
     <script type="text/javascript">
         window.addEventListener('updateAdminInfo', function(event) {
-            $('#adminProfileName').html(event.detail[0].adminName);
-            $('#adminProfileEmail').html(event.detail[0].adminEmail);
+            $('#userProfileName').html(event.detail[0].userName);
+            $('#userProfileEmail').html(event.detail[0].userEmail);
         });
     </script>
 @endpush

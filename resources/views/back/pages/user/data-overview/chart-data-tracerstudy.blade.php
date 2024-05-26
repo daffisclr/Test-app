@@ -10,7 +10,7 @@
                 <nav aria-label="breadcrumb" role="navigation">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item">
-                            <a href="{{ route('admin.home') }}">Home</a>
+                            <a href="{{ route('user.home') }}">Home</a>
                         </li>
                         <li class="breadcrumb-item active" aria-current="page">
                             Tracer Study Overview
@@ -35,12 +35,14 @@
                             <rect x="0" y="0" width="988" height="301" fill="none"></rect>
                         </clipPath>
                     </defs>
-                    <rect fill="#ffffff" class="highcharts-background" x="0" y="0" width="1008" height="400"
-                        rx="0" ry="0"></rect>
-                    <rect fill="none" class="highcharts-plot-background" x="10" y="46" width="988" height="301">
+                    <rect fill="#ffffff" class="highcharts-background" x="0" y="0" width="1008"
+                        height="400" rx="0" ry="0"></rect>
+                    <rect fill="none" class="highcharts-plot-background" x="10" y="46" width="988"
+                        height="301">
                     </rect>
                     <g class="highcharts-pane-group"></g>
-                    <rect fill="none" class="highcharts-plot-border" x="10" y="46" width="988" height="301"></rect>
+                    <rect fill="none" class="highcharts-plot-border" x="10" y="46" width="988"
+                        height="301"></rect>
                     <g class="highcharts-series-group">
                         <g class="highcharts-series highcharts-series-0 highcharts-pie-series  highcharts-tracker"
                             transform="translate(10,46) scale(1 1)">
@@ -124,63 +126,71 @@
                         <g class="highcharts-label highcharts-data-label highcharts-data-label-color-0 "
                             transform="translate(518,2)"><text x="5"
                                 style="font-size:11px;font-weight:bold;color:#000000;fill:#000000;" y="16">
-                                <tspan x="5" y="16" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF"
-                                    stroke-width="2px" stroke-linejoin="round" style="">Apples</tspan>
+                                <tspan x="5" y="16" class="highcharts-text-outline" fill="#FFFFFF"
+                                    stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round" style="">Apples
+                                </tspan>
                                 <tspan x="5" y="16">Apples</tspan>
                             </text></g>
                         <g class="highcharts-label highcharts-data-label highcharts-data-label-color-1 "
                             transform="translate(584,26)"><text x="5"
                                 style="font-size:11px;font-weight:bold;color:#000000;fill:#000000;" y="16">
-                                <tspan x="5" y="16" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF"
-                                    stroke-width="2px" stroke-linejoin="round" style="">Pears</tspan>
+                                <tspan x="5" y="16" class="highcharts-text-outline" fill="#FFFFFF"
+                                    stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round" style="">Pears
+                                </tspan>
                                 <tspan x="5" y="16">Pears</tspan>
                             </text></g>
                         <g class="highcharts-label highcharts-data-label highcharts-data-label-color-2 "
                             transform="translate(628,72)"><text x="5"
                                 style="font-size:11px;font-weight:bold;color:#000000;fill:#000000;" y="16">
-                                <tspan x="5" y="16" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF"
-                                    stroke-width="2px" stroke-linejoin="round" style="">Oranges</tspan>
+                                <tspan x="5" y="16" class="highcharts-text-outline" fill="#FFFFFF"
+                                    stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round" style="">Oranges
+                                </tspan>
                                 <tspan x="5" y="16">Oranges</tspan>
                             </text></g>
                         <g class="highcharts-label highcharts-data-label highcharts-data-label-color-3 "
                             transform="translate(644,182)"><text x="5"
                                 style="font-size:11px;font-weight:bold;color:#000000;fill:#000000;" y="16">
-                                <tspan x="5" y="16" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF"
-                                    stroke-width="2px" stroke-linejoin="round" style="">Plums</tspan>
+                                <tspan x="5" y="16" class="highcharts-text-outline" fill="#FFFFFF"
+                                    stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round" style="">Plums
+                                </tspan>
                                 <tspan x="5" y="16">Plums</tspan>
                             </text></g>
                         <g class="highcharts-label highcharts-data-label highcharts-data-label-color-4 "
                             transform="translate(562,279)"><text x="5"
                                 style="font-size:11px;font-weight:bold;color:#000000;fill:#000000;" y="16">
-                                <tspan x="5" y="16" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF"
-                                    stroke-width="2px" stroke-linejoin="round" style="">Bananas</tspan>
+                                <tspan x="5" y="16" class="highcharts-text-outline" fill="#FFFFFF"
+                                    stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round" style="">Bananas
+                                </tspan>
                                 <tspan x="5" y="16">Bananas</tspan>
                             </text></g>
                         <g class="highcharts-label highcharts-data-label highcharts-data-label-color-5 "
                             transform="translate(339,261)"><text x="5"
                                 style="font-size:11px;font-weight:bold;color:#000000;fill:#000000;" y="16">
-                                <tspan x="5" y="16" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF"
-                                    stroke-width="2px" stroke-linejoin="round" style="">Peaches</tspan>
+                                <tspan x="5" y="16" class="highcharts-text-outline" fill="#FFFFFF"
+                                    stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round" style="">Peaches
+                                </tspan>
                                 <tspan x="5" y="16">Peaches</tspan>
                             </text></g>
                         <g class="highcharts-label highcharts-data-label highcharts-data-label-color-6 "
                             transform="translate(292,128)"><text x="5"
                                 style="font-size:11px;font-weight:bold;color:#000000;fill:#000000;" y="16">
-                                <tspan x="5" y="16" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF"
-                                    stroke-width="2px" stroke-linejoin="round" style="">Prunes</tspan>
+                                <tspan x="5" y="16" class="highcharts-text-outline" fill="#FFFFFF"
+                                    stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round" style="">Prunes
+                                </tspan>
                                 <tspan x="5" y="16">Prunes</tspan>
                             </text></g>
                         <g class="highcharts-label highcharts-data-label highcharts-data-label-color-7 "
                             transform="translate(351,19)"><text x="5"
                                 style="font-size:11px;font-weight:bold;color:#000000;fill:#000000;" y="16">
-                                <tspan x="5" y="16" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF"
-                                    stroke-width="2px" stroke-linejoin="round" style="">Avocados</tspan>
+                                <tspan x="5" y="16" class="highcharts-text-outline" fill="#FFFFFF"
+                                    stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round" style="">Avocados
+                                </tspan>
                                 <tspan x="5" y="16">Avocados</tspan>
                             </text></g>
                     </g>
                     <g class="highcharts-legend" transform="translate(160,359)">
-                        <rect fill="none" class="highcharts-legend-box" rx="0" ry="0" x="0" y="0"
-                            width="687" height="26" visibility="visible"></rect>
+                        <rect fill="none" class="highcharts-legend-box" rx="0" ry="0" x="0"
+                            y="0" width="687" height="26" visibility="visible"></rect>
                         <g>
                             <g>
                                 <g class="highcharts-legend-item highcharts-pie-series highcharts-color-0"
@@ -189,8 +199,8 @@
                                         text-anchor="start" y="15">
                                         <tspan>Apples</tspan>
                                     </text>
-                                    <rect x="2" y="4" width="12" height="12" fill="#7cb5ec" rx="6"
-                                        ry="6" class="highcharts-point"></rect>
+                                    <rect x="2" y="4" width="12" height="12" fill="#7cb5ec"
+                                        rx="6" ry="6" class="highcharts-point"></rect>
                                 </g>
                                 <g class="highcharts-legend-item highcharts-pie-series highcharts-color-1"
                                     transform="translate(90.58944702148438,3)"><text x="21" y="15"
@@ -198,8 +208,8 @@
                                         text-anchor="start">
                                         <tspan>Pears</tspan>
                                     </text>
-                                    <rect x="2" y="4" width="12" height="12" fill="#434348" rx="6"
-                                        ry="6" class="highcharts-point"></rect>
+                                    <rect x="2" y="4" width="12" height="12" fill="#434348"
+                                        rx="6" ry="6" class="highcharts-point"></rect>
                                 </g>
                                 <g class="highcharts-legend-item highcharts-pie-series highcharts-color-2"
                                     transform="translate(165.29283142089844,3)"><text x="21" y="15"
@@ -207,8 +217,8 @@
                                         text-anchor="start">
                                         <tspan>Oranges</tspan>
                                     </text>
-                                    <rect x="2" y="4" width="12" height="12" fill="#90ed7d" rx="6"
-                                        ry="6" class="highcharts-point"></rect>
+                                    <rect x="2" y="4" width="12" height="12" fill="#90ed7d"
+                                        rx="6" ry="6" class="highcharts-point"></rect>
                                 </g>
                                 <g class="highcharts-legend-item highcharts-pie-series highcharts-color-3"
                                     transform="translate(256.59165954589844,3)"><text x="21" y="15"
@@ -216,8 +226,8 @@
                                         text-anchor="start">
                                         <tspan>Plums</tspan>
                                     </text>
-                                    <rect x="2" y="4" width="12" height="12" fill="#f7a35c" rx="6"
-                                        ry="6" class="highcharts-point"></rect>
+                                    <rect x="2" y="4" width="12" height="12" fill="#f7a35c"
+                                        rx="6" ry="6" class="highcharts-point"></rect>
                                 </g>
                                 <g class="highcharts-legend-item highcharts-pie-series highcharts-color-4"
                                     transform="translate(334.03338623046875,3)"><text x="21" y="15"
@@ -225,8 +235,8 @@
                                         text-anchor="start">
                                         <tspan>Bananas</tspan>
                                     </text>
-                                    <rect x="2" y="4" width="12" height="12" fill="#8085e9" rx="6"
-                                        ry="6" class="highcharts-point"></rect>
+                                    <rect x="2" y="4" width="12" height="12" fill="#8085e9"
+                                        rx="6" ry="6" class="highcharts-point"></rect>
                                 </g>
                                 <g class="highcharts-legend-item highcharts-pie-series highcharts-color-5"
                                     transform="translate(425.77622985839844,3)"><text x="21" y="15"
@@ -234,8 +244,8 @@
                                         text-anchor="start">
                                         <tspan>Peaches</tspan>
                                     </text>
-                                    <rect x="2" y="4" width="12" height="12" fill="#f15c80" rx="6"
-                                        ry="6" class="highcharts-point"></rect>
+                                    <rect x="2" y="4" width="12" height="12" fill="#f15c80"
+                                        rx="6" ry="6" class="highcharts-point"></rect>
                                 </g>
                                 <g class="highcharts-legend-item highcharts-pie-series highcharts-color-6"
                                     transform="translate(517.2864379882812,3)"><text x="21" y="15"
@@ -243,8 +253,8 @@
                                         text-anchor="start">
                                         <tspan>Prunes</tspan>
                                     </text>
-                                    <rect x="2" y="4" width="12" height="12" fill="#e4d354" rx="6"
-                                        ry="6" class="highcharts-point"></rect>
+                                    <rect x="2" y="4" width="12" height="12" fill="#e4d354"
+                                        rx="6" ry="6" class="highcharts-point"></rect>
                                 </g>
                                 <g class="highcharts-legend-item highcharts-pie-series highcharts-color-7"
                                     transform="translate(600.0591278076172,3)"><text x="21" y="15"
@@ -252,13 +262,14 @@
                                         text-anchor="start">
                                         <tspan>Avocados</tspan>
                                     </text>
-                                    <rect x="2" y="4" width="12" height="12" fill="#2b908f" rx="6"
-                                        ry="6" class="highcharts-point"></rect>
+                                    <rect x="2" y="4" width="12" height="12" fill="#2b908f"
+                                        rx="6" ry="6" class="highcharts-point"></rect>
                                 </g>
                             </g>
                         </g>
                     </g><text x="998" class="highcharts-credits" text-anchor="end"
-                        style="cursor:pointer;color:#999999;font-size:9px;fill:#999999;" y="395">Highcharts.com</text>
+                        style="cursor:pointer;color:#999999;font-size:9px;fill:#999999;"
+                        y="395">Highcharts.com</text>
                     <g class="highcharts-label highcharts-tooltip highcharts-color-2"
                         style="cursor:default;pointer-events:none;white-space:nowrap;" transform="translate(619,-9999)"
                         opacity="0" visibility="visible">
@@ -303,12 +314,14 @@
                             <rect x="0" y="0" width="988" height="301" fill="none"></rect>
                         </clipPath>
                     </defs>
-                    <rect fill="#ffffff" class="highcharts-background" x="0" y="0" width="1008" height="400"
-                        rx="0" ry="0"></rect>
-                    <rect fill="none" class="highcharts-plot-background" x="10" y="46" width="988" height="301">
+                    <rect fill="#ffffff" class="highcharts-background" x="0" y="0" width="1008"
+                        height="400" rx="0" ry="0"></rect>
+                    <rect fill="none" class="highcharts-plot-background" x="10" y="46"
+                        width="988" height="301">
                     </rect>
                     <g class="highcharts-pane-group"></g>
-                    <rect fill="none" class="highcharts-plot-border" x="10" y="46" width="988" height="301">
+                    <rect fill="none" class="highcharts-plot-border" x="10" y="46" width="988"
+                        height="301">
                     </rect>
                     <g class="highcharts-series-group">
                         <g class="highcharts-series highcharts-series-0 highcharts-pie-series  highcharts-tracker"
@@ -393,63 +406,71 @@
                         <g class="highcharts-label highcharts-data-label highcharts-data-label-color-0 "
                             transform="translate(518,2)"><text x="5"
                                 style="font-size:11px;font-weight:bold;color:#000000;fill:#000000;" y="16">
-                                <tspan x="5" y="16" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF"
-                                    stroke-width="2px" stroke-linejoin="round" style="">Apples</tspan>
+                                <tspan x="5" y="16" class="highcharts-text-outline" fill="#FFFFFF"
+                                    stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round" style="">Apples
+                                </tspan>
                                 <tspan x="5" y="16">Apples</tspan>
                             </text></g>
                         <g class="highcharts-label highcharts-data-label highcharts-data-label-color-1 "
                             transform="translate(584,26)"><text x="5"
                                 style="font-size:11px;font-weight:bold;color:#000000;fill:#000000;" y="16">
-                                <tspan x="5" y="16" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF"
-                                    stroke-width="2px" stroke-linejoin="round" style="">Pears</tspan>
+                                <tspan x="5" y="16" class="highcharts-text-outline" fill="#FFFFFF"
+                                    stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round" style="">Pears
+                                </tspan>
                                 <tspan x="5" y="16">Pears</tspan>
                             </text></g>
                         <g class="highcharts-label highcharts-data-label highcharts-data-label-color-2 "
                             transform="translate(628,72)"><text x="5"
                                 style="font-size:11px;font-weight:bold;color:#000000;fill:#000000;" y="16">
-                                <tspan x="5" y="16" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF"
-                                    stroke-width="2px" stroke-linejoin="round" style="">Oranges</tspan>
+                                <tspan x="5" y="16" class="highcharts-text-outline" fill="#FFFFFF"
+                                    stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round" style="">Oranges
+                                </tspan>
                                 <tspan x="5" y="16">Oranges</tspan>
                             </text></g>
                         <g class="highcharts-label highcharts-data-label highcharts-data-label-color-3 "
                             transform="translate(644,182)"><text x="5"
                                 style="font-size:11px;font-weight:bold;color:#000000;fill:#000000;" y="16">
-                                <tspan x="5" y="16" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF"
-                                    stroke-width="2px" stroke-linejoin="round" style="">Plums</tspan>
+                                <tspan x="5" y="16" class="highcharts-text-outline" fill="#FFFFFF"
+                                    stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round" style="">Plums
+                                </tspan>
                                 <tspan x="5" y="16">Plums</tspan>
                             </text></g>
                         <g class="highcharts-label highcharts-data-label highcharts-data-label-color-4 "
                             transform="translate(562,279)"><text x="5"
                                 style="font-size:11px;font-weight:bold;color:#000000;fill:#000000;" y="16">
-                                <tspan x="5" y="16" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF"
-                                    stroke-width="2px" stroke-linejoin="round" style="">Bananas</tspan>
+                                <tspan x="5" y="16" class="highcharts-text-outline" fill="#FFFFFF"
+                                    stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round" style="">Bananas
+                                </tspan>
                                 <tspan x="5" y="16">Bananas</tspan>
                             </text></g>
                         <g class="highcharts-label highcharts-data-label highcharts-data-label-color-5 "
                             transform="translate(339,261)"><text x="5"
                                 style="font-size:11px;font-weight:bold;color:#000000;fill:#000000;" y="16">
-                                <tspan x="5" y="16" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF"
-                                    stroke-width="2px" stroke-linejoin="round" style="">Peaches</tspan>
+                                <tspan x="5" y="16" class="highcharts-text-outline" fill="#FFFFFF"
+                                    stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round" style="">Peaches
+                                </tspan>
                                 <tspan x="5" y="16">Peaches</tspan>
                             </text></g>
                         <g class="highcharts-label highcharts-data-label highcharts-data-label-color-6 "
                             transform="translate(292,128)"><text x="5"
                                 style="font-size:11px;font-weight:bold;color:#000000;fill:#000000;" y="16">
-                                <tspan x="5" y="16" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF"
-                                    stroke-width="2px" stroke-linejoin="round" style="">Prunes</tspan>
+                                <tspan x="5" y="16" class="highcharts-text-outline" fill="#FFFFFF"
+                                    stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round" style="">Prunes
+                                </tspan>
                                 <tspan x="5" y="16">Prunes</tspan>
                             </text></g>
                         <g class="highcharts-label highcharts-data-label highcharts-data-label-color-7 "
                             transform="translate(351,19)"><text x="5"
                                 style="font-size:11px;font-weight:bold;color:#000000;fill:#000000;" y="16">
-                                <tspan x="5" y="16" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF"
-                                    stroke-width="2px" stroke-linejoin="round" style="">Avocados</tspan>
+                                <tspan x="5" y="16" class="highcharts-text-outline" fill="#FFFFFF"
+                                    stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round" style="">Avocados
+                                </tspan>
                                 <tspan x="5" y="16">Avocados</tspan>
                             </text></g>
                     </g>
                     <g class="highcharts-legend" transform="translate(160,359)">
-                        <rect fill="none" class="highcharts-legend-box" rx="0" ry="0" x="0" y="0"
-                            width="687" height="26" visibility="visible"></rect>
+                        <rect fill="none" class="highcharts-legend-box" rx="0" ry="0" x="0"
+                            y="0" width="687" height="26" visibility="visible"></rect>
                         <g>
                             <g>
                                 <g class="highcharts-legend-item highcharts-pie-series highcharts-color-0"
@@ -458,8 +479,8 @@
                                         text-anchor="start" y="15">
                                         <tspan>Apples</tspan>
                                     </text>
-                                    <rect x="2" y="4" width="12" height="12" fill="#7cb5ec" rx="6"
-                                        ry="6" class="highcharts-point"></rect>
+                                    <rect x="2" y="4" width="12" height="12" fill="#7cb5ec"
+                                        rx="6" ry="6" class="highcharts-point"></rect>
                                 </g>
                                 <g class="highcharts-legend-item highcharts-pie-series highcharts-color-1"
                                     transform="translate(90.58944702148438,3)"><text x="21" y="15"
@@ -467,8 +488,8 @@
                                         text-anchor="start">
                                         <tspan>Pears</tspan>
                                     </text>
-                                    <rect x="2" y="4" width="12" height="12" fill="#434348" rx="6"
-                                        ry="6" class="highcharts-point"></rect>
+                                    <rect x="2" y="4" width="12" height="12" fill="#434348"
+                                        rx="6" ry="6" class="highcharts-point"></rect>
                                 </g>
                                 <g class="highcharts-legend-item highcharts-pie-series highcharts-color-2"
                                     transform="translate(165.29283142089844,3)"><text x="21" y="15"
@@ -476,8 +497,8 @@
                                         text-anchor="start">
                                         <tspan>Oranges</tspan>
                                     </text>
-                                    <rect x="2" y="4" width="12" height="12" fill="#90ed7d" rx="6"
-                                        ry="6" class="highcharts-point"></rect>
+                                    <rect x="2" y="4" width="12" height="12" fill="#90ed7d"
+                                        rx="6" ry="6" class="highcharts-point"></rect>
                                 </g>
                                 <g class="highcharts-legend-item highcharts-pie-series highcharts-color-3"
                                     transform="translate(256.59165954589844,3)"><text x="21" y="15"
@@ -485,8 +506,8 @@
                                         text-anchor="start">
                                         <tspan>Plums</tspan>
                                     </text>
-                                    <rect x="2" y="4" width="12" height="12" fill="#f7a35c" rx="6"
-                                        ry="6" class="highcharts-point"></rect>
+                                    <rect x="2" y="4" width="12" height="12" fill="#f7a35c"
+                                        rx="6" ry="6" class="highcharts-point"></rect>
                                 </g>
                                 <g class="highcharts-legend-item highcharts-pie-series highcharts-color-4"
                                     transform="translate(334.03338623046875,3)"><text x="21" y="15"
@@ -494,8 +515,8 @@
                                         text-anchor="start">
                                         <tspan>Bananas</tspan>
                                     </text>
-                                    <rect x="2" y="4" width="12" height="12" fill="#8085e9" rx="6"
-                                        ry="6" class="highcharts-point"></rect>
+                                    <rect x="2" y="4" width="12" height="12" fill="#8085e9"
+                                        rx="6" ry="6" class="highcharts-point"></rect>
                                 </g>
                                 <g class="highcharts-legend-item highcharts-pie-series highcharts-color-5"
                                     transform="translate(425.77622985839844,3)"><text x="21" y="15"
@@ -503,8 +524,8 @@
                                         text-anchor="start">
                                         <tspan>Peaches</tspan>
                                     </text>
-                                    <rect x="2" y="4" width="12" height="12" fill="#f15c80" rx="6"
-                                        ry="6" class="highcharts-point"></rect>
+                                    <rect x="2" y="4" width="12" height="12" fill="#f15c80"
+                                        rx="6" ry="6" class="highcharts-point"></rect>
                                 </g>
                                 <g class="highcharts-legend-item highcharts-pie-series highcharts-color-6"
                                     transform="translate(517.2864379882812,3)"><text x="21" y="15"
@@ -512,8 +533,8 @@
                                         text-anchor="start">
                                         <tspan>Prunes</tspan>
                                     </text>
-                                    <rect x="2" y="4" width="12" height="12" fill="#e4d354" rx="6"
-                                        ry="6" class="highcharts-point"></rect>
+                                    <rect x="2" y="4" width="12" height="12" fill="#e4d354"
+                                        rx="6" ry="6" class="highcharts-point"></rect>
                                 </g>
                                 <g class="highcharts-legend-item highcharts-pie-series highcharts-color-7"
                                     transform="translate(600.0591278076172,3)"><text x="21" y="15"
@@ -521,13 +542,14 @@
                                         text-anchor="start">
                                         <tspan>Avocados</tspan>
                                     </text>
-                                    <rect x="2" y="4" width="12" height="12" fill="#2b908f" rx="6"
-                                        ry="6" class="highcharts-point"></rect>
+                                    <rect x="2" y="4" width="12" height="12" fill="#2b908f"
+                                        rx="6" ry="6" class="highcharts-point"></rect>
                                 </g>
                             </g>
                         </g>
                     </g><text x="998" class="highcharts-credits" text-anchor="end"
-                        style="cursor:pointer;color:#999999;font-size:9px;fill:#999999;" y="395">Highcharts.com</text>
+                        style="cursor:pointer;color:#999999;font-size:9px;fill:#999999;"
+                        y="395">Highcharts.com</text>
                     <g class="highcharts-label highcharts-tooltip highcharts-color-2"
                         style="cursor:default;pointer-events:none;white-space:nowrap;" transform="translate(619,-9999)"
                         opacity="0" visibility="visible">
@@ -572,12 +594,14 @@
                             <rect x="0" y="0" width="988" height="324" fill="none"></rect>
                         </clipPath>
                     </defs>
-                    <rect fill="#ffffff" class="highcharts-background" x="0" y="0" width="1008" height="400"
-                        rx="0" ry="0"></rect>
-                    <rect fill="none" class="highcharts-plot-background" x="10" y="61" width="988" height="324">
+                    <rect fill="#ffffff" class="highcharts-background" x="0" y="0" width="1008"
+                        height="400" rx="0" ry="0"></rect>
+                    <rect fill="none" class="highcharts-plot-background" x="10" y="61"
+                        width="988" height="324">
                     </rect>
                     <g class="highcharts-pane-group"></g>
-                    <rect fill="none" class="highcharts-plot-border" x="10" y="61" width="988" height="324">
+                    <rect fill="none" class="highcharts-plot-border" x="10" y="61" width="988"
+                        height="324">
                     </rect>
                     <g class="highcharts-series-group">
                         <g class="highcharts-series highcharts-series-0 highcharts-pie-series  highcharts-tracker"
@@ -630,114 +654,125 @@
                     </text>
                     <g class="highcharts-data-labels highcharts-series-0 highcharts-pie-series  highcharts-tracker"
                         transform="translate(10,61) scale(1 1)" opacity="1" visibility="visible">
-                        <path fill="none" class="highcharts-data-label-connector highcharts-color-0" stroke="#7cb5ec"
-                            stroke-width="1"
+                        <path fill="none" class="highcharts-data-label-connector highcharts-color-0"
+                            stroke="#7cb5ec" stroke-width="1"
                             d="M 602.4888051595328 49.66684465784455 C 597.4888051595328 49.66684465784455 585.9186281851751 63.45564463398614 582.0619025270558 68.05191129270001 L 578.2051768689366 72.64817795141389">
                         </path>
-                        <path fill="none" class="highcharts-data-label-connector highcharts-color-1" stroke="#434348"
-                            stroke-width="1"
+                        <path fill="none" class="highcharts-data-label-connector highcharts-color-1"
+                            stroke="#434348" stroke-width="1"
                             d="M 659.3873463927711 187.03207458237296 C 654.3873463927711 187.03207458237296 636.4558418271195 185.46327121291512 630.478673638569 184.94033675642916 L 624.5015054500186 184.4174022999432">
                         </path>
-                        <path fill="none" class="highcharts-data-label-connector highcharts-color-2" stroke="#90ed7d"
-                            stroke-width="1"
+                        <path fill="none" class="highcharts-data-label-connector highcharts-color-2"
+                            stroke="#90ed7d" stroke-width="1"
                             d="M 644.9155537129006 241.04154014025258 C 639.9155537129006 241.04154014025258 623.6020135462409 233.43441142892 618.164166824021 230.8987018584758 L 612.7263201018011 228.3629922880316">
                         </path>
-                        <path fill="none" class="highcharts-data-label-connector highcharts-color-3" stroke="#f7a35c"
-                            stroke-width="1"
+                        <path fill="none" class="highcharts-data-label-connector highcharts-color-3"
+                            stroke="#f7a35c" stroke-width="1"
                             d="M 579.5 312.4300900092946 C 574.5 312.4300900092946 565.5 296.8416327411747 562.5 291.64548031846806 L 559.5 286.4493278957614">
                         </path>
-                        <path fill="none" class="highcharts-data-label-connector highcharts-color-4" stroke="#8085e9"
-                            stroke-width="1"
+                        <path fill="none" class="highcharts-data-label-connector highcharts-color-4"
+                            stroke="#8085e9" stroke-width="1"
                             d="M 385.51119484046734 296.3331553421556 C 390.51119484046734 296.3331553421556 402.081371814825 282.544355366014 405.9380974729442 277.9480887073001 L 409.7948231310634 273.3518220485862">
                         </path>
-                        <path fill="none" class="highcharts-data-label-connector highcharts-color-5" stroke="#f15c80"
-                            stroke-width="1"
+                        <path fill="none" class="highcharts-data-label-connector highcharts-color-5"
+                            stroke="#f15c80" stroke-width="1"
                             d="M 330.44595176503447 145.04264339562434 C 335.44595176503447 145.04264339562434 353.1724913192543 148.1683105936291 359.0813378373275 149.21019965963066 L 364.99018435540074 150.25208872563223">
                         </path>
-                        <path fill="none" class="highcharts-data-label-connector highcharts-color-6" stroke="#e4d354"
-                            stroke-width="1"
+                        <path fill="none" class="highcharts-data-label-connector highcharts-color-6"
+                            stroke="#e4d354" stroke-width="1"
                             d="M 374.3178305053484 60 C 379.3178305053484 60 402.0813718148248 63.45564463398625 405.93809747294404 68.05191129270011 L 409.79482313106325 72.64817795141397">
                         </path>
-                        <path fill="none" class="highcharts-data-label-connector highcharts-color-7" stroke="#2b908f"
-                            stroke-width="1"
+                        <path fill="none" class="highcharts-data-label-connector highcharts-color-7"
+                            stroke="#2b908f" stroke-width="1"
                             d="M 404.43050195253613 36 C 409.43050195253613 36 456.9888765503395 34.87260684066324 458.54179082095465 40.66816179839765 L 460.0947050915698 46.46371675613206">
                         </path>
-                        <path fill="none" class="highcharts-data-label-connector highcharts-color-8" stroke="#f45b5b"
-                            stroke-width="1"
+                        <path fill="none" class="highcharts-data-label-connector highcharts-color-8"
+                            stroke="#f45b5b" stroke-width="1"
                             d="M 474.96792541762704 12 C 479.96792541762704 12 481.53672878708494 30.544158172880387 482.05966324357087 36.52132636143086 L 482.5825977000568 42.49849454998133">
                         </path>
                         <g class="highcharts-label highcharts-data-label highcharts-data-label-color-0 "
                             transform="translate(607,40)"><text x="5"
                                 style="font-size:11px;font-weight:bold;color:#000000;fill:#000000;" y="16">
-                                <tspan x="5" y="16" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF"
-                                    stroke-width="2px" stroke-linejoin="round" style="">Bananas</tspan>
+                                <tspan x="5" y="16" class="highcharts-text-outline" fill="#FFFFFF"
+                                    stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round" style="">
+                                    Bananas</tspan>
                                 <tspan x="5" y="16">Bananas</tspan>
                             </text></g>
                         <g class="highcharts-label highcharts-data-label highcharts-data-label-color-1 "
                             transform="translate(664,177)"><text x="5"
                                 style="font-size:11px;font-weight:bold;color:#000000;fill:#000000;" y="16">
-                                <tspan x="5" y="16" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF"
-                                    stroke-width="2px" stroke-linejoin="round" style="">Kiwi</tspan>
+                                <tspan x="5" y="16" class="highcharts-text-outline" fill="#FFFFFF"
+                                    stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round" style="">Kiwi
+                                </tspan>
                                 <tspan x="5" y="16">Kiwi</tspan>
                             </text></g>
                         <g class="highcharts-label highcharts-data-label highcharts-data-label-color-2 "
                             transform="translate(650,231)"><text x="5"
                                 style="font-size:11px;font-weight:bold;color:#000000;fill:#000000;" y="16">
-                                <tspan x="5" y="16" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF"
-                                    stroke-width="2px" stroke-linejoin="round" style="">Mixed nuts</tspan>
+                                <tspan x="5" y="16" class="highcharts-text-outline" fill="#FFFFFF"
+                                    stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round" style="">Mixed
+                                    nuts</tspan>
                                 <tspan x="5" y="16">Mixed nuts</tspan>
                             </text></g>
                         <g class="highcharts-label highcharts-data-label highcharts-data-label-color-3 "
                             transform="translate(585,302)"><text x="5"
                                 style="font-size:11px;font-weight:bold;color:#000000;fill:#000000;" y="16">
-                                <tspan x="5" y="16" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF"
-                                    stroke-width="2px" stroke-linejoin="round" style="">Oranges</tspan>
+                                <tspan x="5" y="16" class="highcharts-text-outline" fill="#FFFFFF"
+                                    stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round" style="">
+                                    Oranges</tspan>
                                 <tspan x="5" y="16">Oranges</tspan>
                             </text></g>
                         <g class="highcharts-label highcharts-data-label highcharts-data-label-color-4 "
                             transform="translate(332,286)"><text x="5"
                                 style="font-size:11px;font-weight:bold;color:#000000;fill:#000000;" y="16">
-                                <tspan x="5" y="16" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF"
-                                    stroke-width="2px" stroke-linejoin="round" style="">Apples</tspan>
+                                <tspan x="5" y="16" class="highcharts-text-outline" fill="#FFFFFF"
+                                    stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round" style="">
+                                    Apples</tspan>
                                 <tspan x="5" y="16">Apples</tspan>
                             </text></g>
                         <g class="highcharts-label highcharts-data-label highcharts-data-label-color-5 "
                             transform="translate(284,135)"><text x="5"
                                 style="font-size:11px;font-weight:bold;color:#000000;fill:#000000;" y="16">
-                                <tspan x="5" y="16" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF"
-                                    stroke-width="2px" stroke-linejoin="round" style="">Pears</tspan>
+                                <tspan x="5" y="16" class="highcharts-text-outline" fill="#FFFFFF"
+                                    stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round" style="">Pears
+                                </tspan>
                                 <tspan x="5" y="16">Pears</tspan>
                             </text></g>
                         <g class="highcharts-label highcharts-data-label highcharts-data-label-color-6 "
                             transform="translate(290,50)"><text x="5"
                                 style="font-size:11px;font-weight:bold;color:#000000;fill:#000000;" y="16">
-                                <tspan x="5" y="16" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF"
-                                    stroke-width="2px" stroke-linejoin="round" style="">Clementines</tspan>
+                                <tspan x="5" y="16" class="highcharts-text-outline" fill="#FFFFFF"
+                                    stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round" style="">
+                                    Clementines</tspan>
                                 <tspan x="5" y="16">Clementines</tspan>
                             </text></g>
                         <g class="highcharts-label highcharts-data-label highcharts-data-label-color-7 "
                             transform="translate(314,26)"><text x="5"
                                 style="font-size:11px;font-weight:bold;color:#000000;fill:#000000;" y="16">
-                                <tspan x="5" y="16" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF"
-                                    stroke-width="2px" stroke-linejoin="round" style="">Reddish (bag)</tspan>
+                                <tspan x="5" y="16" class="highcharts-text-outline" fill="#FFFFFF"
+                                    stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round" style="">
+                                    Reddish (bag)</tspan>
                                 <tspan x="5" y="16">Reddish (bag)</tspan>
                             </text></g>
                         <g class="highcharts-label highcharts-data-label highcharts-data-label-color-8 "
                             transform="translate(376,2)"><text x="5"
                                 style="font-size:11px;font-weight:bold;color:#000000;fill:#000000;" y="16">
-                                <tspan x="5" y="16" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF"
-                                    stroke-width="2px" stroke-linejoin="round" style="">Grapes (bunch)</tspan>
+                                <tspan x="5" y="16" class="highcharts-text-outline" fill="#FFFFFF"
+                                    stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round" style="">
+                                    Grapes (bunch)</tspan>
                                 <tspan x="5" y="16">Grapes (bunch)</tspan>
                             </text></g>
                     </g>
                     <g class="highcharts-legend">
-                        <rect fill="none" class="highcharts-legend-box" rx="0" ry="0" x="0" y="0"
-                            width="8" height="8" visibility="hidden"></rect>
+                        <rect fill="none" class="highcharts-legend-box" rx="0" ry="0"
+                            x="0" y="0" width="8" height="8" visibility="hidden">
+                        </rect>
                         <g>
                             <g></g>
                         </g>
                     </g><text x="998" class="highcharts-credits" text-anchor="end"
-                        style="cursor:pointer;color:#999999;font-size:9px;fill:#999999;" y="395">Highcharts.com</text>
+                        style="cursor:pointer;color:#999999;font-size:9px;fill:#999999;"
+                        y="395">Highcharts.com</text>
                 </svg>
             </div>
         </div>
@@ -754,17 +789,20 @@
                     <desc>Created with Highcharts 6.0.7</desc>
                     <defs>
                         <clipPath id="highcharts-flm2yo6-12">
-                            <rect x="0" y="0" width="988" height="301" fill="none"></rect>
+                            <rect x="0" y="0" width="988" height="301" fill="none">
+                            </rect>
                         </clipPath>
                     </defs>
-                    <rect fill="#ffffff" class="highcharts-background" x="0" y="0" width="1008" height="400"
-                        rx="0" ry="0"></rect>
-                    <g class="highcharts-pane-group"></g><text x="504" text-anchor="middle" class="highcharts-title"
-                        style="color:#333333;font-size:18px;fill:#333333;" y="24">
-                        <tspan>Berapa bulan waktu yang Alumni butuhkan untuk mendapatkan pekerjaan pertama/berwiraswasta</tspan>
+                    <rect fill="#ffffff" class="highcharts-background" x="0" y="0"
+                        width="1008" height="400" rx="0" ry="0"></rect>
+                    <g class="highcharts-pane-group"></g><text x="504" text-anchor="middle"
+                        class="highcharts-title" style="color:#333333;font-size:18px;fill:#333333;" y="24">
+                        <tspan>Berapa bulan waktu yang Alumni butuhkan untuk mendapatkan pekerjaan pertama/berwiraswasta
+                        </tspan>
                     </text><text x="504" text-anchor="middle" class="highcharts-subtitle"
-                        style="color:#666666;fill:#666666;" y="45"></text><text x="998" class="highcharts-credits"
-                        text-anchor="end" style="cursor:pointer;color:#999999;font-size:9px;fill:#999999;"
+                        style="color:#666666;fill:#666666;" y="45"></text><text x="998"
+                        class="highcharts-credits" text-anchor="end"
+                        style="cursor:pointer;color:#999999;font-size:9px;fill:#999999;"
                         y="395">Highcharts.com</text>
                     <g class="highcharts-label highcharts-tooltip highcharts-color-1"
                         style="cursor:default;pointer-events:none;white-space:nowrap;" transform="translate(503,-9999)"
@@ -791,7 +829,8 @@
                             <tspan style="font-weight:bold" dx="0">71.5</tspan>
                         </text>
                     </g>
-                </svg></div>
+                </svg>
+            </div>
         </div>
     </div>
 
@@ -806,17 +845,20 @@
                     <desc>Created with Highcharts 6.0.7</desc>
                     <defs>
                         <clipPath id="highcharts-flm2yo6-12">
-                            <rect x="0" y="0" width="988" height="301" fill="none"></rect>
+                            <rect x="0" y="0" width="988" height="301" fill="none">
+                            </rect>
                         </clipPath>
                     </defs>
-                    <rect fill="#ffffff" class="highcharts-background" x="0" y="0" width="1008" height="400"
-                        rx="0" ry="0"></rect>
-                    <g class="highcharts-pane-group"></g><text x="504" text-anchor="middle" class="highcharts-title"
-                        style="color:#333333;font-size:18px;fill:#333333;" y="24">
-                        <tspan>Berapa bulan waktu yang Alumni butuhkan untuk mendapatkan pekerjaan pertama/berwiraswasta</tspan>
+                    <rect fill="#ffffff" class="highcharts-background" x="0" y="0"
+                        width="1008" height="400" rx="0" ry="0"></rect>
+                    <g class="highcharts-pane-group"></g><text x="504" text-anchor="middle"
+                        class="highcharts-title" style="color:#333333;font-size:18px;fill:#333333;" y="24">
+                        <tspan>Berapa bulan waktu yang Alumni butuhkan untuk mendapatkan pekerjaan pertama/berwiraswasta
+                        </tspan>
                     </text><text x="504" text-anchor="middle" class="highcharts-subtitle"
-                        style="color:#666666;fill:#666666;" y="45"></text><text x="998" class="highcharts-credits"
-                        text-anchor="end" style="cursor:pointer;color:#999999;font-size:9px;fill:#999999;"
+                        style="color:#666666;fill:#666666;" y="45"></text><text x="998"
+                        class="highcharts-credits" text-anchor="end"
+                        style="cursor:pointer;color:#999999;font-size:9px;fill:#999999;"
                         y="395">Highcharts.com</text>
                     <g class="highcharts-label highcharts-tooltip highcharts-color-1"
                         style="cursor:default;pointer-events:none;white-space:nowrap;" transform="translate(503,-9999)"
@@ -843,7 +885,8 @@
                             <tspan style="font-weight:bold" dx="0">71.5</tspan>
                         </text>
                     </g>
-                </svg></div>
+                </svg>
+            </div>
         </div>
     </div>
 
@@ -858,17 +901,19 @@
                     <desc>Created with Highcharts 6.0.7</desc>
                     <defs>
                         <clipPath id="highcharts-flm2yo6-12">
-                            <rect x="0" y="0" width="988" height="301" fill="none"></rect>
+                            <rect x="0" y="0" width="988" height="301" fill="none">
+                            </rect>
                         </clipPath>
                     </defs>
-                    <rect fill="#ffffff" class="highcharts-background" x="0" y="0" width="1008" height="400"
-                        rx="0" ry="0"></rect>
-                    <g class="highcharts-pane-group"></g><text x="504" text-anchor="middle" class="highcharts-title"
-                        style="color:#333333;font-size:18px;fill:#333333;" y="24">
+                    <rect fill="#ffffff" class="highcharts-background" x="0" y="0"
+                        width="1008" height="400" rx="0" ry="0"></rect>
+                    <g class="highcharts-pane-group"></g><text x="504" text-anchor="middle"
+                        class="highcharts-title" style="color:#333333;font-size:18px;fill:#333333;" y="24">
                         <tspan>Nama perusahaan/kantor tempat Alumni bekerja/berwiraswasta saat ini</tspan>
                     </text><text x="504" text-anchor="middle" class="highcharts-subtitle"
-                        style="color:#666666;fill:#666666;" y="45"></text><text x="998" class="highcharts-credits"
-                        text-anchor="end" style="cursor:pointer;color:#999999;font-size:9px;fill:#999999;"
+                        style="color:#666666;fill:#666666;" y="45"></text><text x="998"
+                        class="highcharts-credits" text-anchor="end"
+                        style="cursor:pointer;color:#999999;font-size:9px;fill:#999999;"
                         y="395">Highcharts.com</text>
                     <g class="highcharts-label highcharts-tooltip highcharts-color-1"
                         style="cursor:default;pointer-events:none;white-space:nowrap;" transform="translate(503,-9999)"
@@ -895,7 +940,8 @@
                             <tspan style="font-weight:bold" dx="0">71.5</tspan>
                         </text>
                     </g>
-                </svg></div>
+                </svg>
+            </div>
         </div>
     </div>
 
@@ -910,17 +956,19 @@
                     <desc>Created with Highcharts 6.0.7</desc>
                     <defs>
                         <clipPath id="highcharts-flm2yo6-12">
-                            <rect x="0" y="0" width="988" height="301" fill="none"></rect>
+                            <rect x="0" y="0" width="988" height="301" fill="none">
+                            </rect>
                         </clipPath>
                     </defs>
-                    <rect fill="#ffffff" class="highcharts-background" x="0" y="0" width="1008" height="400"
-                        rx="0" ry="0"></rect>
-                    <g class="highcharts-pane-group"></g><text x="504" text-anchor="middle" class="highcharts-title"
-                        style="color:#333333;font-size:18px;fill:#333333;" y="24">
+                    <rect fill="#ffffff" class="highcharts-background" x="0" y="0"
+                        width="1008" height="400" rx="0" ry="0"></rect>
+                    <g class="highcharts-pane-group"></g><text x="504" text-anchor="middle"
+                        class="highcharts-title" style="color:#333333;font-size:18px;fill:#333333;" y="24">
                         <tspan>Rata-rata pendapatan Alumni per bulan</tspan>
                     </text><text x="504" text-anchor="middle" class="highcharts-subtitle"
-                        style="color:#666666;fill:#666666;" y="45"></text><text x="998" class="highcharts-credits"
-                        text-anchor="end" style="cursor:pointer;color:#999999;font-size:9px;fill:#999999;"
+                        style="color:#666666;fill:#666666;" y="45"></text><text x="998"
+                        class="highcharts-credits" text-anchor="end"
+                        style="cursor:pointer;color:#999999;font-size:9px;fill:#999999;"
                         y="395">Highcharts.com</text>
                     <g class="highcharts-label highcharts-tooltip highcharts-color-1"
                         style="cursor:default;pointer-events:none;white-space:nowrap;" transform="translate(503,-9999)"
@@ -947,7 +995,8 @@
                             <tspan style="font-weight:bold" dx="0">71.5</tspan>
                         </text>
                     </g>
-                </svg></div>
+                </svg>
+            </div>
         </div>
     </div>
 
@@ -962,17 +1011,19 @@
                     <desc>Created with Highcharts 6.0.7</desc>
                     <defs>
                         <clipPath id="highcharts-flm2yo6-12">
-                            <rect x="0" y="0" width="988" height="301" fill="none"></rect>
+                            <rect x="0" y="0" width="988" height="301" fill="none">
+                            </rect>
                         </clipPath>
                     </defs>
-                    <rect fill="#ffffff" class="highcharts-background" x="0" y="0" width="1008" height="400"
-                        rx="0" ry="0"></rect>
-                    <g class="highcharts-pane-group"></g><text x="504" text-anchor="middle" class="highcharts-title"
-                        style="color:#333333;font-size:18px;fill:#333333;" y="24">
+                    <rect fill="#ffffff" class="highcharts-background" x="0" y="0"
+                        width="1008" height="400" rx="0" ry="0"></rect>
+                    <g class="highcharts-pane-group"></g><text x="504" text-anchor="middle"
+                        class="highcharts-title" style="color:#333333;font-size:18px;fill:#333333;" y="24">
                         <tspan>Lokasi tempat Alumni bekerja/berwiraswasta</tspan>
                     </text><text x="504" text-anchor="middle" class="highcharts-subtitle"
-                        style="color:#666666;fill:#666666;" y="45"></text><text x="998" class="highcharts-credits"
-                        text-anchor="end" style="cursor:pointer;color:#999999;font-size:9px;fill:#999999;"
+                        style="color:#666666;fill:#666666;" y="45"></text><text x="998"
+                        class="highcharts-credits" text-anchor="end"
+                        style="cursor:pointer;color:#999999;font-size:9px;fill:#999999;"
                         y="395">Highcharts.com</text>
                     <g class="highcharts-label highcharts-tooltip highcharts-color-1"
                         style="cursor:default;pointer-events:none;white-space:nowrap;" transform="translate(503,-9999)"
@@ -999,7 +1050,8 @@
                             <tspan style="font-weight:bold" dx="0">71.5</tspan>
                         </text>
                     </g>
-                </svg></div>
+                </svg>
+            </div>
         </div>
     </div>
 
@@ -1014,16 +1066,18 @@
                     <desc>Created with Highcharts 6.0.7</desc>
                     <defs>
                         <clipPath id="highcharts-flm2yo6-14">
-                            <rect x="0" y="0" width="988" height="324" fill="none"></rect>
+                            <rect x="0" y="0" width="988" height="324" fill="none">
+                            </rect>
                         </clipPath>
                     </defs>
-                    <rect fill="#ffffff" class="highcharts-background" x="0" y="0" width="1008" height="400"
-                        rx="0" ry="0"></rect>
-                    <rect fill="none" class="highcharts-plot-background" x="10" y="61" width="988"
-                        height="324">
+                    <rect fill="#ffffff" class="highcharts-background" x="0" y="0"
+                        width="1008" height="400" rx="0" ry="0"></rect>
+                    <rect fill="none" class="highcharts-plot-background" x="10" y="61"
+                        width="988" height="324">
                     </rect>
                     <g class="highcharts-pane-group"></g>
-                    <rect fill="none" class="highcharts-plot-border" x="10" y="61" width="988" height="324">
+                    <rect fill="none" class="highcharts-plot-border" x="10" y="61"
+                        width="988" height="324">
                     </rect>
                     <g class="highcharts-series-group">
                         <g class="highcharts-series highcharts-series-0 highcharts-pie-series  highcharts-tracker"
@@ -1112,75 +1166,86 @@
                         <g class="highcharts-label highcharts-data-label highcharts-data-label-color-0 "
                             transform="translate(607,40)"><text x="5"
                                 style="font-size:11px;font-weight:bold;color:#000000;fill:#000000;" y="16">
-                                <tspan x="5" y="16" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF"
-                                    stroke-width="2px" stroke-linejoin="round" style="">Bananas</tspan>
+                                <tspan x="5" y="16" class="highcharts-text-outline" fill="#FFFFFF"
+                                    stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round" style="">
+                                    Bananas</tspan>
                                 <tspan x="5" y="16">Bananas</tspan>
                             </text></g>
                         <g class="highcharts-label highcharts-data-label highcharts-data-label-color-1 "
                             transform="translate(664,177)"><text x="5"
                                 style="font-size:11px;font-weight:bold;color:#000000;fill:#000000;" y="16">
-                                <tspan x="5" y="16" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF"
-                                    stroke-width="2px" stroke-linejoin="round" style="">Kiwi</tspan>
+                                <tspan x="5" y="16" class="highcharts-text-outline" fill="#FFFFFF"
+                                    stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round" style="">Kiwi
+                                </tspan>
                                 <tspan x="5" y="16">Kiwi</tspan>
                             </text></g>
                         <g class="highcharts-label highcharts-data-label highcharts-data-label-color-2 "
                             transform="translate(650,231)"><text x="5"
                                 style="font-size:11px;font-weight:bold;color:#000000;fill:#000000;" y="16">
-                                <tspan x="5" y="16" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF"
-                                    stroke-width="2px" stroke-linejoin="round" style="">Mixed nuts</tspan>
+                                <tspan x="5" y="16" class="highcharts-text-outline" fill="#FFFFFF"
+                                    stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round" style="">Mixed
+                                    nuts</tspan>
                                 <tspan x="5" y="16">Mixed nuts</tspan>
                             </text></g>
                         <g class="highcharts-label highcharts-data-label highcharts-data-label-color-3 "
                             transform="translate(585,302)"><text x="5"
                                 style="font-size:11px;font-weight:bold;color:#000000;fill:#000000;" y="16">
-                                <tspan x="5" y="16" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF"
-                                    stroke-width="2px" stroke-linejoin="round" style="">Oranges</tspan>
+                                <tspan x="5" y="16" class="highcharts-text-outline" fill="#FFFFFF"
+                                    stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round" style="">
+                                    Oranges</tspan>
                                 <tspan x="5" y="16">Oranges</tspan>
                             </text></g>
                         <g class="highcharts-label highcharts-data-label highcharts-data-label-color-4 "
                             transform="translate(332,286)"><text x="5"
                                 style="font-size:11px;font-weight:bold;color:#000000;fill:#000000;" y="16">
-                                <tspan x="5" y="16" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF"
-                                    stroke-width="2px" stroke-linejoin="round" style="">Apples</tspan>
+                                <tspan x="5" y="16" class="highcharts-text-outline" fill="#FFFFFF"
+                                    stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round" style="">
+                                    Apples</tspan>
                                 <tspan x="5" y="16">Apples</tspan>
                             </text></g>
                         <g class="highcharts-label highcharts-data-label highcharts-data-label-color-5 "
                             transform="translate(284,135)"><text x="5"
                                 style="font-size:11px;font-weight:bold;color:#000000;fill:#000000;" y="16">
-                                <tspan x="5" y="16" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF"
-                                    stroke-width="2px" stroke-linejoin="round" style="">Pears</tspan>
+                                <tspan x="5" y="16" class="highcharts-text-outline" fill="#FFFFFF"
+                                    stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round" style="">Pears
+                                </tspan>
                                 <tspan x="5" y="16">Pears</tspan>
                             </text></g>
                         <g class="highcharts-label highcharts-data-label highcharts-data-label-color-6 "
                             transform="translate(290,50)"><text x="5"
                                 style="font-size:11px;font-weight:bold;color:#000000;fill:#000000;" y="16">
-                                <tspan x="5" y="16" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF"
-                                    stroke-width="2px" stroke-linejoin="round" style="">Clementines</tspan>
+                                <tspan x="5" y="16" class="highcharts-text-outline" fill="#FFFFFF"
+                                    stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round" style="">
+                                    Clementines</tspan>
                                 <tspan x="5" y="16">Clementines</tspan>
                             </text></g>
                         <g class="highcharts-label highcharts-data-label highcharts-data-label-color-7 "
                             transform="translate(314,26)"><text x="5"
                                 style="font-size:11px;font-weight:bold;color:#000000;fill:#000000;" y="16">
-                                <tspan x="5" y="16" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF"
-                                    stroke-width="2px" stroke-linejoin="round" style="">Reddish (bag)</tspan>
+                                <tspan x="5" y="16" class="highcharts-text-outline" fill="#FFFFFF"
+                                    stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round" style="">
+                                    Reddish (bag)</tspan>
                                 <tspan x="5" y="16">Reddish (bag)</tspan>
                             </text></g>
                         <g class="highcharts-label highcharts-data-label highcharts-data-label-color-8 "
                             transform="translate(376,2)"><text x="5"
                                 style="font-size:11px;font-weight:bold;color:#000000;fill:#000000;" y="16">
-                                <tspan x="5" y="16" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF"
-                                    stroke-width="2px" stroke-linejoin="round" style="">Grapes (bunch)</tspan>
+                                <tspan x="5" y="16" class="highcharts-text-outline" fill="#FFFFFF"
+                                    stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round" style="">
+                                    Grapes (bunch)</tspan>
                                 <tspan x="5" y="16">Grapes (bunch)</tspan>
                             </text></g>
                     </g>
                     <g class="highcharts-legend">
-                        <rect fill="none" class="highcharts-legend-box" rx="0" ry="0" x="0" y="0"
-                            width="8" height="8" visibility="hidden"></rect>
+                        <rect fill="none" class="highcharts-legend-box" rx="0" ry="0"
+                            x="0" y="0" width="8" height="8" visibility="hidden">
+                        </rect>
                         <g>
                             <g></g>
                         </g>
                     </g><text x="998" class="highcharts-credits" text-anchor="end"
-                        style="cursor:pointer;color:#999999;font-size:9px;fill:#999999;" y="395">Highcharts.com</text>
+                        style="cursor:pointer;color:#999999;font-size:9px;fill:#999999;"
+                        y="395">Highcharts.com</text>
                 </svg>
             </div>
         </div>
@@ -1197,17 +1262,19 @@
                     <desc>Created with Highcharts 6.0.7</desc>
                     <defs>
                         <clipPath id="highcharts-flm2yo6-12">
-                            <rect x="0" y="0" width="988" height="301" fill="none"></rect>
+                            <rect x="0" y="0" width="988" height="301" fill="none">
+                            </rect>
                         </clipPath>
                     </defs>
-                    <rect fill="#ffffff" class="highcharts-background" x="0" y="0" width="1008" height="400"
-                        rx="0" ry="0"></rect>
-                    <g class="highcharts-pane-group"></g><text x="504" text-anchor="middle" class="highcharts-title"
-                        style="color:#333333;font-size:18px;fill:#333333;" y="24">
+                    <rect fill="#ffffff" class="highcharts-background" x="0" y="0"
+                        width="1008" height="400" rx="0" ry="0"></rect>
+                    <g class="highcharts-pane-group"></g><text x="504" text-anchor="middle"
+                        class="highcharts-title" style="color:#333333;font-size:18px;fill:#333333;" y="24">
                         <tspan>Tingkatan tempat kerja Alumni</tspan>
                     </text><text x="504" text-anchor="middle" class="highcharts-subtitle"
-                        style="color:#666666;fill:#666666;" y="45"></text><text x="998" class="highcharts-credits"
-                        text-anchor="end" style="cursor:pointer;color:#999999;font-size:9px;fill:#999999;"
+                        style="color:#666666;fill:#666666;" y="45"></text><text x="998"
+                        class="highcharts-credits" text-anchor="end"
+                        style="cursor:pointer;color:#999999;font-size:9px;fill:#999999;"
                         y="395">Highcharts.com</text>
                     <g class="highcharts-label highcharts-tooltip highcharts-color-1"
                         style="cursor:default;pointer-events:none;white-space:nowrap;" transform="translate(503,-9999)"
@@ -1234,7 +1301,8 @@
                             <tspan style="font-weight:bold" dx="0">71.5</tspan>
                         </text>
                     </g>
-                </svg></div>
+                </svg>
+            </div>
         </div>
     </div>
 
@@ -1249,17 +1317,19 @@
                     <desc>Created with Highcharts 6.0.7</desc>
                     <defs>
                         <clipPath id="highcharts-flm2yo6-12">
-                            <rect x="0" y="0" width="988" height="301" fill="none"></rect>
+                            <rect x="0" y="0" width="988" height="301" fill="none">
+                            </rect>
                         </clipPath>
                     </defs>
-                    <rect fill="#ffffff" class="highcharts-background" x="0" y="0" width="1008" height="400"
-                        rx="0" ry="0"></rect>
-                    <g class="highcharts-pane-group"></g><text x="504" text-anchor="middle" class="highcharts-title"
-                        style="color:#333333;font-size:18px;fill:#333333;" y="24">
+                    <rect fill="#ffffff" class="highcharts-background" x="0" y="0"
+                        width="1008" height="400" rx="0" ry="0"></rect>
+                    <g class="highcharts-pane-group"></g><text x="504" text-anchor="middle"
+                        class="highcharts-title" style="color:#333333;font-size:18px;fill:#333333;" y="24">
                         <tspan>Lokasi Anda melanjutkan studi</tspan>
                     </text><text x="504" text-anchor="middle" class="highcharts-subtitle"
-                        style="color:#666666;fill:#666666;" y="45"></text><text x="998" class="highcharts-credits"
-                        text-anchor="end" style="cursor:pointer;color:#999999;font-size:9px;fill:#999999;"
+                        style="color:#666666;fill:#666666;" y="45"></text><text x="998"
+                        class="highcharts-credits" text-anchor="end"
+                        style="cursor:pointer;color:#999999;font-size:9px;fill:#999999;"
                         y="395">Highcharts.com</text>
                     <g class="highcharts-label highcharts-tooltip highcharts-color-1"
                         style="cursor:default;pointer-events:none;white-space:nowrap;" transform="translate(503,-9999)"
@@ -1286,7 +1356,8 @@
                             <tspan style="font-weight:bold" dx="0">71.5</tspan>
                         </text>
                     </g>
-                </svg></div>
+                </svg>
+            </div>
         </div>
     </div>
 
@@ -1301,17 +1372,19 @@
                     <desc>Created with Highcharts 6.0.7</desc>
                     <defs>
                         <clipPath id="highcharts-flm2yo6-12">
-                            <rect x="0" y="0" width="988" height="301" fill="none"></rect>
+                            <rect x="0" y="0" width="988" height="301" fill="none">
+                            </rect>
                         </clipPath>
                     </defs>
-                    <rect fill="#ffffff" class="highcharts-background" x="0" y="0" width="1008" height="400"
-                        rx="0" ry="0"></rect>
-                    <g class="highcharts-pane-group"></g><text x="504" text-anchor="middle" class="highcharts-title"
-                        style="color:#333333;font-size:18px;fill:#333333;" y="24">
+                    <rect fill="#ffffff" class="highcharts-background" x="0" y="0"
+                        width="1008" height="400" rx="0" ry="0"></rect>
+                    <g class="highcharts-pane-group"></g><text x="504" text-anchor="middle"
+                        class="highcharts-title" style="color:#333333;font-size:18px;fill:#333333;" y="24">
                         <tspan>Sumber biaya studi lanjut Alumni</tspan>
                     </text><text x="504" text-anchor="middle" class="highcharts-subtitle"
-                        style="color:#666666;fill:#666666;" y="45"></text><text x="998" class="highcharts-credits"
-                        text-anchor="end" style="cursor:pointer;color:#999999;font-size:9px;fill:#999999;"
+                        style="color:#666666;fill:#666666;" y="45"></text><text x="998"
+                        class="highcharts-credits" text-anchor="end"
+                        style="cursor:pointer;color:#999999;font-size:9px;fill:#999999;"
                         y="395">Highcharts.com</text>
                     <g class="highcharts-label highcharts-tooltip highcharts-color-1"
                         style="cursor:default;pointer-events:none;white-space:nowrap;" transform="translate(503,-9999)"
@@ -1338,7 +1411,8 @@
                             <tspan style="font-weight:bold" dx="0">71.5</tspan>
                         </text>
                     </g>
-                </svg></div>
+                </svg>
+            </div>
         </div>
     </div>
 
@@ -1353,17 +1427,19 @@
                     <desc>Created with Highcharts 6.0.7</desc>
                     <defs>
                         <clipPath id="highcharts-flm2yo6-12">
-                            <rect x="0" y="0" width="988" height="301" fill="none"></rect>
+                            <rect x="0" y="0" width="988" height="301" fill="none">
+                            </rect>
                         </clipPath>
                     </defs>
-                    <rect fill="#ffffff" class="highcharts-background" x="0" y="0" width="1008" height="400"
-                        rx="0" ry="0"></rect>
-                    <g class="highcharts-pane-group"></g><text x="504" text-anchor="middle" class="highcharts-title"
-                        style="color:#333333;font-size:18px;fill:#333333;" y="24">
+                    <rect fill="#ffffff" class="highcharts-background" x="0" y="0"
+                        width="1008" height="400" rx="0" ry="0"></rect>
+                    <g class="highcharts-pane-group"></g><text x="504" text-anchor="middle"
+                        class="highcharts-title" style="color:#333333;font-size:18px;fill:#333333;" y="24">
                         <tspan>Kapan Alumni memulai studi lanjut</tspan>
                     </text><text x="504" text-anchor="middle" class="highcharts-subtitle"
-                        style="color:#666666;fill:#666666;" y="45"></text><text x="998" class="highcharts-credits"
-                        text-anchor="end" style="cursor:pointer;color:#999999;font-size:9px;fill:#999999;"
+                        style="color:#666666;fill:#666666;" y="45"></text><text x="998"
+                        class="highcharts-credits" text-anchor="end"
+                        style="cursor:pointer;color:#999999;font-size:9px;fill:#999999;"
                         y="395">Highcharts.com</text>
                     <g class="highcharts-label highcharts-tooltip highcharts-color-1"
                         style="cursor:default;pointer-events:none;white-space:nowrap;" transform="translate(503,-9999)"
@@ -1390,7 +1466,8 @@
                             <tspan style="font-weight:bold" dx="0">71.5</tspan>
                         </text>
                     </g>
-                </svg></div>
+                </svg>
+            </div>
         </div>
     </div>
 
@@ -1405,17 +1482,19 @@
                     <desc>Created with Highcharts 6.0.7</desc>
                     <defs>
                         <clipPath id="highcharts-flm2yo6-12">
-                            <rect x="0" y="0" width="988" height="301" fill="none"></rect>
+                            <rect x="0" y="0" width="988" height="301" fill="none">
+                            </rect>
                         </clipPath>
                     </defs>
-                    <rect fill="#ffffff" class="highcharts-background" x="0" y="0" width="1008" height="400"
-                        rx="0" ry="0"></rect>
-                    <g class="highcharts-pane-group"></g><text x="504" text-anchor="middle" class="highcharts-title"
-                        style="color:#333333;font-size:18px;fill:#333333;" y="24">
+                    <rect fill="#ffffff" class="highcharts-background" x="0" y="0"
+                        width="1008" height="400" rx="0" ry="0"></rect>
+                    <g class="highcharts-pane-group"></g><text x="504" text-anchor="middle"
+                        class="highcharts-title" style="color:#333333;font-size:18px;fill:#333333;" y="24">
                         <tspan>Nama Perguruan Tinggi tempat Alumni melanjutkan studi</tspan>
                     </text><text x="504" text-anchor="middle" class="highcharts-subtitle"
-                        style="color:#666666;fill:#666666;" y="45"></text><text x="998" class="highcharts-credits"
-                        text-anchor="end" style="cursor:pointer;color:#999999;font-size:9px;fill:#999999;"
+                        style="color:#666666;fill:#666666;" y="45"></text><text x="998"
+                        class="highcharts-credits" text-anchor="end"
+                        style="cursor:pointer;color:#999999;font-size:9px;fill:#999999;"
                         y="395">Highcharts.com</text>
                     <g class="highcharts-label highcharts-tooltip highcharts-color-1"
                         style="cursor:default;pointer-events:none;white-space:nowrap;" transform="translate(503,-9999)"
@@ -1442,7 +1521,8 @@
                             <tspan style="font-weight:bold" dx="0">71.5</tspan>
                         </text>
                     </g>
-                </svg></div>
+                </svg>
+            </div>
         </div>
     </div>
 
@@ -1457,17 +1537,19 @@
                     <desc>Created with Highcharts 6.0.7</desc>
                     <defs>
                         <clipPath id="highcharts-flm2yo6-12">
-                            <rect x="0" y="0" width="988" height="301" fill="none"></rect>
+                            <rect x="0" y="0" width="988" height="301" fill="none">
+                            </rect>
                         </clipPath>
                     </defs>
-                    <rect fill="#ffffff" class="highcharts-background" x="0" y="0" width="1008" height="400"
-                        rx="0" ry="0"></rect>
-                    <g class="highcharts-pane-group"></g><text x="504" text-anchor="middle" class="highcharts-title"
-                        style="color:#333333;font-size:18px;fill:#333333;" y="24">
+                    <rect fill="#ffffff" class="highcharts-background" x="0" y="0"
+                        width="1008" height="400" rx="0" ry="0"></rect>
+                    <g class="highcharts-pane-group"></g><text x="504" text-anchor="middle"
+                        class="highcharts-title" style="color:#333333;font-size:18px;fill:#333333;" y="24">
                         <tspan>Program studi yang Alumni ambil dalam melanjutkan studi</tspan>
                     </text><text x="504" text-anchor="middle" class="highcharts-subtitle"
-                        style="color:#666666;fill:#666666;" y="45"></text><text x="998" class="highcharts-credits"
-                        text-anchor="end" style="cursor:pointer;color:#999999;font-size:9px;fill:#999999;"
+                        style="color:#666666;fill:#666666;" y="45"></text><text x="998"
+                        class="highcharts-credits" text-anchor="end"
+                        style="cursor:pointer;color:#999999;font-size:9px;fill:#999999;"
                         y="395">Highcharts.com</text>
                     <g class="highcharts-label highcharts-tooltip highcharts-color-1"
                         style="cursor:default;pointer-events:none;white-space:nowrap;" transform="translate(503,-9999)"
@@ -1494,7 +1576,8 @@
                             <tspan style="font-weight:bold" dx="0">71.5</tspan>
                         </text>
                     </g>
-                </svg></div>
+                </svg>
+            </div>
         </div>
     </div>
 
@@ -1509,17 +1592,19 @@
                     <desc>Created with Highcharts 6.0.7</desc>
                     <defs>
                         <clipPath id="highcharts-flm2yo6-12">
-                            <rect x="0" y="0" width="988" height="301" fill="none"></rect>
+                            <rect x="0" y="0" width="988" height="301" fill="none">
+                            </rect>
                         </clipPath>
                     </defs>
-                    <rect fill="#ffffff" class="highcharts-background" x="0" y="0" width="1008" height="400"
-                        rx="0" ry="0"></rect>
-                    <g class="highcharts-pane-group"></g><text x="504" text-anchor="middle" class="highcharts-title"
-                        style="color:#333333;font-size:18px;fill:#333333;" y="24">
+                    <rect fill="#ffffff" class="highcharts-background" x="0" y="0"
+                        width="1008" height="400" rx="0" ry="0"></rect>
+                    <g class="highcharts-pane-group"></g><text x="504" text-anchor="middle"
+                        class="highcharts-title" style="color:#333333;font-size:18px;fill:#333333;" y="24">
                         <tspan>Alasan Alumni melanjutkan studi</tspan>
                     </text><text x="504" text-anchor="middle" class="highcharts-subtitle"
-                        style="color:#666666;fill:#666666;" y="45"></text><text x="998" class="highcharts-credits"
-                        text-anchor="end" style="cursor:pointer;color:#999999;font-size:9px;fill:#999999;"
+                        style="color:#666666;fill:#666666;" y="45"></text><text x="998"
+                        class="highcharts-credits" text-anchor="end"
+                        style="cursor:pointer;color:#999999;font-size:9px;fill:#999999;"
                         y="395">Highcharts.com</text>
                     <g class="highcharts-label highcharts-tooltip highcharts-color-1"
                         style="cursor:default;pointer-events:none;white-space:nowrap;" transform="translate(503,-9999)"
@@ -1546,7 +1631,8 @@
                             <tspan style="font-weight:bold" dx="0">71.5</tspan>
                         </text>
                     </g>
-                </svg></div>
+                </svg>
+            </div>
         </div>
     </div>
 
@@ -1561,17 +1647,19 @@
                     <desc>Created with Highcharts 6.0.7</desc>
                     <defs>
                         <clipPath id="highcharts-flm2yo6-12">
-                            <rect x="0" y="0" width="988" height="301" fill="none"></rect>
+                            <rect x="0" y="0" width="988" height="301" fill="none">
+                            </rect>
                         </clipPath>
                     </defs>
-                    <rect fill="#ffffff" class="highcharts-background" x="0" y="0" width="1008" height="400"
-                        rx="0" ry="0"></rect>
-                    <g class="highcharts-pane-group"></g><text x="504" text-anchor="middle" class="highcharts-title"
-                        style="color:#333333;font-size:18px;fill:#333333;" y="24">
+                    <rect fill="#ffffff" class="highcharts-background" x="0" y="0"
+                        width="1008" height="400" rx="0" ry="0"></rect>
+                    <g class="highcharts-pane-group"></g><text x="504" text-anchor="middle"
+                        class="highcharts-title" style="color:#333333;font-size:18px;fill:#333333;" y="24">
                         <tspan>Sumberdana dalam pembiayaan kuliah alumni</tspan>
                     </text><text x="504" text-anchor="middle" class="highcharts-subtitle"
-                        style="color:#666666;fill:#666666;" y="45"></text><text x="998" class="highcharts-credits"
-                        text-anchor="end" style="cursor:pointer;color:#999999;font-size:9px;fill:#999999;"
+                        style="color:#666666;fill:#666666;" y="45"></text><text x="998"
+                        class="highcharts-credits" text-anchor="end"
+                        style="cursor:pointer;color:#999999;font-size:9px;fill:#999999;"
                         y="395">Highcharts.com</text>
                     <g class="highcharts-label highcharts-tooltip highcharts-color-1"
                         style="cursor:default;pointer-events:none;white-space:nowrap;" transform="translate(503,-9999)"
@@ -1598,7 +1686,8 @@
                             <tspan style="font-weight:bold" dx="0">71.5</tspan>
                         </text>
                     </g>
-                </svg></div>
+                </svg>
+            </div>
         </div>
     </div>
 
@@ -1613,17 +1702,19 @@
                     <desc>Created with Highcharts 6.0.7</desc>
                     <defs>
                         <clipPath id="highcharts-flm2yo6-12">
-                            <rect x="0" y="0" width="988" height="301" fill="none"></rect>
+                            <rect x="0" y="0" width="988" height="301" fill="none">
+                            </rect>
                         </clipPath>
                     </defs>
-                    <rect fill="#ffffff" class="highcharts-background" x="0" y="0" width="1008" height="400"
-                        rx="0" ry="0"></rect>
-                    <g class="highcharts-pane-group"></g><text x="504" text-anchor="middle" class="highcharts-title"
-                        style="color:#333333;font-size:18px;fill:#333333;" y="24">
+                    <rect fill="#ffffff" class="highcharts-background" x="0" y="0"
+                        width="1008" height="400" rx="0" ry="0"></rect>
+                    <g class="highcharts-pane-group"></g><text x="504" text-anchor="middle"
+                        class="highcharts-title" style="color:#333333;font-size:18px;fill:#333333;" y="24">
                         <tspan>Seberapa erat hubungan antara bidang studi dengan pekerjaan alumni</tspan>
                     </text><text x="504" text-anchor="middle" class="highcharts-subtitle"
-                        style="color:#666666;fill:#666666;" y="45"></text><text x="998" class="highcharts-credits"
-                        text-anchor="end" style="cursor:pointer;color:#999999;font-size:9px;fill:#999999;"
+                        style="color:#666666;fill:#666666;" y="45"></text><text x="998"
+                        class="highcharts-credits" text-anchor="end"
+                        style="cursor:pointer;color:#999999;font-size:9px;fill:#999999;"
                         y="395">Highcharts.com</text>
                     <g class="highcharts-label highcharts-tooltip highcharts-color-1"
                         style="cursor:default;pointer-events:none;white-space:nowrap;" transform="translate(503,-9999)"
@@ -1650,7 +1741,8 @@
                             <tspan style="font-weight:bold" dx="0">71.5</tspan>
                         </text>
                     </g>
-                </svg></div>
+                </svg>
+            </div>
         </div>
     </div>
 
@@ -1665,17 +1757,19 @@
                     <desc>Created with Highcharts 6.0.7</desc>
                     <defs>
                         <clipPath id="highcharts-flm2yo6-12">
-                            <rect x="0" y="0" width="988" height="301" fill="none"></rect>
+                            <rect x="0" y="0" width="988" height="301" fill="none">
+                            </rect>
                         </clipPath>
                     </defs>
-                    <rect fill="#ffffff" class="highcharts-background" x="0" y="0" width="1008" height="400"
-                        rx="0" ry="0"></rect>
-                    <g class="highcharts-pane-group"></g><text x="504" text-anchor="middle" class="highcharts-title"
-                        style="color:#333333;font-size:18px;fill:#333333;" y="24">
+                    <rect fill="#ffffff" class="highcharts-background" x="0" y="0"
+                        width="1008" height="400" rx="0" ry="0"></rect>
+                    <g class="highcharts-pane-group"></g><text x="504" text-anchor="middle"
+                        class="highcharts-title" style="color:#333333;font-size:18px;fill:#333333;" y="24">
                         <tspan>Tingkat pendidikan tepat/sesuai untuk pekerjaan alumni saat ini</tspan>
                     </text><text x="504" text-anchor="middle" class="highcharts-subtitle"
-                        style="color:#666666;fill:#666666;" y="45"></text><text x="998" class="highcharts-credits"
-                        text-anchor="end" style="cursor:pointer;color:#999999;font-size:9px;fill:#999999;"
+                        style="color:#666666;fill:#666666;" y="45"></text><text x="998"
+                        class="highcharts-credits" text-anchor="end"
+                        style="cursor:pointer;color:#999999;font-size:9px;fill:#999999;"
                         y="395">Highcharts.com</text>
                     <g class="highcharts-label highcharts-tooltip highcharts-color-1"
                         style="cursor:default;pointer-events:none;white-space:nowrap;" transform="translate(503,-9999)"
@@ -1702,7 +1796,8 @@
                             <tspan style="font-weight:bold" dx="0">71.5</tspan>
                         </text>
                     </g>
-                </svg></div>
+                </svg>
+            </div>
         </div>
     </div>
 
@@ -1717,17 +1812,19 @@
                     <desc>Created with Highcharts 6.0.7</desc>
                     <defs>
                         <clipPath id="highcharts-flm2yo6-12">
-                            <rect x="0" y="0" width="988" height="301" fill="none"></rect>
+                            <rect x="0" y="0" width="988" height="301" fill="none">
+                            </rect>
                         </clipPath>
                     </defs>
-                    <rect fill="#ffffff" class="highcharts-background" x="0" y="0" width="1008" height="400"
-                        rx="0" ry="0"></rect>
-                    <g class="highcharts-pane-group"></g><text x="504" text-anchor="middle" class="highcharts-title"
-                        style="color:#333333;font-size:18px;fill:#333333;" y="24">
+                    <rect fill="#ffffff" class="highcharts-background" x="0" y="0"
+                        width="1008" height="400" rx="0" ry="0"></rect>
+                    <g class="highcharts-pane-group"></g><text x="504" text-anchor="middle"
+                        class="highcharts-title" style="color:#333333;font-size:18px;fill:#333333;" y="24">
                         <tspan>(A) Tingkat kompetensi yang alumni kuasai pada saat lulus</tspan>
                     </text><text x="504" text-anchor="middle" class="highcharts-subtitle"
-                        style="color:#666666;fill:#666666;" y="45"></text><text x="998" class="highcharts-credits"
-                        text-anchor="end" style="cursor:pointer;color:#999999;font-size:9px;fill:#999999;"
+                        style="color:#666666;fill:#666666;" y="45"></text><text x="998"
+                        class="highcharts-credits" text-anchor="end"
+                        style="cursor:pointer;color:#999999;font-size:9px;fill:#999999;"
                         y="395">Highcharts.com</text>
                     <g class="highcharts-label highcharts-tooltip highcharts-color-1"
                         style="cursor:default;pointer-events:none;white-space:nowrap;" transform="translate(503,-9999)"
@@ -1754,7 +1851,8 @@
                             <tspan style="font-weight:bold" dx="0">71.5</tspan>
                         </text>
                     </g>
-                </svg></div>
+                </svg>
+            </div>
         </div>
     </div>
 
@@ -1769,17 +1867,19 @@
                     <desc>Created with Highcharts 6.0.7</desc>
                     <defs>
                         <clipPath id="highcharts-flm2yo6-12">
-                            <rect x="0" y="0" width="988" height="301" fill="none"></rect>
+                            <rect x="0" y="0" width="988" height="301" fill="none">
+                            </rect>
                         </clipPath>
                     </defs>
-                    <rect fill="#ffffff" class="highcharts-background" x="0" y="0" width="1008" height="400"
-                        rx="0" ry="0"></rect>
-                    <g class="highcharts-pane-group"></g><text x="504" text-anchor="middle" class="highcharts-title"
-                        style="color:#333333;font-size:18px;fill:#333333;" y="24">
+                    <rect fill="#ffffff" class="highcharts-background" x="0" y="0"
+                        width="1008" height="400" rx="0" ry="0"></rect>
+                    <g class="highcharts-pane-group"></g><text x="504" text-anchor="middle"
+                        class="highcharts-title" style="color:#333333;font-size:18px;fill:#333333;" y="24">
                         <tspan>(A) Tingkat kompetensi yang alumni kuasai pada saat lulus</tspan>
                     </text><text x="504" text-anchor="middle" class="highcharts-subtitle"
-                        style="color:#666666;fill:#666666;" y="45"></text><text x="998" class="highcharts-credits"
-                        text-anchor="end" style="cursor:pointer;color:#999999;font-size:9px;fill:#999999;"
+                        style="color:#666666;fill:#666666;" y="45"></text><text x="998"
+                        class="highcharts-credits" text-anchor="end"
+                        style="cursor:pointer;color:#999999;font-size:9px;fill:#999999;"
                         y="395">Highcharts.com</text>
                     <g class="highcharts-label highcharts-tooltip highcharts-color-1"
                         style="cursor:default;pointer-events:none;white-space:nowrap;" transform="translate(503,-9999)"
@@ -1806,7 +1906,8 @@
                             <tspan style="font-weight:bold" dx="0">71.5</tspan>
                         </text>
                     </g>
-                </svg></div>
+                </svg>
+            </div>
         </div>
     </div>
 
@@ -1821,17 +1922,19 @@
                     <desc>Created with Highcharts 6.0.7</desc>
                     <defs>
                         <clipPath id="highcharts-flm2yo6-12">
-                            <rect x="0" y="0" width="988" height="301" fill="none"></rect>
+                            <rect x="0" y="0" width="988" height="301" fill="none">
+                            </rect>
                         </clipPath>
                     </defs>
-                    <rect fill="#ffffff" class="highcharts-background" x="0" y="0" width="1008" height="400"
-                        rx="0" ry="0"></rect>
-                    <g class="highcharts-pane-group"></g><text x="504" text-anchor="middle" class="highcharts-title"
-                        style="color:#333333;font-size:18px;fill:#333333;" y="24">
+                    <rect fill="#ffffff" class="highcharts-background" x="0" y="0"
+                        width="1008" height="400" rx="0" ry="0"></rect>
+                    <g class="highcharts-pane-group"></g><text x="504" text-anchor="middle"
+                        class="highcharts-title" style="color:#333333;font-size:18px;fill:#333333;" y="24">
                         <tspan>Seberapa besar penekanan pada metode pembelajaran yang dilaksanakan di JTIK PNJ</tspan>
                     </text><text x="504" text-anchor="middle" class="highcharts-subtitle"
-                        style="color:#666666;fill:#666666;" y="45"></text><text x="998" class="highcharts-credits"
-                        text-anchor="end" style="cursor:pointer;color:#999999;font-size:9px;fill:#999999;"
+                        style="color:#666666;fill:#666666;" y="45"></text><text x="998"
+                        class="highcharts-credits" text-anchor="end"
+                        style="cursor:pointer;color:#999999;font-size:9px;fill:#999999;"
                         y="395">Highcharts.com</text>
                     <g class="highcharts-label highcharts-tooltip highcharts-color-1"
                         style="cursor:default;pointer-events:none;white-space:nowrap;" transform="translate(503,-9999)"
@@ -1858,7 +1961,8 @@
                             <tspan style="font-weight:bold" dx="0">71.5</tspan>
                         </text>
                     </g>
-                </svg></div>
+                </svg>
+            </div>
         </div>
     </div>
 
@@ -1873,17 +1977,19 @@
                     <desc>Created with Highcharts 6.0.7</desc>
                     <defs>
                         <clipPath id="highcharts-flm2yo6-12">
-                            <rect x="0" y="0" width="988" height="301" fill="none"></rect>
+                            <rect x="0" y="0" width="988" height="301" fill="none">
+                            </rect>
                         </clipPath>
                     </defs>
-                    <rect fill="#ffffff" class="highcharts-background" x="0" y="0" width="1008" height="400"
-                        rx="0" ry="0"></rect>
-                    <g class="highcharts-pane-group"></g><text x="504" text-anchor="middle" class="highcharts-title"
-                        style="color:#333333;font-size:18px;fill:#333333;" y="24">
+                    <rect fill="#ffffff" class="highcharts-background" x="0" y="0"
+                        width="1008" height="400" rx="0" ry="0"></rect>
+                    <g class="highcharts-pane-group"></g><text x="504" text-anchor="middle"
+                        class="highcharts-title" style="color:#333333;font-size:18px;fill:#333333;" y="24">
                         <tspan>Kapan alumni mulai mencari pekerjaan</tspan>
                     </text><text x="504" text-anchor="middle" class="highcharts-subtitle"
-                        style="color:#666666;fill:#666666;" y="45"></text><text x="998" class="highcharts-credits"
-                        text-anchor="end" style="cursor:pointer;color:#999999;font-size:9px;fill:#999999;"
+                        style="color:#666666;fill:#666666;" y="45"></text><text x="998"
+                        class="highcharts-credits" text-anchor="end"
+                        style="cursor:pointer;color:#999999;font-size:9px;fill:#999999;"
                         y="395">Highcharts.com</text>
                     <g class="highcharts-label highcharts-tooltip highcharts-color-1"
                         style="cursor:default;pointer-events:none;white-space:nowrap;" transform="translate(503,-9999)"
@@ -1910,7 +2016,8 @@
                             <tspan style="font-weight:bold" dx="0">71.5</tspan>
                         </text>
                     </g>
-                </svg></div>
+                </svg>
+            </div>
         </div>
     </div>
 
@@ -1925,17 +2032,19 @@
                     <desc>Created with Highcharts 6.0.7</desc>
                     <defs>
                         <clipPath id="highcharts-flm2yo6-12">
-                            <rect x="0" y="0" width="988" height="301" fill="none"></rect>
+                            <rect x="0" y="0" width="988" height="301" fill="none">
+                            </rect>
                         </clipPath>
                     </defs>
-                    <rect fill="#ffffff" class="highcharts-background" x="0" y="0" width="1008" height="400"
-                        rx="0" ry="0"></rect>
-                    <g class="highcharts-pane-group"></g><text x="504" text-anchor="middle" class="highcharts-title"
-                        style="color:#333333;font-size:18px;fill:#333333;" y="24">
+                    <rect fill="#ffffff" class="highcharts-background" x="0" y="0"
+                        width="1008" height="400" rx="0" ry="0"></rect>
+                    <g class="highcharts-pane-group"></g><text x="504" text-anchor="middle"
+                        class="highcharts-title" style="color:#333333;font-size:18px;fill:#333333;" y="24">
                         <tspan>Bagaimanakah alumni mencari pekerjaan tersebut</tspan>
                     </text><text x="504" text-anchor="middle" class="highcharts-subtitle"
-                        style="color:#666666;fill:#666666;" y="45"></text><text x="998" class="highcharts-credits"
-                        text-anchor="end" style="cursor:pointer;color:#999999;font-size:9px;fill:#999999;"
+                        style="color:#666666;fill:#666666;" y="45"></text><text x="998"
+                        class="highcharts-credits" text-anchor="end"
+                        style="cursor:pointer;color:#999999;font-size:9px;fill:#999999;"
                         y="395">Highcharts.com</text>
                     <g class="highcharts-label highcharts-tooltip highcharts-color-1"
                         style="cursor:default;pointer-events:none;white-space:nowrap;" transform="translate(503,-9999)"
@@ -1962,7 +2071,8 @@
                             <tspan style="font-weight:bold" dx="0">71.5</tspan>
                         </text>
                     </g>
-                </svg></div>
+                </svg>
+            </div>
         </div>
     </div>
 
@@ -1977,17 +2087,19 @@
                     <desc>Created with Highcharts 6.0.7</desc>
                     <defs>
                         <clipPath id="highcharts-flm2yo6-12">
-                            <rect x="0" y="0" width="988" height="301" fill="none"></rect>
+                            <rect x="0" y="0" width="988" height="301" fill="none">
+                            </rect>
                         </clipPath>
                     </defs>
-                    <rect fill="#ffffff" class="highcharts-background" x="0" y="0" width="1008" height="400"
-                        rx="0" ry="0"></rect>
-                    <g class="highcharts-pane-group"></g><text x="504" text-anchor="middle" class="highcharts-title"
-                        style="color:#333333;font-size:18px;fill:#333333;" y="24">
+                    <rect fill="#ffffff" class="highcharts-background" x="0" y="0"
+                        width="1008" height="400" rx="0" ry="0"></rect>
+                    <g class="highcharts-pane-group"></g><text x="504" text-anchor="middle"
+                        class="highcharts-title" style="color:#333333;font-size:18px;fill:#333333;" y="24">
                         <tspan>Bagaimanakah alumni mencari pekerjaan tersebut</tspan>
                     </text><text x="504" text-anchor="middle" class="highcharts-subtitle"
-                        style="color:#666666;fill:#666666;" y="45"></text><text x="998" class="highcharts-credits"
-                        text-anchor="end" style="cursor:pointer;color:#999999;font-size:9px;fill:#999999;"
+                        style="color:#666666;fill:#666666;" y="45"></text><text x="998"
+                        class="highcharts-credits" text-anchor="end"
+                        style="cursor:pointer;color:#999999;font-size:9px;fill:#999999;"
                         y="395">Highcharts.com</text>
                     <g class="highcharts-label highcharts-tooltip highcharts-color-1"
                         style="cursor:default;pointer-events:none;white-space:nowrap;" transform="translate(503,-9999)"
@@ -2014,7 +2126,8 @@
                             <tspan style="font-weight:bold" dx="0">71.5</tspan>
                         </text>
                     </g>
-                </svg></div>
+                </svg>
+            </div>
         </div>
     </div>
 
@@ -2029,17 +2142,20 @@
                     <desc>Created with Highcharts 6.0.7</desc>
                     <defs>
                         <clipPath id="highcharts-flm2yo6-12">
-                            <rect x="0" y="0" width="988" height="301" fill="none"></rect>
+                            <rect x="0" y="0" width="988" height="301" fill="none">
+                            </rect>
                         </clipPath>
                     </defs>
-                    <rect fill="#ffffff" class="highcharts-background" x="0" y="0" width="1008" height="400"
-                        rx="0" ry="0"></rect>
-                    <g class="highcharts-pane-group"></g><text x="504" text-anchor="middle" class="highcharts-title"
-                        style="color:#333333;font-size:18px;fill:#333333;" y="24">
-                        <tspan>Berapa perusahaan/instansi/institusi yang sudah alumni lamar (lewat surat atau email) sebelum alumni memperoleh pekerjaan</tspan>
+                    <rect fill="#ffffff" class="highcharts-background" x="0" y="0"
+                        width="1008" height="400" rx="0" ry="0"></rect>
+                    <g class="highcharts-pane-group"></g><text x="504" text-anchor="middle"
+                        class="highcharts-title" style="color:#333333;font-size:18px;fill:#333333;" y="24">
+                        <tspan>Berapa perusahaan/instansi/institusi yang sudah alumni lamar (lewat surat atau email) sebelum
+                            alumni memperoleh pekerjaan</tspan>
                     </text><text x="504" text-anchor="middle" class="highcharts-subtitle"
-                        style="color:#666666;fill:#666666;" y="45"></text><text x="998" class="highcharts-credits"
-                        text-anchor="end" style="cursor:pointer;color:#999999;font-size:9px;fill:#999999;"
+                        style="color:#666666;fill:#666666;" y="45"></text><text x="998"
+                        class="highcharts-credits" text-anchor="end"
+                        style="cursor:pointer;color:#999999;font-size:9px;fill:#999999;"
                         y="395">Highcharts.com</text>
                     <g class="highcharts-label highcharts-tooltip highcharts-color-1"
                         style="cursor:default;pointer-events:none;white-space:nowrap;" transform="translate(503,-9999)"
@@ -2066,7 +2182,8 @@
                             <tspan style="font-weight:bold" dx="0">71.5</tspan>
                         </text>
                     </g>
-                </svg></div>
+                </svg>
+            </div>
         </div>
     </div>
 
@@ -2081,17 +2198,19 @@
                     <desc>Created with Highcharts 6.0.7</desc>
                     <defs>
                         <clipPath id="highcharts-flm2yo6-12">
-                            <rect x="0" y="0" width="988" height="301" fill="none"></rect>
+                            <rect x="0" y="0" width="988" height="301" fill="none">
+                            </rect>
                         </clipPath>
                     </defs>
-                    <rect fill="#ffffff" class="highcharts-background" x="0" y="0" width="1008" height="400"
-                        rx="0" ry="0"></rect>
-                    <g class="highcharts-pane-group"></g><text x="504" text-anchor="middle" class="highcharts-title"
-                        style="color:#333333;font-size:18px;fill:#333333;" y="24">
+                    <rect fill="#ffffff" class="highcharts-background" x="0" y="0"
+                        width="1008" height="400" rx="0" ry="0"></rect>
+                    <g class="highcharts-pane-group"></g><text x="504" text-anchor="middle"
+                        class="highcharts-title" style="color:#333333;font-size:18px;fill:#333333;" y="24">
                         <tspan>Jumlah perusahaan/instansi/institusi yang merespon lamaran alumni</tspan>
                     </text><text x="504" text-anchor="middle" class="highcharts-subtitle"
-                        style="color:#666666;fill:#666666;" y="45"></text><text x="998" class="highcharts-credits"
-                        text-anchor="end" style="cursor:pointer;color:#999999;font-size:9px;fill:#999999;"
+                        style="color:#666666;fill:#666666;" y="45"></text><text x="998"
+                        class="highcharts-credits" text-anchor="end"
+                        style="cursor:pointer;color:#999999;font-size:9px;fill:#999999;"
                         y="395">Highcharts.com</text>
                     <g class="highcharts-label highcharts-tooltip highcharts-color-1"
                         style="cursor:default;pointer-events:none;white-space:nowrap;" transform="translate(503,-9999)"
@@ -2118,7 +2237,8 @@
                             <tspan style="font-weight:bold" dx="0">71.5</tspan>
                         </text>
                     </g>
-                </svg></div>
+                </svg>
+            </div>
         </div>
     </div>
 
@@ -2133,17 +2253,19 @@
                     <desc>Created with Highcharts 6.0.7</desc>
                     <defs>
                         <clipPath id="highcharts-flm2yo6-12">
-                            <rect x="0" y="0" width="988" height="301" fill="none"></rect>
+                            <rect x="0" y="0" width="988" height="301" fill="none">
+                            </rect>
                         </clipPath>
                     </defs>
-                    <rect fill="#ffffff" class="highcharts-background" x="0" y="0" width="1008" height="400"
-                        rx="0" ry="0"></rect>
-                    <g class="highcharts-pane-group"></g><text x="504" text-anchor="middle" class="highcharts-title"
-                        style="color:#333333;font-size:18px;fill:#333333;" y="24">
+                    <rect fill="#ffffff" class="highcharts-background" x="0" y="0"
+                        width="1008" height="400" rx="0" ry="0"></rect>
+                    <g class="highcharts-pane-group"></g><text x="504" text-anchor="middle"
+                        class="highcharts-title" style="color:#333333;font-size:18px;fill:#333333;" y="24">
                         <tspan>Jumlah perusahaan/instansi/institusi yang mengundang alumni untuk wawancara</tspan>
                     </text><text x="504" text-anchor="middle" class="highcharts-subtitle"
-                        style="color:#666666;fill:#666666;" y="45"></text><text x="998" class="highcharts-credits"
-                        text-anchor="end" style="cursor:pointer;color:#999999;font-size:9px;fill:#999999;"
+                        style="color:#666666;fill:#666666;" y="45"></text><text x="998"
+                        class="highcharts-credits" text-anchor="end"
+                        style="cursor:pointer;color:#999999;font-size:9px;fill:#999999;"
                         y="395">Highcharts.com</text>
                     <g class="highcharts-label highcharts-tooltip highcharts-color-1"
                         style="cursor:default;pointer-events:none;white-space:nowrap;" transform="translate(503,-9999)"
@@ -2170,7 +2292,8 @@
                             <tspan style="font-weight:bold" dx="0">71.5</tspan>
                         </text>
                     </g>
-                </svg></div>
+                </svg>
+            </div>
         </div>
     </div>
 
@@ -2185,17 +2308,19 @@
                     <desc>Created with Highcharts 6.0.7</desc>
                     <defs>
                         <clipPath id="highcharts-flm2yo6-12">
-                            <rect x="0" y="0" width="988" height="301" fill="none"></rect>
+                            <rect x="0" y="0" width="988" height="301" fill="none">
+                            </rect>
                         </clipPath>
                     </defs>
-                    <rect fill="#ffffff" class="highcharts-background" x="0" y="0" width="1008" height="400"
-                        rx="0" ry="0"></rect>
-                    <g class="highcharts-pane-group"></g><text x="504" text-anchor="middle" class="highcharts-title"
-                        style="color:#333333;font-size:18px;fill:#333333;" y="24">
+                    <rect fill="#ffffff" class="highcharts-background" x="0" y="0"
+                        width="1008" height="400" rx="0" ry="0"></rect>
+                    <g class="highcharts-pane-group"></g><text x="504" text-anchor="middle"
+                        class="highcharts-title" style="color:#333333;font-size:18px;fill:#333333;" y="24">
                         <tspan>Keaktifan alumni mencari pekerjaan dalam 4 minggu terakhir</tspan>
                     </text><text x="504" text-anchor="middle" class="highcharts-subtitle"
-                        style="color:#666666;fill:#666666;" y="45"></text><text x="998" class="highcharts-credits"
-                        text-anchor="end" style="cursor:pointer;color:#999999;font-size:9px;fill:#999999;"
+                        style="color:#666666;fill:#666666;" y="45"></text><text x="998"
+                        class="highcharts-credits" text-anchor="end"
+                        style="cursor:pointer;color:#999999;font-size:9px;fill:#999999;"
                         y="395">Highcharts.com</text>
                     <g class="highcharts-label highcharts-tooltip highcharts-color-1"
                         style="cursor:default;pointer-events:none;white-space:nowrap;" transform="translate(503,-9999)"
@@ -2222,7 +2347,8 @@
                             <tspan style="font-weight:bold" dx="0">71.5</tspan>
                         </text>
                     </g>
-                </svg></div>
+                </svg>
+            </div>
         </div>
     </div>
 
@@ -2237,17 +2363,19 @@
                     <desc>Created with Highcharts 6.0.7</desc>
                     <defs>
                         <clipPath id="highcharts-flm2yo6-12">
-                            <rect x="0" y="0" width="988" height="301" fill="none"></rect>
+                            <rect x="0" y="0" width="988" height="301" fill="none">
+                            </rect>
                         </clipPath>
                     </defs>
-                    <rect fill="#ffffff" class="highcharts-background" x="0" y="0" width="1008" height="400"
-                        rx="0" ry="0"></rect>
-                    <g class="highcharts-pane-group"></g><text x="504" text-anchor="middle" class="highcharts-title"
-                        style="color:#333333;font-size:18px;fill:#333333;" y="24">
+                    <rect fill="#ffffff" class="highcharts-background" x="0" y="0"
+                        width="1008" height="400" rx="0" ry="0"></rect>
+                    <g class="highcharts-pane-group"></g><text x="504" text-anchor="middle"
+                        class="highcharts-title" style="color:#333333;font-size:18px;fill:#333333;" y="24">
                         <tspan>Alasan alumni bekerja yang tidak sesuai pendidikannya</tspan>
                     </text><text x="504" text-anchor="middle" class="highcharts-subtitle"
-                        style="color:#666666;fill:#666666;" y="45"></text><text x="998" class="highcharts-credits"
-                        text-anchor="end" style="cursor:pointer;color:#999999;font-size:9px;fill:#999999;"
+                        style="color:#666666;fill:#666666;" y="45"></text><text x="998"
+                        class="highcharts-credits" text-anchor="end"
+                        style="cursor:pointer;color:#999999;font-size:9px;fill:#999999;"
                         y="395">Highcharts.com</text>
                     <g class="highcharts-label highcharts-tooltip highcharts-color-1"
                         style="cursor:default;pointer-events:none;white-space:nowrap;" transform="translate(503,-9999)"
@@ -2274,7 +2402,8 @@
                             <tspan style="font-weight:bold" dx="0">71.5</tspan>
                         </text>
                     </g>
-                </svg></div>
+                </svg>
+            </div>
         </div>
     </div>
 

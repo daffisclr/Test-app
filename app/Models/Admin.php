@@ -12,42 +12,14 @@ class Admin extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
 
-    protected $guard = "admin";
+    protected $guard = "user";
 
     /**
      * The attributes that are mass assignable.
      *
      * @var array<int, string>
      */
-    protected $fillable = [
-        'name',
-        'username',
-        'email',
-        'phone',
-        'picture',
-        'password',
-        'valid_status',
-    ];
-
-    /**
-     * The attributes that should be hidden for serialization.
-     *
-     * @var array<int, string>
-     */
-    protected $hidden = [
-        'password',
-        'remember_token',
-    ];
-
-    /**
-     * The attributes that should be cast.
-     *
-     * @var array<string, string>
-     */
-    protected $casts = [
-        'email_verified_at' => 'datetime',
-        'password' => 'hashed',
-    ];
+    protected $fillable = [];
 
     public function getPictureAttribute($value)
     {
@@ -56,9 +28,5 @@ class Admin extends Authenticatable
         } else {
             return asset('/images/users/default-avatar.png');
         }
-    }
-    public function role()
-    {
-        return $this->belongsTo(Role::class);
     }
 }

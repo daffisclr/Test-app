@@ -4,14 +4,14 @@ namespace App\Livewire;
 
 
 use Livewire\Component;
-use App\Models\Admin;
+use App\Models\User;
 use App\Models\Module;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 
 class Menu extends Component
 {
-    public $admin, $main_modules, $sub_menus = [];
+    public $user, $main_modules, $sub_menus = [];
 
     public $listeners = [
         'updateHeaderInfo' => 'refresh'
@@ -19,14 +19,14 @@ class Menu extends Component
 
     public function mount()
     {
-        if (Auth::guard('admin')->check()) {
-            $this->admin = Admin::findOrFail(auth()->id());
+        if (Auth::guard('user')->check()) {
+            $this->user = User::findOrFail(auth()->id());
 
             $this->main_modules = DB::table('modules')
                 ->leftJoin('module_role', 'module_role.module_id', '=', 'modules.id')
                 ->where('modules.valid_status', '=', 1)
                 ->where('modules.module_level', '=', 0)
-                ->where('module_role.role_id', '=', $this->admin->role_id)
+                ->where('module_role.role_id', '=', $this->user->role_id)
                 ->where('module_role.valid', '=', 1)
                 ->select(['modules.*', 'module_role.valid', 'module_role.C', 'module_role.R', 'module_role.U', 'module_role.D',])
                 ->get();
@@ -47,7 +47,7 @@ class Menu extends Component
             ->leftJoin('module_role', 'module_role.module_id', '=', 'modules.id')
             ->where('modules.valid_status', '=', 1)
             ->where('modules.module_level', '=', 1)
-            ->where('module_role.role_id', '=', $this->admin->role_id)
+            ->where('module_role.role_id', '=', $this->user->role_id)
             ->where('module_role.valid', '=', 1)
             ->select(['modules.*', 'module_role.valid'])
             ->get();
@@ -57,7 +57,7 @@ class Menu extends Component
             ->leftJoin('module_role', 'module_role.module_id', '=', 'modules.id')
             ->where('modules.valid_status', '=', 1)
             ->where('modules.module_level', '=', 2)
-            ->where('module_role.role_id', '=', $this->admin->role_id)
+            ->where('module_role.role_id', '=', $this->user->role_id)
             ->where('module_role.valid', '=', 1)
             ->select(['modules.*', 'module_role.valid', 'module_role.C', 'module_role.R', 'module_role.U', 'module_role.D'])
             ->get();

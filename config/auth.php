@@ -1,6 +1,5 @@
 <?php
 
-use App\Models\Admin;
 use App\Models\Alumni;
 use App\Models\User;
 use Illuminate\Support\Facades\App;
@@ -23,14 +22,9 @@ return [
         'passwords' => 'users',
     ],
 
-    'admin' => [
+    'user' => [
         'driver' => 'eloquent',
-        'model' => Admin::class,
-    ],
-
-    'alumni' => [
-        'driver' => 'eloquent',
-        'model' => Alumni::class,
+        'model' => User::class,
     ],
 
 
@@ -57,14 +51,9 @@ return [
             'provider' => 'users',
         ],
 
-        'admin' => [
+        'user' => [
             'driver' => 'session',
-            'provider' => 'admins',
-        ],
-
-        'alumni' => [
-            'driver' => 'session',
-            'provider' => 'alumnis',
+            'provider' => 'users',
         ],
     ],
 
@@ -90,21 +79,6 @@ return [
             'driver' => 'eloquent',
             'model' => User::class,
         ],
-
-        'admins' => [
-            'driver' => 'eloquent',
-            'model' => Admin::class,
-        ],
-
-        'alumnis' => [
-            'driver' => 'eloquent',
-            'model' => Alumni::class,
-        ],
-
-        // 'users' => [
-        //     'driver' => 'database',
-        //     'table' => 'users',
-        // ],
     ],
 
     /*
@@ -129,19 +103,11 @@ return [
     'passwords' => [
         'users' => [
             'provider' => 'users',
+            'driver' => 'eloquent',
             'table' => 'password_reset_tokens',
             'expire' => 60,
             'throttle' => 60,
-        ],
-
-        'admins' => [
-            'driver' => 'eloquent',
-            'model' => Admin::class,
-        ],
-
-        'alumnis' => [
-            'driver' => 'eloquent',
-            'model' => Alumni::class,
+            'model' => User::class,
         ],
     ],
 

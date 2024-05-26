@@ -37,7 +37,7 @@ return new class extends Migration
     public function down(): void
     {
         Schema::dropIfExists('module_role');
-        Schema::table('adminrole', function (Blueprint $table) {
+        Schema::table('userrole', function (Blueprint $table) {
             $table->dropForeign('module_id');
             $table->dropIndex('module_id');
             $table->dropColumn('module_id');

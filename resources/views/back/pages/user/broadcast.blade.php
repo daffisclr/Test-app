@@ -2,7 +2,7 @@
 @section('pageTitle', isset($pageTitle) ? $pageTitle : 'Broadcast Email')
 @section('content')
     <div class="page-header">
-        <form action="{{ route('admin.broadcast-action') }}" method="POST">
+        <form action="{{ route('user.broadcast-action') }}" method="POST">
             @csrf
             <div class="row">
                 <div class="col-12">
