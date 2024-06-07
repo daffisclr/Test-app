@@ -26,6 +26,8 @@ Route::prefix('user')->name('user.')->group(function () {
         Route::post('/send-password-reset-link', [UserController::class, 'sendPasswordResetLink'])->name('send-password-reset-link');
         Route::get('/password/reset/{token}', [UserController::class, 'resetPassword'])->name('reset-password');
         Route::post('/reset-password-handler', [UserController::class, 'resetPasswordHandler'])->name('reset-password-handler');
+        Route::get('/guest-form', [BroadcastController::class, 'form_index'])->name('guest-form');
+        Route::post('/guest-form-create', [BroadcastController::class, 'form_create'])->name('guest-form-create');
     });
 
     Route::middleware(['auth:user', 'PreventBackHistory'])->group(function () {
