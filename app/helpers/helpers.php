@@ -3,7 +3,7 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-/** SEND EMAIL FUNCTION USING PHPMAILER LIBRARY**/
+/** SEND MAIL FUNCTION USING PHPMAILER LIBRARY**/
 
 if (!function_exists('sendEmail')) {
     function sendEmail($mailConfig)
@@ -15,13 +15,13 @@ if (!function_exists('sendEmail')) {
         $mail = new PHPMailer(true);
         $mail->SMTPDebug = 0;
         $mail->isSMTP();
-        $mail->Host = env('EMAIL_HOST');
+        $mail->Host = env('MAIL_HOST');
         $mail->SMTPAuth = true;
-        $mail->Username = env('EMAIL_USERNAME');
-        $mail->Password = env('EMAIL_PASSWORD');
-        $mail->SMTPSecure = env('EMAIL_ENCRYPTION');
-        $mail->Port = env('EMAIL_PORT');
-        dd($mailConfig['mail_from_email'], $mailConfig['mail_from_name']);
+        $mail->Username = env('MAIL_USERNAME');
+        $mail->Password = env('MAIL_PASSWORD');
+        $mail->SMTPSecure = env('MAIL_ENCRYPTION');
+        $mail->Port = env('MAIL_PORT');
+        // dd($mailConfig['mail_from_email'], $mailConfig['mail_from_name']);
         $mail->setFrom($mailConfig['mail_from_email'], $mailConfig['mail_from_name']);
         if (isset($mailConfig->mail_recipient)) {
             foreach ($mailConfig['mail_recipient'] as $recipient) {
@@ -51,12 +51,12 @@ if (!function_exists('broadcastEmail')) {
         $mail = new PHPMailer(true);
         $mail->SMTPDebug = 0;
         $mail->isSMTP();
-        $mail->Host = env('EMAIL_HOST');
+        $mail->Host = env('MAIL_HOST');
         $mail->SMTPAuth = true;
-        $mail->Username = env('EMAIL_USERNAME');
-        $mail->Password = env('EMAIL_PASSWORD');
-        $mail->SMTPSecure = env('EMAIL_ENCRYPTION');
-        $mail->Port = env('EMAIL_PORT');
+        $mail->Username = env('MAIL_USERNAME');
+        $mail->Password = env('MAIL_PASSWORD');
+        $mail->SMTPSecure = env('MAIL_ENCRYPTION');
+        $mail->Port = env('MAIL_PORT');
         $mail->setFrom($mailConfig['mail_from_email'], $mailConfig['mail_from_name']);
         if ($mailConfig['mail_recipient']) {
             foreach ($mailConfig['mail_recipient'] as $key => $value) {
