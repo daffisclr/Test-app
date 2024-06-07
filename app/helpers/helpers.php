@@ -21,7 +21,7 @@ if (!function_exists('sendEmail')) {
         $mail->Password = env('MAIL_PASSWORD');
         $mail->SMTPSecure = env('MAIL_ENCRYPTION');
         $mail->Port = env('MAIL_PORT');
-        dd($mailConfig['mail_from_email'], $mailConfig['mail_from_name']);
+        // dd($mailConfig['mail_from_email'], $mailConfig['mail_from_name']);
         $mail->setFrom($mailConfig['mail_from_email'], $mailConfig['mail_from_name']);
         if (isset($mailConfig->mail_recipient)) {
             foreach ($mailConfig['mail_recipient'] as $recipient) {
