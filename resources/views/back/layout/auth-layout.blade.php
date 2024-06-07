@@ -61,7 +61,7 @@
         <div class="container-fluid d-flex justify-content-between align-items-center">
             <div class="brand-logo">
                 <a href="login">
-                    <img src="/back/vendors/images/deskapp-logo.svg" alt="" />
+                    <img width="63" height="63" src="/images/asset_pnj/logo_pnj.jpg" alt="" />
                 </a>
             </div>
         </div>
