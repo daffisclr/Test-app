@@ -7,7 +7,28 @@
             <div class="row">
                 <div class="col-12">
                     <div class="form-group">
-                        <label>Emails :</label>
+                        <label>Email Pengguna Alumni :</label>
+                        <input type="text" id="email" name="email" class="w-100" data-role="tagsinput" />
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="form-group">
+                        <label>Nama Pengguna Alumni :</label>
+                        <input type="text" id="email" name="email" class="w-100" data-role="tagsinput" />
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="form-group">
+                        <label>Nama Perusahaan Pengguna Alumni :</label>
+                        <input type="text" id="email" name="email" class="w-100" data-role="tagsinput" />
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="form-group">
+                        <label>Jabatan Pengguna Alumni :</label>
                         <input type="text" id="email" name="email" class="w-100" data-role="tagsinput" />
                     </div>
                 </div>
