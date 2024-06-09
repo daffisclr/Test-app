@@ -21,6 +21,7 @@ Route::prefix('user')->name('user.')->group(function () {
 
     Route::middleware(['guest:user', 'PreventBackHistory'])->group(function () {
         Route::view('/login', 'back.pages.user.auth.login')->name('login');
+        Route::view('/register', 'back.pages.user.auth.register')->name('register');
         Route::post('/login_handler', [UserController::class, 'loginHandler'])->name('login_handler');
         Route::view('/forgot-password', 'back.pages.user.auth.forgot-password')->name('forgot-password');
         Route::post('/send-password-reset-link', [UserController::class, 'sendPasswordResetLink'])->name('send-password-reset-link');
