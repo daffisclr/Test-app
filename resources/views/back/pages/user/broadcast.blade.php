@@ -5,43 +5,33 @@
         <form action="{{ route('user.broadcast-action') }}" method="POST">
             @csrf
             <div class="row">
-                <div class="col-12">
-                    <div class="form-group">
-                        <label>Email Pengguna Alumni :</label>
-                        <input type="text" id="email" name="email" class="w-100" data-role="tagsinput" />
+                <div class="row form-group">
+                    <label class="col-12 col-sm-3 required-field">Email Pengguna Alumni</label>
+                    <div class="col-12 col-sm-9">
+                        <input type="text" id="p_email" name="email" class="form-control" required />
                     </div>
                 </div>
 
-                <div class="col-12">
-                    <div class="form-group">
-                        <label>Nama Pengguna Alumni :</label>
-                        <input type="text" id="email" name="email" class="w-100" data-role="tagsinput" />
+                <div class="form-group row">
+                    <label class="col-12 col-sm-3 required-field">Nama Pengguna Alumni</label>
+                    <div class="col-12 col-sm-9">
+                        <input type="text" id="p_nama" name="nama" class="form-control" required />
                     </div>
                 </div>
 
-                <div class="col-12">
-                    <div class="form-group">
-                        <label>Nama Perusahaan Pengguna Alumni :</label>
-                        <input type="text" id="email" name="email" class="w-100" data-role="tagsinput" />
-                    </div>
+                <div class="form-group row">
+                    <label class="col-12 col-sm-3 required-field">Nama Perusahaan Pengguna Alumni</label>
+                    <div class="col-12 col-sm-9">
+                        <input type="text" id="p_perusahaan" name="perusahaan"
+                            class="form-control" required /></div>
                 </div>
 
-                <div class="col-12">
-                    <div class="form-group">
-                        <label>Jabatan Pengguna Alumni :</label>
-                        <input type="text" id="email" name="email" class="w-100" data-role="tagsinput" />
+                <div class="form-group row">
+                    <label class="col-12 col-sm-3 required-field">Jabatan Pengguna Alumni</label>
+                    <div class="col-12 col-sm-9">
+                        <input type="text" id="p_jabatan" name="jabatan" class="form-control" required />
                     </div>
                 </div>
-
-                {{-- <div class="col-sm-6 col-12">
-                    <div class="form-group">
-                        <label>Email Groups :</label>
-                        <div class="custom-control custom-checkbox mb-5">
-                            <input id="email_group" type="checkbox" class="custom-control-input" id="customCheck2" />
-                            <label class="custom-control-label" for="customCheck2">Alumni</label>
-                        </div>
-                    </div>
-                </div> --}}
 
                 <div class="col-12 d-flex justify-content-center mt-2">
                     <button class="btn btn-primary" type="submit">
