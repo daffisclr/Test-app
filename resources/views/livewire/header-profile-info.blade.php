@@ -5,7 +5,7 @@
             <div class="dropdown">
                 <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown">
                     <span class="user-icon">
-                        <img src="{{ $user->picture }}" alt="" />
+                        <img src="/asset_pnj/Logo_pnj_icon.jpg" alt="" />
                     </span>
                     <span class="user-name">{{ $user->name }}</span>
                 </a>

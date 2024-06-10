@@ -27,7 +27,7 @@
             <div class="pd-20 card-box height-100-p">
                 <div class="profile-photo">
                     <a href="" class="edit-avatar"><i class="fa fa-pencil"></i></a>
-                    <img src="{{ $user->picture }}" alt="" class="avatar-photo" id="userProfilePicture">
+                    <img src="/asset_pnj/Logo_pnj_icon.jpg" alt="" class="avatar-photo" id="userProfilePicture">
                 </div>
                 <h5 class="text-center h5 mb-0" id="userProfileName">{{ $user->name }}</h5>
                 <p class="text-center text-muted font-14" id="userProfileEmail">
