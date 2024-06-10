@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('kuesioner_company', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('broadcast_id')->nullable(false);
             $table->string('unique_code')->nullable(false);
             $table->string('company_name')->nullable();
             $table->string('name')->nullable();
@@ -33,6 +34,7 @@ return new class extends Migration
             $table->integer('readiness')->nullable();
             $table->string('remarks')->nullable();
             $table->string('recommendation')->nullable();
+            $table->foreign('broadcast_id')->references('id')->on('broadcast')->onDelete('cascade')->onUpdate('cascade');
             $table->timestamps();
         });
     }

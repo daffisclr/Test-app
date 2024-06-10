@@ -59,6 +59,9 @@
     <link rel="stylesheet" type="text/css"
         href="/back/src/plugins/bootstrap-touchspin/jquery.bootstrap-touchspin.css" />
 
+    <!--  css -->
+    <link rel="stylesheet" type="text/css" href="/back/src/styles/app.css" />
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GBZ3SGGX85"></script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2973766580778258"

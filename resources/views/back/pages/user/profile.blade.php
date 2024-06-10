@@ -45,7 +45,7 @@
 @endsection
 @push('scripts')
     <script type="text/javascript">
-        window.addEventListener('updateAdminInfo', function(event) {
+        window.addEventListener('updateUserInfo', function(event) {
             $('#userProfileName').html(event.detail[0].userName);
             $('#userProfileEmail').html(event.detail[0].userEmail);
         });

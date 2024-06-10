@@ -78,13 +78,13 @@ class UserController extends Controller
 
         // Check if there is an existing reset password token
         $oldtoken = DB::table('password_reset_tokens')
-            ->where(['email' => $request->email, 'guard' => constGuards::ADMIN])
+            ->where(['email' => $request->email, 'guard' => constGuards::USER])
             ->first();
 
         if ($oldtoken) {
             //Update token
             DB::table('password_reset_tokens')
-                ->where(['email' => $request->email, 'guard' => constGuards::ADMIN])
+                ->where(['email' => $request->email, 'guard' => constGuards::USER])
                 ->update([
                     'token' => $token,
                     'created_at' => Carbon::now()
@@ -93,7 +93,7 @@ class UserController extends Controller
             // Add new token
             DB::table('password_reset_tokens')->insert([
                 'email' => $request->email,
-                'guard' => constGuards::ADMIN,
+                'guard' => constGuards::USER,
                 'token' => $token,
                 'created_at' => Carbon::now()
             ]);
@@ -129,7 +129,7 @@ class UserController extends Controller
     public function resetPassword(Request $request, $token = null)
     {
         $check_token = DB::table('password_reset_tokens')
-            ->where(['token' => $token, 'guard' => constGuards::ADMIN])
+            ->where(['token' => $token, 'guard' => constGuards::USER])
             ->first();
 
         if ($check_token) {
@@ -158,7 +158,7 @@ class UserController extends Controller
         ]);
 
         $token = DB::table('password_reset_tokens')
-            ->where(['token' => $request->token, 'guard' => constGuards::ADMIN])
+            ->where(['token' => $request->token, 'guard' => constGuards::USER])
             ->first();
 
         // Get User detail
@@ -173,7 +173,7 @@ class UserController extends Controller
         DB::table('password_reset_tokens')->where([
             'email' => $user->email,
             'token' => $request->token,
-            'guard' => constGuards::ADMIN
+            'guard' => constGuards::USER
         ])->delete();
 
         // Send email to notify user

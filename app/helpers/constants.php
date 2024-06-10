@@ -2,6 +2,7 @@
 
 class constGuards
 {
+    const USER = 'user';
     const ADMIN = 'admin';
     const ALUMNI = 'alumni';
 }

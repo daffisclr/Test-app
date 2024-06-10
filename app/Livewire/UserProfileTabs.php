@@ -67,7 +67,7 @@ class UserProfileTabs extends Component
 
     public function render()
     {
-        return view('livewire.admin-profile-tabs');
+        return view('livewire.user-profile-tabs');
     }
 
     //Change Password

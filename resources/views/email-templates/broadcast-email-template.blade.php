@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 
-<p> Yth.
-    Bapak/Ibu Pengguna Lulusan
-    Jurusan Teknik Informatika dan Komputer Politeknik Negeri Jakarta
-    di Tempat
+<p> Yth. <br/>
+    Bapak/Ibu {{ $form_value['nama'] ? $form_value['nama'] : "Pengguna Lulusan" }} <br/>
+    Jurusan Teknik Informatika dan Komputer Politeknik Negeri Jakarta <br/>
+    di Tempat <br/>
 </p>
 <p>
     Dalam rangka meningkatkan kualitas lulusan Jurusan Teknik Informatika dan Komputer Politeknik Negeri Jakarta,

@@ -24,31 +24,48 @@ class BroadcastController extends Controller
 
     public function broadcast_email(Request $request)
     {
-        //get Email
-        $recepients = explode(',', $request->email);
-        $email_pattern = '/^([a-z0-9+-]+)(.[a-z0-9+-]+)*@([a-z0-9-]+.)+[a-z]{2,6}$/ix';
+        $request->validate([
+            "email" => 'required|email',
+            "nama" => 'required',
+            "perusahaan" => 'required',
+            "jabatan" => 'required',
+        ], ['required' => 'Field is required', 'email' => 'Field must be valid email']);
 
-        foreach ($recepients as $key => $value) {
-            $pattern =
-                Str::of($value)->test($email_pattern);
+        /** get Email **/
+        $form_value = $request->post();
 
-            if (!$pattern) {
-                session()->flash('fail', 'The Email is not correct!');
-                return redirect()->back();
-            }
-        }
 
         $base_url = URL::to('/');
         $unique_id = $this->unique_code(6);
         $guest_kuesioner = $base_url . '/user/guest-form?f_id=' . $unique_id;
-        // dd($recepients);
+
+        DB::beginTransaction();
+        
+        DB::table('broadcast')->insert([
+            'unique_code' => $unique_id,
+            'email' => $form_value['email'],
+            'name' => $form_value['nama'],
+            'company' => $form_value['perusahaan'],
+            'position' => $form_value['jabatan'],
+            'created_at' => now(),
+            'updated_at' => now()
+        ]);
+
+        if (DB::transactionLevel() == 1) {
+            DB::commit();
+        } else {
+            DB::rollback();
+            // something went wrong
+        }
         // customise the email body
-        $mail_body = view('email-templates.broadcast-email-template', compact('guest_kuesioner'))->render();
+        $mail_body = view('email-templates.broadcast-email-template', compact('guest_kuesioner','form_value'))->render();
 
         $mailConfig = array(
             'mail_from_email' => env('EMAIL_FROM_ADDRESS'),
             'mail_from_name' => env('EMAIL_FROM_NAME '),
-            'mail_recipient' => $recepients,
+            'mail_recipient' => null,
+            'mail_recipient_email' => $form_value['email'],
+            'mail_recipient_name' => $form_value['nama'],
             'mail_subject' => 'Broadcast Email', //change subject
             'mail_body' => $mail_body
         );
@@ -111,8 +128,18 @@ class BroadcastController extends Controller
         //Begin db transaction for questionare answers
         DB::beginTransaction();
 
+        $broadcast_id = DB::table('broadcast')->select(["id"])->where('unique_code',"=", $f_id)->first();
+
+        if (!$broadcast_id->id) {
+            DB::rollback();
+            // something went wrong
+            session()->flash('fail', 'Something went wrong!');
+            return redirect()->back();
+        }
+
         //Table Kuesioner Guest
         DB::table('kuesioner_company')->insert([
+            'broadcast_id' => $broadcast_id->id,
             'unique_code' => $f_id,
             'company_name' => $form_value['company_name'],
             'name' => $form_value['name'],
