@@ -15,20 +15,23 @@
     Jakarta yang bekerja di instansi atau perusahaan
     yang Bapak/Ibu pimpin dengan cara mengisi kuisioner pengguna lulusan Jurusan Teknik Informatika dan Komputer
     Politeknik Negeri Jakarta.
-
+</p>
+<p>
     Penilaian dan masukan yang Bapak/Ibu berikan sangat berharga bagi kami dan kami akan menjaga kerahasiaan informasi
     yang diberikan tersebut. Oleh karena itu bantuan penilaian dan masukan dari Bapak/Ibu sangat kami harapkan.
-
+</p>
+<p>
     Atas nama Jurusan Teknik Informatika dan Komputer Politeknik Negeri Jakarta, kami mengucapkan terima kasih yang
     sebesar-besarnya atas kesediaan saudara
     meluangkan waktu sejenak untuk berpartisapasi dalam pengisian survey ini.
-
+</p>
+<p>
     Team tracer study Jurusan Teknik Informatika dan Komputer Politeknik Negeri Jakarta
-
-
+</p>
+<p>
     Silahkan Mengisi kuesioner pada link berikut ini:
-
-    {{ $guest_kuesioner }}
+    <br>
+    <a href="{{ $guest_kuesioner }}">{{ $guest_kuesioner }}</a>
 </p>
 
 </html>
