@@ -45,7 +45,7 @@
 
                 <div class="col-12 d-flex justify-content-center mt-2">
                     <button class="btn btn-primary" type="submit">
-                        Broadcast Email
+                        Invite Pengguna Alumni
                     </button>
                 </div>
             </div>

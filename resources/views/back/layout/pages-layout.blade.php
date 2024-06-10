@@ -241,7 +241,8 @@
     <div class="left-side-bar">
         <div class="brand-logo">
             <a href="">
-                <img width="50" height="50" src="/images/asset_pnj/logo_pnj.jpg" alt="" class="dark-logo" />
+                <img width="50" height="50" src="/images/asset_pnj/logo_pnj.jpg" alt=""
+                    class="dark-logo" />
             </a>
             <div class="close-sidebar" data-toggle="left-sidebar-close">
                 <i class="ion-close-round"></i>
